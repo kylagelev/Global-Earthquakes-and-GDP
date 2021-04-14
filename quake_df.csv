@@ -1,321 +1,321 @@
 ,Time,Longitude,Latitude,Alert,Depth,Magnitude,Tsunami,Place,Type
-0,1616231384002,38.4754,141.6328,yellow,,7.0,1,"29 km ENE of Ishinomaki, Japan",earthquake
-1,1614886113178,-29.7228,-177.2794,green,,8.1,1,"Kermadec Islands, New Zealand",earthquake
-2,1614879683370,-29.6768,-177.8398,green,,7.4,1,"Kermadec Islands, New Zealand",earthquake
-3,1614864454885,-37.5459,179.3587,green,,7.3,1,"170 km NE of Gisborne, New Zealand",earthquake
-4,1613225270194,37.7534,141.7145,orange,,7.1,1,"69 km ENE of Namie, Japan",earthquake
-5,1612963195531,-23.051,171.6565,green,,7.7,1,southeast of the Loyalty Islands,earthquake
-6,1611231784255,4.9931,127.5145,green,,7.0,1,"211 km SE of Pondaguitan, Philippines",earthquake
-7,1604058687348,37.8973,26.7838,orange,,7.0,0,"13 km NNE of Néon Karlovásion, Greece",earthquake
-8,1603140878950,54.602,-159.6258,yellow,,7.6,1,"99 km SE of Sand Point, Alaska",earthquake
-9,1595398364810,55.0715,-158.596,green,,7.8,1,"99 km SSE of Perryville, Alaska",earthquake
-10,1594954222178,-7.836,147.7704,green,,7.0,1,"114 km NNW of Popondetta, Papua New Guinea",earthquake
-11,1592926144350,15.8861,-96.0077,orange,,7.4,1,"9 km SE of Santa María Xadani, Mexico",earthquake
-12,1592484593844,-33.2927,-177.8571,green,,7.4,1,south of the Kermadec Islands,earthquake
-13,1585104561160,48.9638,157.6955,green,,7.5,1,"221km SSE of Severo-Kuril'sk, Russia",earthquake
-14,1581590024406,45.6161,148.959,yellow,,7.0,1,"94km ENE of Kuril'sk, Russia",earthquake
-15,1580238624918,19.4193,-78.756,yellow,,7.7,1,"123km NNW of Lucea, Jamaica",earthquake
-16,1573748260578,1.6213,126.4156,green,,7.1,1,"138km E of Bitung, Indonesia",earthquake
-17,1563095451523,-0.5858,128.034,green,,7.2,1,"93km NNE of Laiwui, Indonesia",earthquake
-18,1562383193040,35.7695,-117.5993333,yellow,,7.1,1,2019 Ridgecrest Earthquake Sequence,earthquake
-19,1561344819830,-6.4078,129.1692,green,,7.3,1,"292km NW of Saumlaki, Indonesia",earthquake
-20,1560639304130,-30.6441,-178.0995,green,,7.3,1,"116km NE of L'Esperance Rock, New Zealand",earthquake
-21,1558856475073,-5.8119,-75.2697,orange,,8.0,1,"78km SE of Lagunas, Peru",earthquake
-22,1557838705939,-4.051,152.5967,green,,7.6,1,"46km SSE of Namatanai, Papua New Guinea",earthquake
-23,1557177577983,-6.9746,146.4494,yellow,,7.1,1,"33km NW of Bulolo, Papua New Guinea",earthquake
-24,1551430242591,-14.7131,-70.1546,green,,7.0,1,"23km NNE of Azangaro, Peru",earthquake
-25,1550830643770,-2.1862,-77.0505,yellow,,7.5,1,"111km ESE of Palora, Ecuador",earthquake
-26,1546054749740,5.8983,126.9209,green,,7.0,1,"96km ESE of Pondaguitan, Philippines",earthquake
-27,1545325315150,55.0999,164.6993,green,,7.3,1,"83km W of Nikol'skoye, Russia",earthquake
-28,1544495189420,-58.5446,-26.3856,green,,7.1,1,"54km N of Bristol Island, South Sandwich Islands",earthquake
-29,1543983488420,-21.9496,169.4266,green,,7.5,1,"165km ESE of Tadine, New Caledonia",earthquake
-30,1543598969330,61.3464,-149.9552,orange,,7.1,1,"14km NNW of Anchorage, Alaska",earthquake
-31,1539204500100,-5.7012,151.2046,green,,7.0,1,"118km E of Kimbe, Papua New Guinea",earthquake
-32,1538128965250,-0.2559,119.8462,red,,7.5,1,"70km N of Palu, Indonesia",earthquake
-33,1536248958710,-18.4743,179.3502,green,,7.9,1,"102km ESE of Suva, Fiji",earthquake
-34,1535514716100,-22.0295,170.1262,green,,7.1,1,"202km WNW of Ile Hunter, New Caledonia",earthquake
-35,1535101448250,-11.0355,-70.8284,green,,7.1,0,"140km WNW of Iberia, Peru",earthquake
-36,1534887107600,10.7731,-62.9019,yellow,,7.3,1,"24km ENE of Rio Caribe, Venezuela",earthquake
-37,1534637980670,-18.1125,-178.153,green,,8.2,1,"286km NNE of Ndoi Island, Fiji",earthquake
-38,1519580684140,-6.0699,142.7536,yellow,,7.5,1,"83km SW of Porgera, Papua New Guinea",earthquake
-39,1518824379280,16.3855,-97.9787,yellow,,7.2,1,"3km S of San Pedro Jicayan, Mexico",earthquake
-40,1516699900890,56.0039,-149.1658,green,,7.9,1,"280km SE of Kodiak, Alaska",earthquake
-41,1515921525540,-15.7675,-74.7092,green,,7.1,1,"38km SSW of Acari, Peru",earthquake
-42,1515552693290,17.4825,-83.52,green,,7.5,1,"44km E of Great Swan Island, Honduras",earthquake
-43,1511131409250,-21.3246,168.6715,green,,7.0,1,"85km ENE of Tadine, New Caledonia",earthquake
-44,1510510697180,34.9109,45.9592,red,,7.3,0,"29km S of Halabjah, Iraq",earthquake
-45,1505844878090,18.5499,-98.4887,,,7.1,0,"1km E of Ayutla, Mexico",earthquake
-46,1504846159180,15.0222,-93.8993,red,,8.2,1,"101km SSW of Tres Picos, Mexico",earthquake
-47,1500334453740,54.4434,168.857,green,,7.7,1,"202km ESE of Nikol'skoye, Russia",earthquake
-48,1485059422960,-6.2464,155.1718,yellow,,7.9,1,"35km WNW of Panguna, Papua New Guinea",earthquake
-49,1484028828140,4.4782,122.6171,green,,7.3,1,"189km SSE of Tabiauan, Philippines",earthquake
-50,1482675747010,-43.4064,-73.9413,yellow,,7.6,1,"41km SW of Puerto Quellon, Chile",earthquake
-51,1481971870500,-4.5049,153.5216,yellow,,7.9,1,"54km E of Taron, Papua New Guinea",earthquake
-52,1481218726280,-10.6812,161.3273,green,,7.8,1,"69km WSW of Kirakira, Solomon Islands",earthquake
-53,1479034976340,-42.7373,173.054,orange,,7.8,1,"54km NNE of Amberley, New Zealand",earthquake
-54,1472747877300,-37.3586,179.1461,green,,7.0,1,"175km NE of Gisborne, New Zealand",earthquake
-55,1472444997860,-0.0456,-17.8255,green,,7.1,1,North of Ascension Island,earthquake
-56,1471591942710,-55.2852,-31.8766,green,,7.4,0,South Georgia Island region,earthquake
-57,1470965196280,-22.4765,173.1167,green,,7.2,1,"110km E of Ile Hunter, New Caledonia",earthquake
-58,1469827104740,18.5429,145.5073,green,,7.7,1,"29km SW of Agrihan, Northern Mariana Islands",earthquake
-59,1464428819780,-56.2409,-26.9353,green,,7.2,1,"53km NNE of Visokoi Island, South Georgia and the South Sandwich Islands",earthquake
-60,1461872004070,-16.0429,167.3786,green,,7.0,1,"2km N of Norsup, Vanuatu",earthquake
-61,1460851116980,0.3819,-79.9218,orange,,7.8,1,"27km SSE of Muisne, Ecuador",earthquake
-62,1460737506220,32.7906,130.7543,red,,7.0,1,"1km E of Kumamoto-shi, Japan",earthquake
-63,1456922988110,-4.9521,94.3299,green,,7.8,1,"Southwest of Sumatra, Indonesia",earthquake
-64,1454124312220,53.9776,158.5463,green,,7.2,1,"88km N of Yelizovo, Russia",earthquake
-65,1453631429557,59.6204,-153.3392,green,,7.1,1,"86km E of Old Iliamna, Alaska",earthquake
-66,1449474605950,38.2107,72.7797,green,,7.2,0,"104km W of Murghob, Tajikistan",earthquake
-67,1449267900110,-47.6165,85.0913,green,,7.1,0,Southeast Indian Ridge,earthquake
-68,1448405454370,-10.0598,-71.0184,green,,7.6,0,"211km S of Tarauaca, Brazil",earthquake
-69,1448405138880,-10.5372,-70.9437,green,,7.6,1,"173km WNW of Iberia, Peru",earthquake
-70,1445850582560,36.5244,70.3676,orange,,7.5,0,"45km E of Farkhar, Afghanistan",earthquake
-71,1445377922560,-14.8595,167.3028,green,,7.1,1,"34km NE of Port-Olry, Vanuatu",earthquake
-72,1442445521850,-31.5622,-71.4262,green,,7.0,0,"25km WNW of Illapel, Chile",earthquake
-73,1442444072860,-31.5729,-71.6744,orange,,8.3,1,"48km W of Illapel, Chile",earthquake
-74,1438033281710,-2.6286,138.5277,green,,7.0,1,"228km W of Abepura, Indonesia",earthquake
-75,1437186453820,-10.4012,165.1409,green,,7.0,1,"83km WNW of Lata, Solomon Islands",earthquake
-76,1434545492790,-35.3639,-17.1605,green,,7.0,1,Southern Mid-Atlantic Ridge,earthquake
-77,1432984982110,27.8386,140.4931,green,,7.8,1,"189km WNW of Chichi-shima, Japan",earthquake
-78,1431414319730,27.8087,86.0655,orange,,7.3,0,"19km SE of Kodari, Nepal",earthquake
-79,1430982619590,-7.2175,154.5567,green,,7.1,1,"143km SW of Panguna, Papua New Guinea",earthquake
-80,1430790246380,-5.4624,151.8751,green,,7.5,1,"130km SSW of Kokopo, Papua New Guinea",earthquake
-81,1429942285950,28.2305,84.7314,red,,7.8,0,"36km E of Khudi, Nepal",earthquake
-82,1427672911010,-4.7294,152.5623,green,,7.5,1,"53km SE of Kokopo, Papua New Guinea",earthquake
-83,1425044705370,-7.2968,122.5348,green,,7.0,0,"130km N of Nebe, Indonesia",earthquake
-84,1423853952230,52.6487,-31.9016,green,,7.1,1,Northern Mid-Atlantic Ridge,earthquake
-85,1416018701720,1.8929,126.5217,green,,7.1,1,"154km NW of Kota Ternate, Indonesia",earthquake
-86,1414868242380,-19.6903,-177.7587,green,,7.1,1,"144km NE of Ndoi Island, Fiji",earthquake
-87,1413258694460,12.5262,-88.1225,yellow,,7.3,1,"74km S of Intipuca, El Salvador",earthquake
-88,1412820871440,-32.1082,-110.8112,green,,7.0,1,Southern East Pacific Rise,earthquake
-89,1403556789700,51.8486,178.7352,green,,7.9,1,"19km SE of Little Sitkin Island, Alaska",earthquake
-90,1397914080810,-6.7547,155.0241,green,,7.5,1,"70km SW of Panguna, Papua New Guinea",earthquake
-91,1397831244920,17.397,-100.9723,yellow,,7.2,1,"33km ESE of Petatlan, Mexico",earthquake
-92,1397392579230,-11.4633,162.0511,green,,7.4,1,"112km S of Kirakira, Solomon Islands",earthquake
-93,1397333679300,-11.2701,162.1481,green,,7.6,1,"93km SSE of Kirakira, Solomon Islands",earthquake
-94,1397200043130,-6.5858,155.0485,green,,7.1,1,"56km WSW of Panguna, Papua New Guinea",earthquake
-95,1396492993110,-20.5709,-70.4931,yellow,,7.7,1,"53km SW of Iquique, Chile",earthquake
-96,1396396007260,-19.6097,-70.7691,yellow,,8.2,1,"94km NW of Iquique, Chile",earthquake
-97,1385360853300,-53.9451,-55.0033,green,,7.0,0,Falkland Islands region,earthquake
-98,1384679095530,-60.2738,-46.4011,green,,7.7,1,Scotia Sea,earthquake
-99,1382721019710,37.1557,144.6611,green,,7.1,1,"Off the east coast of Honshu, Japan",earthquake
-100,1381795952050,9.8796,124.1167,orange,,7.1,1,"4km SE of Sagbayan, Philippines",earthquake
-101,1380127363170,-15.8385,-74.5112,green,,7.1,1,"46km SSE of Acari, Peru",earthquake
-102,1380022187970,26.951,65.5009,red,,7.7,0,"61km NNE of Awaran, Pakistan",earthquake
-103,1377879902300,51.537,-175.2297,green,,7.0,0,"101km SW of Atka, Alaska",earthquake
-104,1373897019880,-60.857,-25.07,green,,7.3,1,"218km SSE of Bristol Island, South Sandwich Islands",earthquake
-105,1373222130740,-3.917,153.927,green,,7.3,1,"115km ENE of Taron, Papua New Guinea",earthquake
-106,1369374288980,54.892,153.221,green,,8.3,1,Sea of Okhotsk,earthquake
-107,1369329544750,-23.009,-177.232,green,,7.4,1,"282km SW of Vaini, Tonga",earthquake
-108,1366340752650,46.221,150.788,green,,7.2,1,"251km ENE of Kuril'sk, Russia",earthquake
-109,1366109060180,28.033,61.996,yellow,,7.7,0,"83km E of Khash, Iran",earthquake
-110,1365223355860,-3.517,138.476,green,,7.0,1,"240km E of Enarotali, Indonesia",earthquake
-111,1360337198470,-10.928,166.018,green,,7.1,1,"31km SE of Lata, Solomon Islands",earthquake
-112,1360115654610,-10.499,165.588,green,,7.0,0,"27km NNW of Lata, Solomon Islands",earthquake
-113,1360113799760,-11.183,164.882,green,,7.1,0,"114km WSW of Lata, Solomon Islands",earthquake
-114,1360113145830,-10.799,165.114,green,,8.0,1,"76km W of Lata, Solomon Islands",earthquake
-115,1357376294957,55.228,-134.8591,,,7.5,0,Southeastern Alaska,earthquake
-116,1355158388770,-6.533,129.825,,,7.1,0,Banda Sea,earthquake
-117,1354868303130,37.89,143.949,,,7.3,0,"off the east coast of Honshu, Japan",earthquake
-118,1352306146930,13.988,-91.895,yellow,,7.4,0,offshore Guatemala,earthquake
-119,1351393448820,52.788,-132.101,,,7.8,0,"Haida Gwaii, Canada",earthquake
-120,1349022695970,1.929,-76.362,,,7.3,0,Colombia,earthquake
-121,1346856127800,10.085,-85.315,,,7.6,0,Costa Rica,earthquake
-122,1346417253380,10.811,126.638,,,7.6,0,Philippine Islands region,earthquake
-123,1346042239430,12.139,-88.59,,,7.3,0,off the coast of El Salvador,earthquake
-124,1344913178460,49.8,145.064,,,7.7,0,Sea of Okhotsk,earthquake
-125,1334214948500,28.696,-113.104,,,7.0,0,"Baja California, Mexico",earthquake
-126,1334140990850,0.802,92.463,green,,8.2,0,off the west coast of northern Sumatra,earthquake
-127,1334133516720,2.327,93.063,yellow,,8.6,0,off the west coast of northern Sumatra,earthquake
-128,1332715026000,-35.2,-72.217,,,7.1,0,"Maule, Chile",earthquake
-129,1332266567440,16.493,-98.231,,,7.4,0,"Oaxaca, Mexico",earthquake
-130,1328189680650,-17.827,167.133,,,7.1,0,Vanuatu,earthquake
-131,1326220619080,2.433,93.21,,,7.2,0,off the west coast of northern Sumatra,earthquake
-132,1323839098630,-7.551,146.809,,,7.1,0,"eastern New Guinea region, Papua New Guinea",earthquake
-133,1319366483250,38.721,43.508,,,7.1,0,eastern Turkey,earthquake
-134,1319219836100,-28.993,-176.238,,,7.4,0,Kermadec Islands region,earthquake
-135,1316115064080,-21.611,-179.528,,,7.3,0,Fiji region,earthquake
-136,1315090540920,-20.671,169.716,,,7.0,0,Vanuatu,earthquake
-137,1314207971650,-7.641,-74.525,,,7.0,0,northern Peru,earthquake
-138,1313864363550,-18.311,168.218,,,7.1,0,Vanuatu,earthquake
-139,1313859302810,-18.365,168.143,,,7.2,0,Vanuatu,earthquake
-140,1310259430800,38.034,143.264,,,7.0,0,"off the east coast of Honshu, Japan",earthquake
-141,1309978998260,-29.539,-176.34,,,7.6,0,Kermadec Islands region,earthquake
-142,1308884979470,52.05,-171.836,,,7.3,0,"Fox Islands, Aleutian Islands, Alaska",earthquake
-143,1302186763290,38.276,141.588,,,7.1,0,"near the east coast of Honshu, Japan",earthquake
-144,1299824750300,38.058,144.59,,,7.7,0,"off the east coast of Honshu, Japan",earthquake
-145,1299824140280,36.281,141.111,,,7.9,0,"near the east coast of Honshu, Japan",earthquake
-146,1299822384120,38.297,142.373,,,9.1,0,"2011 Great Tohoku Earthquake, Japan",earthquake
-147,1299638720330,38.435,142.842,,,7.3,0,"near the east coast of Honshu, Japan",earthquake
-148,1295382203480,28.777,63.951,,,7.2,0,southwestern Pakistan,earthquake
-149,1294935401540,-20.628,168.471,,,7.0,0,"Loyalty Islands, New Caledonia",earthquake
-150,1293999617780,-38.355,-73.326,,,7.2,0,"Araucania, Chile",earthquake
-151,1293875818120,-26.803,-63.136,,,7.0,0,"Santiago Del Estero, Argentina",earthquake
-152,1293282997000,-19.702,167.947,,,7.3,0,Vanuatu region,earthquake
-153,1292951980660,26.901,143.698,,,7.4,0,"Bonin Islands, Japan region",earthquake
-154,1288017742460,-3.487,100.082,,,7.8,0,"Kepulauan Mentawai region, Indonesia",earthquake
-155,1285780285940,-4.963,133.76,,,7.0,0,"near the south coast of Papua, Indonesia",earthquake
-156,1283531747770,-43.522,171.83,,,7.0,0,South Island of New Zealand,earthquake
-157,1281614055580,-1.266,-77.306,,,7.1,0,Ecuador,earthquake
-158,1281417824980,-17.541,168.069,,,7.3,0,Vanuatu,earthquake
-159,1280959303620,-5.746,150.765,,,7.0,0,"New Britain region, Papua New Guinea",earthquake
-160,1279926910190,6.776,123.259,,,7.5,0,"Moro Gulf, Mindanao, Philippines",earthquake
-161,1279925471840,6.497,123.48,,,7.6,0,"Moro Gulf, Mindanao, Philippines",earthquake
-162,1279922891250,6.718,123.409,,,7.3,0,"Moro Gulf, Mindanao, Philippines",earthquake
-163,1279460099360,-5.931,150.59,,,7.3,0,"New Britain region, Papua New Guinea",earthquake
-164,1276658187550,-2.174,136.543,,,7.0,0,"near the north coast of Papua, Indonesia",earthquake
-165,1276370810460,7.881,91.936,,,7.5,0,"Nicobar Islands, India region",earthquake
-166,1274980486570,-13.698,166.643,,,7.2,0,Vanuatu,earthquake
-167,1273384781620,3.748,96.018,,,7.2,0,"northern Sumatra, Indonesia",earthquake
-168,1270592101580,2.383,97.048,,,7.8,0,"northern Sumatra, Indonesia",earthquake
-169,1270420842360,32.2861667,-115.2953333,red,,7.2,0,"12km SW of Delta, B.C., MX",earthquake
-170,1268319327510,-34.326,-71.799,,,7.0,0,"Libertador General Bernardo O'Higgins, Chile",earthquake
-171,1267257683010,-37.773,-75.048,,,7.4,0,"off the coast of Bio-Bio, Chile",earthquake
-172,1267252451530,-36.122,-72.898,,,8.8,0,"offshore Bio-Bio, Chile",earthquake
-173,1267216286970,25.93,128.425,,,7.0,0,"Ryukyu Islands, Japan",earthquake
-174,1263333190060,18.443,-72.571,,,7.0,0,Haiti region,earthquake
-175,1262558185640,-8.783,157.354,,,7.1,0,Solomon Islands,earthquake
-176,1257763495110,-17.239,178.331,,,7.3,0,Fiji,earthquake
-177,1254957228160,-13.093,166.497,,,7.4,0,Vanuatu,earthquake
-178,1254953931240,-12.517,166.382,,,7.8,0,Santa Cruz Islands,earthquake
-179,1254952994470,-13.006,166.51,,,7.7,0,Vanuatu,earthquake
-180,1254305769250,-0.72,99.867,,,7.6,0,"southern Sumatra, Indonesia",earthquake
-181,1254246490990,-15.489,-172.095,,,8.1,0,Samoa Islands region,earthquake
-182,1251878101050,-7.782,107.297,,,7.0,0,"Java, Indonesia",earthquake
-183,1249934138730,14.099,92.902,,,7.5,0,"Andaman Islands, India region",earthquake
-184,1249815355110,33.167,137.944,,,7.1,0,"near the south coast of Honshu, Japan",earthquake
-185,1247649749030,-45.762,166.562,,,7.8,0,off the west coast of the South Island of New Zealand,earthquake
-186,1243499086560,16.731,-86.217,,,7.3,0,offshore Honduras,earthquake
-187,1237486660470,-23.043,-174.66,,,7.6,0,Tonga region,earthquake
-188,1234994025160,-27.424,-176.33,,,7.0,0,Kermadec Islands region,earthquake
-189,1234373690490,3.886,126.387,,,7.2,0,"Kepulauan Talaud, Indonesia",earthquake
-190,1232041779070,46.857,155.154,,,7.4,0,east of the Kuril Islands,earthquake
-191,1231022020290,-0.691,133.305,,,7.4,0,"near the north coast of Papua, Indonesia",earthquake
-192,1231011830650,-0.414,132.885,,,7.7,0,"near the north coast of Papua, Indonesia",earthquake
-193,1227517378760,54.203,154.322,,,7.3,0,Sea of Okhotsk,earthquake
-194,1226854952700,1.271,122.091,,,7.4,0,"Minahasa, Sulawesi, Indonesia",earthquake
-195,1222701571590,-29.756,-177.683,,,7.0,0,"Kermadec Islands, New Zealand",earthquake
-196,1216435168700,37.552,142.214,,,7.0,0,"off the east coast of Honshu, Japan",earthquake
-197,1215223924480,53.882,152.886,,,7.7,0,Sea of Okhotsk,earthquake
-198,1214806663020,-58.227,-22.099,,,7.0,0,South Sandwich Islands region,earthquake
-199,1210573681570,31.002,103.322,,,7.9,0,"eastern Sichuan, China",earthquake
-200,1207960212600,-55.664,158.453,,,7.1,0,Macquarie Island region,earthquake
-201,1207745172720,-20.071,168.892,,,7.3,0,"Loyalty Islands, New Caledonia",earthquake
-202,1206052377930,35.49,81.467,,,7.2,0,Xinjiang-Xizang border region,earthquake
-203,1203928593030,-2.486,99.972,,,7.2,0,"Kepulauan Mentawai region, Indonesia",earthquake
-204,1203494910520,2.768,95.964,,,7.4,0,"Simeulue, Indonesia",earthquake
-205,1198056627930,51.36,-179.509,,,7.2,0,"Andreanof Islands, Aleutian Islands, Alaska",earthquake
-206,1197185300820,-25.996,-177.514,,,7.8,0,south of the Fiji Islands,earthquake
-207,1196362820420,14.944,-61.274,,,7.4,0,"Martinique region, Windward Islands",earthquake
-208,1195054850530,-22.247,-69.89,,,7.7,0,"Antofagasta, Chile",earthquake
-209,1193801415960,18.9,145.388,,,7.2,0,"Pagan region, Northern Mariana Islands",earthquake
-210,1191129814070,-49.271,164.115,,,7.4,0,"Auckland Islands, New Zealand region",earthquake
-211,1190986737880,22.013,142.668,,,7.5,0,"Volcano Islands, Japan region",earthquake
-212,1189654528720,-2.13,99.627,,,7.0,0,"Kepulauan Mentawai region, Indonesia",earthquake
-213,1189640943720,-2.625,100.841,,,7.9,0,"Kepulauan Mentawai region, Indonesia",earthquake
-214,1189595426830,-4.438,101.367,,,8.4,0,"southern Sumatra, Indonesia",earthquake
-215,1188695118150,-11.61,165.762,,,7.2,0,Santa Cruz Islands,earthquake
-216,1187221257890,-13.386,-76.603,,,8.0,0,near the coast of central Peru,earthquake
-217,1186592704920,-5.859,107.419,,,7.5,0,"Java, Indonesia",earthquake
-218,1185988131400,-15.595,167.68,,,7.2,0,Vanuatu,earthquake
-219,1175459998710,-8.466,157.043,,,8.1,0,Solomon Islands,earthquake
-220,1174783201610,-20.617,169.357,,,7.1,0,Vanuatu,earthquake
-221,1169378865060,1.065,126.282,,,7.5,0,Molucca Sea,earthquake
-222,1168662201160,46.243,154.524,,,8.1,0,east of the Kuril Islands,earthquake
-223,1167135981140,21.799,120.547,,,7.1,0,Taiwan region,earthquake
-224,1163589253570,46.592,153.266,,,8.3,0,Kuril Islands,earthquake
-225,1156045308040,-61.029,-34.371,,,7.0,0,Scotia Sea,earthquake
-226,1153124366680,-9.284,107.419,,,7.7,0,"south of Java, Indonesia",earthquake
-227,1147775963340,-31.81,-179.307,,,7.4,0,Kermadec Islands region,earthquake
-228,1146670000290,-20.187,-174.123,,,8.0,0,Tonga,earthquake
-229,1145575502150,60.949,167.089,,,7.6,0,"near the east coast of Koryakskiy Avtonomnyy Okrug, Russia",earthquake
-230,1140646747800,-21.324,33.583,,,7.0,0,Mozambique,earthquake
-231,1138381133670,-5.473,128.131,,,7.6,0,Banda Sea,earthquake
-232,1136240020490,-19.926,-178.178,,,7.2,0,Fiji region,earthquake
-233,1136182249760,-60.957,-21.606,,,7.4,0,east of the South Sandwich Islands,earthquake
-234,1132004331420,38.107,144.896,,,7.0,0,"off the east coast of Honshu, Japan",earthquake
-235,1128743440800,34.539,73.588,,,7.6,0,Pakistan,earthquake
-236,1127699737670,-5.678,-76.398,,,7.5,0,northern Peru,earthquake
-237,1126250803730,-4.539,153.474,,,7.6,0,"New Ireland region, Papua New Guinea",earthquake
-238,1124160388400,38.276,142.039,,,7.2,0,"near the east coast of Honshu, Japan",earthquake
-239,1122219726210,7.92,92.19,,,7.2,0,"Nicobar Islands, India region",earthquake
-240,1118803854190,41.292,-125.953,,,7.2,0,off the coast of Northern California,earthquake
-241,1118702673900,-19.987,-69.197,,,7.8,0,"Tarapaca, Chile",earthquake
-242,1112026176530,2.085,97.108,,,8.6,0,"northern Sumatra, Indonesia",earthquake
-243,1109760132230,-6.527,129.933,,,7.1,0,Banda Sea,earthquake
-244,1107606198940,5.293,123.337,,,7.1,0,Celebes Sea,earthquake
-245,1104034889810,6.91,92.958,,,7.2,0,"Nicobar Islands, India region",earthquake
-246,1104022733450,3.295,95.982,,,9.1,0,2004 Sumatra - Andaman Islands Earthquake,earthquake
-247,1103813944410,-49.312,161.345,,,8.1,0,north of Macquarie Island,earthquake
-248,1101666734130,43.006,145.119,,,7.0,0,"Hokkaido, Japan region",earthquake
-249,1101435903310,-3.609,135.404,,,7.1,0,"Papua, Indonesia",earthquake
-250,1101155183900,-46.676,164.721,,,7.1,0,off the west coast of the South Island of New Zealand,earthquake
-251,1100509616560,4.695,-77.508,,,7.2,0,near the west coast of Colombia,earthquake
-252,1100208401150,-8.152,124.868,,,7.5,0,"Kepulauan Alor, Indonesia",earthquake
-253,1097357213690,11.422,-86.665,,,7.0,0,near the coast of Nicaragua,earthquake
-254,1094396238610,33.184,137.071,,,7.4,0,"near the south coast of Honshu, Japan",earthquake
-255,1094378827820,33.07,136.618,,,7.2,0,"near the south coast of western Honshu, Japan",earthquake
-256,1090766119060,-2.427,103.981,,,7.3,0,"southern Sumatra, Indonesia",earthquake
-257,1089865634730,-17.656,-178.76,,,7.1,0,Fiji region,earthquake
-258,1076121755210,-4.003,135.023,,,7.3,0,"near the south coast of Papua, Indonesia",earthquake
-259,1076015102840,-3.615,135.538,,,7.0,0,"Papua, Indonesia",earthquake
-260,1073147001020,-22.253,169.683,,,7.1,0,southeast of the Loyalty Islands,earthquake
-261,1072540859450,-22.015,169.766,,,7.3,0,southeast of the Loyalty Islands,earthquake
-262,1069051386800,51.146,178.65,,,7.8,0,"Rat Islands, Aleutian Islands, Alaska",earthquake
-263,1067562388280,37.812,142.619,,,7.0,0,"off the east coast of Honshu, Japan",earthquake
-264,1064662405080,50.038,87.813,,,7.3,0,"southwestern Siberia, Russia",earthquake
-265,1064524080030,41.774,143.593,,,7.4,0,"Hokkaido, Japan region",earthquake
-266,1064519406360,41.815,143.91,,,8.16,0,"Hokkaido, Japan region",earthquake
-267,1061467969790,-45.104,167.144,,,7.2,0,South Island of New Zealand,earthquake
-268,1059971840130,-60.532,-43.411,,,7.6,0,Scotia Sea,earthquake
-269,1058300870530,-2.598,68.382,,,7.6,0,Carlsberg Ridge,earthquake
-270,1056089978910,-7.606,-71.722,,,7.1,0,"Amazonas, Brazil",earthquake
-271,1053977007940,2.354,128.855,,,7.0,0,"Halmahera, Indonesia",earthquake
-272,1053941073400,38.849,141.568,,,7.0,0,"near the east coast of Honshu, Japan",earthquake
-273,1047918977310,51.272,177.978,,,7.1,0,"Rat Islands, Aleutian Islands, Alaska",earthquake
-274,1047918969856,50.3298,177.5472,,,7.0,0,"Rat Islands, Aleutian Islands, Alaska",earthquake
-275,1043201194610,18.77,-104.104,,,7.6,0,"offshore Colima, Mexico",earthquake
-276,1043052186070,-10.491,160.77,,,7.3,0,Solomon Islands,earthquake
-277,1037508833540,47.824,146.209,,,7.3,0,northwest of the Kuril Islands,earthquake
-278,1036361561518,63.5141,-147.4529,,,7.9,0,Central Alaska,earthquake
-279,1036200370700,2.824,96.085,,,7.4,0,"Simeulue, Indonesia",earthquake
-280,1034247020570,-1.757,134.297,,,7.6,0,"near the north coast of Papua, Indonesia",earthquake
-281,1031510663710,-3.302,142.945,,,7.6,0,"near the north coast of New Guinea, Papua New Guinea",earthquake
-282,1029755304310,-23.884,178.495,,,7.7,0,south of the Fiji Islands,earthquake
-283,1029754861190,-21.696,-179.513,,,7.7,0,Fiji region,earthquake
-284,1025284770270,43.752,130.666,,,7.3,0,"Jilin-Heilongjiang border region, China",earthquake
-285,1019837167000,13.088,144.619,,,7.1,0,Guam region,earthquake
-286,1017557570490,24.279,122.179,,,7.1,0,Taiwan region,earthquake
-287,1015362969130,6.033,124.249,,,7.5,0,"Mindanao, Philippines",earthquake
-288,1015157299740,36.502,70.482,,,7.4,0,"Hindu Kush region, Afghanistan",earthquake
-289,1009992168760,-17.6,167.856,,,7.2,0,Vanuatu,earthquake
-290,1008165755040,-42.813,124.688,,,7.1,0,south of Australia,earthquake
-291,1005729970010,35.946,90.541,,,7.8,0,"southern Qinghai, China",earthquake
-292,1004519420000,-5.912,150.196,,,7.0,0,"New Britain region, Papua New Guinea",earthquake
-293,1003462124460,-4.102,123.907,,,7.5,0,Banda Sea,earthquake
-294,1002898936840,12.686,144.98,,,7.0,0,Guam region,earthquake
-295,998376726250,-36.813,-179.575,,,7.1,0,east of the North Island of New Zealand,earthquake
-296,994498723520,-17.543,-72.077,,,7.6,0,near the coast of southern Peru,earthquake
-297,993328394130,-16.265,-73.641,,,8.4,0,near the coast of southern Peru,earthquake
-298,991536117160,-29.666,-178.633,,,7.2,0,"Kermadec Islands, New Zealand",earthquake
-299,982999428730,1.271,126.249,,,7.1,0,Molucca Sea,earthquake
-300,982092510260,-4.68,102.562,,,7.4,0,"southern Sumatra, Indonesia",earthquake
-301,980479000500,23.419,70.232,,,7.7,0,"Gujarat, India",earthquake
-302,979407212380,13.049,-88.66,,,7.7,0,offshore El Salvador,earthquake
-303,979058968000,-14.928,167.17,,,7.1,0,Vanuatu,earthquake
-304,978332224170,6.898,126.579,,,7.5,0,"Mindanao, Philippines",earthquake
-305,976122666400,39.566,54.799,,,7.0,0,Turkmenistan,earthquake
-306,974494916490,-5.496,151.781,,,7.8,0,"New Britain region, Papua New Guinea",earthquake
-307,974360536930,-5.233,153.102,,,7.8,0,"New Ireland region, Papua New Guinea",earthquake
-308,974350496740,-3.98,152.169,,,8.0,0,"New Ireland region, Papua New Guinea",earthquake
-309,972808628770,-4.766,153.945,,,7.0,0,"New Ireland region, Papua New Guinea",earthquake
-310,970678724310,-15.421,166.91,,,7.0,0,Vanuatu,earthquake
-311,965546832900,28.856,139.556,,,7.4,0,"Bonin Islands, Japan region",earthquake
-312,961339453310,-13.802,97.453,,,7.9,0,South Indian Ocean,earthquake
-313,960136106170,-4.721,102.087,,,7.9,0,"southern Sumatra, Indonesia",earthquake
-314,958156998120,-23.548,-66.452,,,7.2,0,"Jujuy, Argentina",earthquake
-315,957414076210,-1.105,123.573,,,7.6,0,"Sulawesi, Indonesia",earthquake
-316,956482043320,-28.307,-62.99,,,7.0,0,"Santiago Del Estero, Argentina",earthquake
-317,954241222510,22.338,143.73,,,7.6,0,"Volcano Islands, Japan region",earthquake
-318,951443038640,-19.528,173.818,,,7.1,0,Vanuatu region,earthquake
-319,947350040580,-16.925,-174.248,,,7.2,0,Tonga,earthquake
+0,1616231384002,38.4754,141.6328,yellow,43.0,7.0,1,"29 km ENE of Ishinomaki, Japan",earthquake
+1,1614886113178,-29.7228,-177.2794,green,28.93,8.1,1,"Kermadec Islands, New Zealand",earthquake
+2,1614879683370,-29.6768,-177.8398,green,43.0,7.4,1,"Kermadec Islands, New Zealand",earthquake
+3,1614864454885,-37.5459,179.3587,green,10.0,7.3,1,"170 km NE of Gisborne, New Zealand",earthquake
+4,1613225270194,37.7534,141.7145,orange,44.07,7.1,1,"69 km ENE of Namie, Japan",earthquake
+5,1612963195531,-23.051,171.6565,green,10.0,7.7,1,southeast of the Loyalty Islands,earthquake
+6,1611231784255,4.9931,127.5145,green,80.0,7.0,1,"211 km SE of Pondaguitan, Philippines",earthquake
+7,1604058687348,37.8973,26.7838,orange,21.0,7.0,0,"13 km NNE of Néon Karlovásion, Greece",earthquake
+8,1603140878950,54.602,-159.6258,yellow,28.37,7.6,1,"99 km SE of Sand Point, Alaska",earthquake
+9,1595398364810,55.0715,-158.596,green,28.0,7.8,1,"99 km SSE of Perryville, Alaska",earthquake
+10,1594954222178,-7.836,147.7704,green,73.0,7.0,1,"114 km NNW of Popondetta, Papua New Guinea",earthquake
+11,1592926144350,15.8861,-96.0077,orange,20.0,7.4,1,"9 km SE of Santa María Xadani, Mexico",earthquake
+12,1592484593844,-33.2927,-177.8571,green,10.0,7.4,1,south of the Kermadec Islands,earthquake
+13,1585104561160,48.9638,157.6955,green,57.8,7.5,1,"221km SSE of Severo-Kuril'sk, Russia",earthquake
+14,1581590024406,45.6161,148.959,yellow,143.0,7.0,1,"94km ENE of Kuril'sk, Russia",earthquake
+15,1580238624918,19.4193,-78.756,yellow,14.86,7.7,1,"123km NNW of Lucea, Jamaica",earthquake
+16,1573748260578,1.6213,126.4156,green,33.0,7.1,1,"138km E of Bitung, Indonesia",earthquake
+17,1563095451523,-0.5858,128.034,green,18.98,7.2,1,"93km NNE of Laiwui, Indonesia",earthquake
+18,1562383193040,35.7695,-117.5993333,yellow,8.0,7.1,1,2019 Ridgecrest Earthquake Sequence,earthquake
+19,1561344819830,-6.4078,129.1692,green,212.0,7.3,1,"292km NW of Saumlaki, Indonesia",earthquake
+20,1560639304130,-30.6441,-178.0995,green,46.0,7.3,1,"116km NE of L'Esperance Rock, New Zealand",earthquake
+21,1558856475073,-5.8119,-75.2697,orange,122.57,8.0,1,"78km SE of Lagunas, Peru",earthquake
+22,1557838705939,-4.051,152.5967,green,10.0,7.6,1,"46km SSE of Namatanai, Papua New Guinea",earthquake
+23,1557177577983,-6.9746,146.4494,yellow,146.0,7.1,1,"33km NW of Bulolo, Papua New Guinea",earthquake
+24,1551430242591,-14.7131,-70.1546,green,267.0,7.0,1,"23km NNE of Azangaro, Peru",earthquake
+25,1550830643770,-2.1862,-77.0505,yellow,145.0,7.5,1,"111km ESE of Palora, Ecuador",earthquake
+26,1546054749740,5.8983,126.9209,green,60.21,7.0,1,"96km ESE of Pondaguitan, Philippines",earthquake
+27,1545325315150,55.0999,164.6993,green,16.56,7.3,1,"83km W of Nikol'skoye, Russia",earthquake
+28,1544495189420,-58.5446,-26.3856,green,133.0,7.1,1,"54km N of Bristol Island, South Sandwich Islands",earthquake
+29,1543983488420,-21.9496,169.4266,green,10.0,7.5,1,"165km ESE of Tadine, New Caledonia",earthquake
+30,1543598969330,61.3464,-149.9552,orange,46.7,7.1,1,"14km NNW of Anchorage, Alaska",earthquake
+31,1539204500100,-5.7012,151.2046,green,39.0,7.0,1,"118km E of Kimbe, Papua New Guinea",earthquake
+32,1538128965250,-0.2559,119.8462,red,20.0,7.5,1,"70km N of Palu, Indonesia",earthquake
+33,1536248958710,-18.4743,179.3502,green,670.81,7.9,1,"102km ESE of Suva, Fiji",earthquake
+34,1535514716100,-22.0295,170.1262,green,21.43,7.1,1,"202km WNW of Ile Hunter, New Caledonia",earthquake
+35,1535101448250,-11.0355,-70.8284,green,630.0,7.1,0,"140km WNW of Iberia, Peru",earthquake
+36,1534887107600,10.7731,-62.9019,yellow,146.82,7.3,1,"24km ENE of Rio Caribe, Venezuela",earthquake
+37,1534637980670,-18.1125,-178.153,green,600.0,8.2,1,"286km NNE of Ndoi Island, Fiji",earthquake
+38,1519580684140,-6.0699,142.7536,yellow,25.21,7.5,1,"83km SW of Porgera, Papua New Guinea",earthquake
+39,1518824379280,16.3855,-97.9787,yellow,22.0,7.2,1,"3km S of San Pedro Jicayan, Mexico",earthquake
+40,1516699900890,56.0039,-149.1658,green,14.06,7.9,1,"280km SE of Kodiak, Alaska",earthquake
+41,1515921525540,-15.7675,-74.7092,green,39.0,7.1,1,"38km SSW of Acari, Peru",earthquake
+42,1515552693290,17.4825,-83.52,green,19.0,7.5,1,"44km E of Great Swan Island, Honduras",earthquake
+43,1511131409250,-21.3246,168.6715,green,10.0,7.0,1,"85km ENE of Tadine, New Caledonia",earthquake
+44,1510510697180,34.9109,45.9592,red,19.0,7.3,0,"29km S of Halabjah, Iraq",earthquake
+45,1505844878090,18.5499,-98.4887,,48.0,7.1,0,"1km E of Ayutla, Mexico",earthquake
+46,1504846159180,15.0222,-93.8993,red,47.39,8.2,1,"101km SSW of Tres Picos, Mexico",earthquake
+47,1500334453740,54.4434,168.857,green,10.0,7.7,1,"202km ESE of Nikol'skoye, Russia",earthquake
+48,1485059422960,-6.2464,155.1718,yellow,135.0,7.9,1,"35km WNW of Panguna, Papua New Guinea",earthquake
+49,1484028828140,4.4782,122.6171,green,627.17,7.3,1,"189km SSE of Tabiauan, Philippines",earthquake
+50,1482675747010,-43.4064,-73.9413,yellow,38.0,7.6,1,"41km SW of Puerto Quellon, Chile",earthquake
+51,1481971870500,-4.5049,153.5216,yellow,94.54,7.9,1,"54km E of Taron, Papua New Guinea",earthquake
+52,1481218726280,-10.6812,161.3273,green,40.0,7.8,1,"69km WSW of Kirakira, Solomon Islands",earthquake
+53,1479034976340,-42.7373,173.054,orange,15.11,7.8,1,"54km NNE of Amberley, New Zealand",earthquake
+54,1472747877300,-37.3586,179.1461,green,19.0,7.0,1,"175km NE of Gisborne, New Zealand",earthquake
+55,1472444997860,-0.0456,-17.8255,green,10.0,7.1,1,North of Ascension Island,earthquake
+56,1471591942710,-55.2852,-31.8766,green,10.0,7.4,0,South Georgia Island region,earthquake
+57,1470965196280,-22.4765,173.1167,green,16.37,7.2,1,"110km E of Ile Hunter, New Caledonia",earthquake
+58,1469827104740,18.5429,145.5073,green,196.0,7.7,1,"29km SW of Agrihan, Northern Mariana Islands",earthquake
+59,1464428819780,-56.2409,-26.9353,green,78.0,7.2,1,"53km NNE of Visokoi Island, South Georgia and the South Sandwich Islands",earthquake
+60,1461872004070,-16.0429,167.3786,green,24.0,7.0,1,"2km N of Norsup, Vanuatu",earthquake
+61,1460851116980,0.3819,-79.9218,orange,20.59,7.8,1,"27km SSE of Muisne, Ecuador",earthquake
+62,1460737506220,32.7906,130.7543,red,10.0,7.0,1,"1km E of Kumamoto-shi, Japan",earthquake
+63,1456922988110,-4.9521,94.3299,green,24.0,7.8,1,"Southwest of Sumatra, Indonesia",earthquake
+64,1454124312220,53.9776,158.5463,green,177.0,7.2,1,"88km N of Yelizovo, Russia",earthquake
+65,1453631429557,59.6204,-153.3392,green,125.6,7.1,1,"86km E of Old Iliamna, Alaska",earthquake
+66,1449474605950,38.2107,72.7797,green,22.0,7.2,0,"104km W of Murghob, Tajikistan",earthquake
+67,1449267900110,-47.6165,85.0913,green,35.0,7.1,0,Southeast Indian Ridge,earthquake
+68,1448405454370,-10.0598,-71.0184,green,620.56,7.6,0,"211km S of Tarauaca, Brazil",earthquake
+69,1448405138880,-10.5372,-70.9437,green,606.21,7.6,1,"173km WNW of Iberia, Peru",earthquake
+70,1445850582560,36.5244,70.3676,orange,231.0,7.5,0,"45km E of Farkhar, Afghanistan",earthquake
+71,1445377922560,-14.8595,167.3028,green,135.0,7.1,1,"34km NE of Port-Olry, Vanuatu",earthquake
+72,1442445521850,-31.5622,-71.4262,green,28.41,7.0,0,"25km WNW of Illapel, Chile",earthquake
+73,1442444072860,-31.5729,-71.6744,orange,22.44,8.3,1,"48km W of Illapel, Chile",earthquake
+74,1438033281710,-2.6286,138.5277,green,48.0,7.0,1,"228km W of Abepura, Indonesia",earthquake
+75,1437186453820,-10.4012,165.1409,green,11.0,7.0,1,"83km WNW of Lata, Solomon Islands",earthquake
+76,1434545492790,-35.3639,-17.1605,green,10.0,7.0,1,Southern Mid-Atlantic Ridge,earthquake
+77,1432984982110,27.8386,140.4931,green,664.0,7.8,1,"189km WNW of Chichi-shima, Japan",earthquake
+78,1431414319730,27.8087,86.0655,orange,15.0,7.3,0,"19km SE of Kodari, Nepal",earthquake
+79,1430982619590,-7.2175,154.5567,green,10.0,7.1,1,"143km SW of Panguna, Papua New Guinea",earthquake
+80,1430790246380,-5.4624,151.8751,green,55.0,7.5,1,"130km SSW of Kokopo, Papua New Guinea",earthquake
+81,1429942285950,28.2305,84.7314,red,8.22,7.8,0,"36km E of Khudi, Nepal",earthquake
+82,1427672911010,-4.7294,152.5623,green,41.0,7.5,1,"53km SE of Kokopo, Papua New Guinea",earthquake
+83,1425044705370,-7.2968,122.5348,green,552.06,7.0,0,"130km N of Nebe, Indonesia",earthquake
+84,1423853952230,52.6487,-31.9016,green,16.68,7.1,1,Northern Mid-Atlantic Ridge,earthquake
+85,1416018701720,1.8929,126.5217,green,45.0,7.1,1,"154km NW of Kota Ternate, Indonesia",earthquake
+86,1414868242380,-19.6903,-177.7587,green,434.0,7.1,1,"144km NE of Ndoi Island, Fiji",earthquake
+87,1413258694460,12.5262,-88.1225,yellow,40.0,7.3,1,"74km S of Intipuca, El Salvador",earthquake
+88,1412820871440,-32.1082,-110.8112,green,16.54,7.0,1,Southern East Pacific Rise,earthquake
+89,1403556789700,51.8486,178.7352,green,109.0,7.9,1,"19km SE of Little Sitkin Island, Alaska",earthquake
+90,1397914080810,-6.7547,155.0241,green,43.37,7.5,1,"70km SW of Panguna, Papua New Guinea",earthquake
+91,1397831244920,17.397,-100.9723,yellow,24.0,7.2,1,"33km ESE of Petatlan, Mexico",earthquake
+92,1397392579230,-11.4633,162.0511,green,39.0,7.4,1,"112km S of Kirakira, Solomon Islands",earthquake
+93,1397333679300,-11.2701,162.1481,green,22.56,7.6,1,"93km SSE of Kirakira, Solomon Islands",earthquake
+94,1397200043130,-6.5858,155.0485,green,60.53,7.1,1,"56km WSW of Panguna, Papua New Guinea",earthquake
+95,1396492993110,-20.5709,-70.4931,yellow,22.4,7.7,1,"53km SW of Iquique, Chile",earthquake
+96,1396396007260,-19.6097,-70.7691,yellow,25.0,8.2,1,"94km NW of Iquique, Chile",earthquake
+97,1385360853300,-53.9451,-55.0033,green,11.78,7.0,0,Falkland Islands region,earthquake
+98,1384679095530,-60.2738,-46.4011,green,10.0,7.7,1,Scotia Sea,earthquake
+99,1382721019710,37.1557,144.6611,green,35.0,7.1,1,"Off the east coast of Honshu, Japan",earthquake
+100,1381795952050,9.8796,124.1167,orange,19.04,7.1,1,"4km SE of Sagbayan, Philippines",earthquake
+101,1380127363170,-15.8385,-74.5112,green,40.0,7.1,1,"46km SSE of Acari, Peru",earthquake
+102,1380022187970,26.951,65.5009,red,15.0,7.7,0,"61km NNE of Awaran, Pakistan",earthquake
+103,1377879902300,51.537,-175.2297,green,29.0,7.0,0,"101km SW of Atka, Alaska",earthquake
+104,1373897019880,-60.857,-25.07,green,11.0,7.3,1,"218km SSE of Bristol Island, South Sandwich Islands",earthquake
+105,1373222130740,-3.917,153.927,green,385.5,7.3,1,"115km ENE of Taron, Papua New Guinea",earthquake
+106,1369374288980,54.892,153.221,green,598.1,8.3,1,Sea of Okhotsk,earthquake
+107,1369329544750,-23.009,-177.232,green,173.7,7.4,1,"282km SW of Vaini, Tonga",earthquake
+108,1366340752650,46.221,150.788,green,110.0,7.2,1,"251km ENE of Kuril'sk, Russia",earthquake
+109,1366109060180,28.033,61.996,yellow,80.0,7.7,0,"83km E of Khash, Iran",earthquake
+110,1365223355860,-3.517,138.476,green,66.0,7.0,1,"240km E of Enarotali, Indonesia",earthquake
+111,1360337198470,-10.928,166.018,green,21.0,7.1,1,"31km SE of Lata, Solomon Islands",earthquake
+112,1360115654610,-10.499,165.588,green,8.8,7.0,0,"27km NNW of Lata, Solomon Islands",earthquake
+113,1360113799760,-11.183,164.882,green,10.0,7.1,0,"114km WSW of Lata, Solomon Islands",earthquake
+114,1360113145830,-10.799,165.114,green,24.0,8.0,1,"76km W of Lata, Solomon Islands",earthquake
+115,1357376294957,55.228,-134.8591,,8.7,7.5,0,Southeastern Alaska,earthquake
+116,1355158388770,-6.533,129.825,,155.0,7.1,0,Banda Sea,earthquake
+117,1354868303130,37.89,143.949,,31.0,7.3,0,"off the east coast of Honshu, Japan",earthquake
+118,1352306146930,13.988,-91.895,yellow,24.0,7.4,0,offshore Guatemala,earthquake
+119,1351393448820,52.788,-132.101,,14.0,7.8,0,"Haida Gwaii, Canada",earthquake
+120,1349022695970,1.929,-76.362,,170.0,7.3,0,Colombia,earthquake
+121,1346856127800,10.085,-85.315,,35.0,7.6,0,Costa Rica,earthquake
+122,1346417253380,10.811,126.638,,28.0,7.6,0,Philippine Islands region,earthquake
+123,1346042239430,12.139,-88.59,,28.0,7.3,0,off the coast of El Salvador,earthquake
+124,1344913178460,49.8,145.064,,583.2,7.7,0,Sea of Okhotsk,earthquake
+125,1334214948500,28.696,-113.104,,13.0,7.0,0,"Baja California, Mexico",earthquake
+126,1334140990850,0.802,92.463,green,25.1,8.2,0,off the west coast of northern Sumatra,earthquake
+127,1334133516720,2.327,93.063,yellow,20.0,8.6,0,off the west coast of northern Sumatra,earthquake
+128,1332715026000,-35.2,-72.217,,40.7,7.1,0,"Maule, Chile",earthquake
+129,1332266567440,16.493,-98.231,,20.0,7.4,0,"Oaxaca, Mexico",earthquake
+130,1328189680650,-17.827,167.133,,23.0,7.1,0,Vanuatu,earthquake
+131,1326220619080,2.433,93.21,,19.0,7.2,0,off the west coast of northern Sumatra,earthquake
+132,1323839098630,-7.551,146.809,,135.0,7.1,0,"eastern New Guinea region, Papua New Guinea",earthquake
+133,1319366483250,38.721,43.508,,18.0,7.1,0,eastern Turkey,earthquake
+134,1319219836100,-28.993,-176.238,,33.0,7.4,0,Kermadec Islands region,earthquake
+135,1316115064080,-21.611,-179.528,,644.6,7.3,0,Fiji region,earthquake
+136,1315090540920,-20.671,169.716,,185.1,7.0,0,Vanuatu,earthquake
+137,1314207971650,-7.641,-74.525,,147.0,7.0,0,northern Peru,earthquake
+138,1313864363550,-18.311,168.218,,28.0,7.1,0,Vanuatu,earthquake
+139,1313859302810,-18.365,168.143,,32.0,7.2,0,Vanuatu,earthquake
+140,1310259430800,38.034,143.264,,23.0,7.0,0,"off the east coast of Honshu, Japan",earthquake
+141,1309978998260,-29.539,-176.34,,17.0,7.6,0,Kermadec Islands region,earthquake
+142,1308884979470,52.05,-171.836,,52.0,7.3,0,"Fox Islands, Aleutian Islands, Alaska",earthquake
+143,1302186763290,38.276,141.588,,42.0,7.1,0,"near the east coast of Honshu, Japan",earthquake
+144,1299824750300,38.058,144.59,,18.6,7.7,0,"off the east coast of Honshu, Japan",earthquake
+145,1299824140280,36.281,141.111,,42.6,7.9,0,"near the east coast of Honshu, Japan",earthquake
+146,1299822384120,38.297,142.373,,29.0,9.1,0,"2011 Great Tohoku Earthquake, Japan",earthquake
+147,1299638720330,38.435,142.842,,32.0,7.3,0,"near the east coast of Honshu, Japan",earthquake
+148,1295382203480,28.777,63.951,,68.0,7.2,0,southwestern Pakistan,earthquake
+149,1294935401540,-20.628,168.471,,9.0,7.0,0,"Loyalty Islands, New Caledonia",earthquake
+150,1293999617780,-38.355,-73.326,,24.0,7.2,0,"Araucania, Chile",earthquake
+151,1293875818120,-26.803,-63.136,,576.8,7.0,0,"Santiago Del Estero, Argentina",earthquake
+152,1293282997000,-19.702,167.947,,16.0,7.3,0,Vanuatu region,earthquake
+153,1292951980660,26.901,143.698,,14.0,7.4,0,"Bonin Islands, Japan region",earthquake
+154,1288017742460,-3.487,100.082,,20.1,7.8,0,"Kepulauan Mentawai region, Indonesia",earthquake
+155,1285780285940,-4.963,133.76,,26.0,7.0,0,"near the south coast of Papua, Indonesia",earthquake
+156,1283531747770,-43.522,171.83,,12.0,7.0,0,South Island of New Zealand,earthquake
+157,1281614055580,-1.266,-77.306,,206.7,7.1,0,Ecuador,earthquake
+158,1281417824980,-17.541,168.069,,25.0,7.3,0,Vanuatu,earthquake
+159,1280959303620,-5.746,150.765,,44.0,7.0,0,"New Britain region, Papua New Guinea",earthquake
+160,1279926910190,6.776,123.259,,640.6,7.5,0,"Moro Gulf, Mindanao, Philippines",earthquake
+161,1279925471840,6.497,123.48,,578.0,7.6,0,"Moro Gulf, Mindanao, Philippines",earthquake
+162,1279922891250,6.718,123.409,,607.1,7.3,0,"Moro Gulf, Mindanao, Philippines",earthquake
+163,1279460099360,-5.931,150.59,,35.0,7.3,0,"New Britain region, Papua New Guinea",earthquake
+164,1276658187550,-2.174,136.543,,18.0,7.0,0,"near the north coast of Papua, Indonesia",earthquake
+165,1276370810460,7.881,91.936,,35.0,7.5,0,"Nicobar Islands, India region",earthquake
+166,1274980486570,-13.698,166.643,,31.0,7.2,0,Vanuatu,earthquake
+167,1273384781620,3.748,96.018,,38.0,7.2,0,"northern Sumatra, Indonesia",earthquake
+168,1270592101580,2.383,97.048,,31.0,7.8,0,"northern Sumatra, Indonesia",earthquake
+169,1270420842360,32.2861667,-115.2953333,red,9.987,7.2,0,"12km SW of Delta, B.C., MX",earthquake
+170,1268319327510,-34.326,-71.799,,18.0,7.0,0,"Libertador General Bernardo O'Higgins, Chile",earthquake
+171,1267257683010,-37.773,-75.048,,35.0,7.4,0,"off the coast of Bio-Bio, Chile",earthquake
+172,1267252451530,-36.122,-72.898,,22.9,8.8,0,"offshore Bio-Bio, Chile",earthquake
+173,1267216286970,25.93,128.425,,25.0,7.0,0,"Ryukyu Islands, Japan",earthquake
+174,1263333190060,18.443,-72.571,,13.0,7.0,0,Haiti region,earthquake
+175,1262558185640,-8.783,157.354,,10.0,7.1,0,Solomon Islands,earthquake
+176,1257763495110,-17.239,178.331,,595.0,7.3,0,Fiji,earthquake
+177,1254957228160,-13.093,166.497,,31.1,7.4,0,Vanuatu,earthquake
+178,1254953931240,-12.517,166.382,,35.0,7.8,0,Santa Cruz Islands,earthquake
+179,1254952994470,-13.006,166.51,,45.0,7.7,0,Vanuatu,earthquake
+180,1254305769250,-0.72,99.867,,81.0,7.6,0,"southern Sumatra, Indonesia",earthquake
+181,1254246490990,-15.489,-172.095,,18.0,8.1,0,Samoa Islands region,earthquake
+182,1251878101050,-7.782,107.297,,46.0,7.0,0,"Java, Indonesia",earthquake
+183,1249934138730,14.099,92.902,,24.0,7.5,0,"Andaman Islands, India region",earthquake
+184,1249815355110,33.167,137.944,,292.0,7.1,0,"near the south coast of Honshu, Japan",earthquake
+185,1247649749030,-45.762,166.562,,12.0,7.8,0,off the west coast of the South Island of New Zealand,earthquake
+186,1243499086560,16.731,-86.217,,19.0,7.3,0,offshore Honduras,earthquake
+187,1237486660470,-23.043,-174.66,,31.0,7.6,0,Tonga region,earthquake
+188,1234994025160,-27.424,-176.33,,25.0,7.0,0,Kermadec Islands region,earthquake
+189,1234373690490,3.886,126.387,,20.0,7.2,0,"Kepulauan Talaud, Indonesia",earthquake
+190,1232041779070,46.857,155.154,,36.0,7.4,0,east of the Kuril Islands,earthquake
+191,1231022020290,-0.691,133.305,,23.0,7.4,0,"near the north coast of Papua, Indonesia",earthquake
+192,1231011830650,-0.414,132.885,,17.0,7.7,0,"near the north coast of Papua, Indonesia",earthquake
+193,1227517378760,54.203,154.322,,492.3,7.3,0,Sea of Okhotsk,earthquake
+194,1226854952700,1.271,122.091,,30.0,7.4,0,"Minahasa, Sulawesi, Indonesia",earthquake
+195,1222701571590,-29.756,-177.683,,36.0,7.0,0,"Kermadec Islands, New Zealand",earthquake
+196,1216435168700,37.552,142.214,,22.0,7.0,0,"off the east coast of Honshu, Japan",earthquake
+197,1215223924480,53.882,152.886,,632.8,7.7,0,Sea of Okhotsk,earthquake
+198,1214806663020,-58.227,-22.099,,8.0,7.0,0,South Sandwich Islands region,earthquake
+199,1210573681570,31.002,103.322,,19.0,7.9,0,"eastern Sichuan, China",earthquake
+200,1207960212600,-55.664,158.453,,16.0,7.1,0,Macquarie Island region,earthquake
+201,1207745172720,-20.071,168.892,,33.0,7.3,0,"Loyalty Islands, New Caledonia",earthquake
+202,1206052377930,35.49,81.467,,10.0,7.2,0,Xinjiang-Xizang border region,earthquake
+203,1203928593030,-2.486,99.972,,25.0,7.2,0,"Kepulauan Mentawai region, Indonesia",earthquake
+204,1203494910520,2.768,95.964,,26.0,7.4,0,"Simeulue, Indonesia",earthquake
+205,1198056627930,51.36,-179.509,,34.0,7.2,0,"Andreanof Islands, Aleutian Islands, Alaska",earthquake
+206,1197185300820,-25.996,-177.514,,152.5,7.8,0,south of the Fiji Islands,earthquake
+207,1196362820420,14.944,-61.274,,156.0,7.4,0,"Martinique region, Windward Islands",earthquake
+208,1195054850530,-22.247,-69.89,,40.0,7.7,0,"Antofagasta, Chile",earthquake
+209,1193801415960,18.9,145.388,,207.0,7.2,0,"Pagan region, Northern Mariana Islands",earthquake
+210,1191129814070,-49.271,164.115,,10.0,7.4,0,"Auckland Islands, New Zealand region",earthquake
+211,1190986737880,22.013,142.668,,260.0,7.5,0,"Volcano Islands, Japan region",earthquake
+212,1189654528720,-2.13,99.627,,22.0,7.0,0,"Kepulauan Mentawai region, Indonesia",earthquake
+213,1189640943720,-2.625,100.841,,35.0,7.9,0,"Kepulauan Mentawai region, Indonesia",earthquake
+214,1189595426830,-4.438,101.367,,34.0,8.4,0,"southern Sumatra, Indonesia",earthquake
+215,1188695118150,-11.61,165.762,,35.0,7.2,0,Santa Cruz Islands,earthquake
+216,1187221257890,-13.386,-76.603,,39.0,8.0,0,near the coast of central Peru,earthquake
+217,1186592704920,-5.859,107.419,,280.0,7.5,0,"Java, Indonesia",earthquake
+218,1185988131400,-15.595,167.68,,120.0,7.2,0,Vanuatu,earthquake
+219,1175459998710,-8.466,157.043,,24.0,8.1,0,Solomon Islands,earthquake
+220,1174783201610,-20.617,169.357,,34.0,7.1,0,Vanuatu,earthquake
+221,1169378865060,1.065,126.282,,22.0,7.5,0,Molucca Sea,earthquake
+222,1168662201160,46.243,154.524,,10.0,8.1,0,east of the Kuril Islands,earthquake
+223,1167135981140,21.799,120.547,,10.0,7.1,0,Taiwan region,earthquake
+224,1163589253570,46.592,153.266,,10.0,8.3,0,Kuril Islands,earthquake
+225,1156045308040,-61.029,-34.371,,13.0,7.0,0,Scotia Sea,earthquake
+226,1153124366680,-9.284,107.419,,20.0,7.7,0,"south of Java, Indonesia",earthquake
+227,1147775963340,-31.81,-179.307,,152.0,7.4,0,Kermadec Islands region,earthquake
+228,1146670000290,-20.187,-174.123,,55.0,8.0,0,Tonga,earthquake
+229,1145575502150,60.949,167.089,,22.0,7.6,0,"near the east coast of Koryakskiy Avtonomnyy Okrug, Russia",earthquake
+230,1140646747800,-21.324,33.583,,11.0,7.0,0,Mozambique,earthquake
+231,1138381133670,-5.473,128.131,,397.0,7.6,0,Banda Sea,earthquake
+232,1136240020490,-19.926,-178.178,,582.9,7.2,0,Fiji region,earthquake
+233,1136182249760,-60.957,-21.606,,13.0,7.4,0,east of the South Sandwich Islands,earthquake
+234,1132004331420,38.107,144.896,,11.0,7.0,0,"off the east coast of Honshu, Japan",earthquake
+235,1128743440800,34.539,73.588,,26.0,7.6,0,Pakistan,earthquake
+236,1127699737670,-5.678,-76.398,,115.0,7.5,0,northern Peru,earthquake
+237,1126250803730,-4.539,153.474,,90.0,7.6,0,"New Ireland region, Papua New Guinea",earthquake
+238,1124160388400,38.276,142.039,,36.0,7.2,0,"near the east coast of Honshu, Japan",earthquake
+239,1122219726210,7.92,92.19,,16.0,7.2,0,"Nicobar Islands, India region",earthquake
+240,1118803854190,41.292,-125.953,,16.0,7.2,0,off the coast of Northern California,earthquake
+241,1118702673900,-19.987,-69.197,,115.6,7.8,0,"Tarapaca, Chile",earthquake
+242,1112026176530,2.085,97.108,,30.0,8.6,0,"northern Sumatra, Indonesia",earthquake
+243,1109760132230,-6.527,129.933,,201.7,7.1,0,Banda Sea,earthquake
+244,1107606198940,5.293,123.337,,525.0,7.1,0,Celebes Sea,earthquake
+245,1104034889810,6.91,92.958,,39.2,7.2,0,"Nicobar Islands, India region",earthquake
+246,1104022733450,3.295,95.982,,30.0,9.1,0,2004 Sumatra - Andaman Islands Earthquake,earthquake
+247,1103813944410,-49.312,161.345,,10.0,8.1,0,north of Macquarie Island,earthquake
+248,1101666734130,43.006,145.119,,39.0,7.0,0,"Hokkaido, Japan region",earthquake
+249,1101435903310,-3.609,135.404,,10.0,7.1,0,"Papua, Indonesia",earthquake
+250,1101155183900,-46.676,164.721,,10.0,7.1,0,off the west coast of the South Island of New Zealand,earthquake
+251,1100509616560,4.695,-77.508,,15.0,7.2,0,near the west coast of Colombia,earthquake
+252,1100208401150,-8.152,124.868,,10.0,7.5,0,"Kepulauan Alor, Indonesia",earthquake
+253,1097357213690,11.422,-86.665,,35.0,7.0,0,near the coast of Nicaragua,earthquake
+254,1094396238610,33.184,137.071,,10.0,7.4,0,"near the south coast of Honshu, Japan",earthquake
+255,1094378827820,33.07,136.618,,14.0,7.2,0,"near the south coast of western Honshu, Japan",earthquake
+256,1090766119060,-2.427,103.981,,582.1,7.3,0,"southern Sumatra, Indonesia",earthquake
+257,1089865634730,-17.656,-178.76,,565.5,7.1,0,Fiji region,earthquake
+258,1076121755210,-4.003,135.023,,10.0,7.3,0,"near the south coast of Papua, Indonesia",earthquake
+259,1076015102840,-3.615,135.538,,16.6,7.0,0,"Papua, Indonesia",earthquake
+260,1073147001020,-22.253,169.683,,22.0,7.1,0,southeast of the Loyalty Islands,earthquake
+261,1072540859450,-22.015,169.766,,10.0,7.3,0,southeast of the Loyalty Islands,earthquake
+262,1069051386800,51.146,178.65,,33.0,7.8,0,"Rat Islands, Aleutian Islands, Alaska",earthquake
+263,1067562388280,37.812,142.619,,10.0,7.0,0,"off the east coast of Honshu, Japan",earthquake
+264,1064662405080,50.038,87.813,,16.0,7.3,0,"southwestern Siberia, Russia",earthquake
+265,1064524080030,41.774,143.593,,33.0,7.4,0,"Hokkaido, Japan region",earthquake
+266,1064519406360,41.815,143.91,,27.0,8.16,0,"Hokkaido, Japan region",earthquake
+267,1061467969790,-45.104,167.144,,28.0,7.2,0,South Island of New Zealand,earthquake
+268,1059971840130,-60.532,-43.411,,10.0,7.6,0,Scotia Sea,earthquake
+269,1058300870530,-2.598,68.382,,10.0,7.6,0,Carlsberg Ridge,earthquake
+270,1056089978910,-7.606,-71.722,,558.1,7.1,0,"Amazonas, Brazil",earthquake
+271,1053977007940,2.354,128.855,,31.0,7.0,0,"Halmahera, Indonesia",earthquake
+272,1053941073400,38.849,141.568,,68.0,7.0,0,"near the east coast of Honshu, Japan",earthquake
+273,1047918977310,51.272,177.978,,33.0,7.1,0,"Rat Islands, Aleutian Islands, Alaska",earthquake
+274,1047918969856,50.3298,177.5472,,5.0,7.0,0,"Rat Islands, Aleutian Islands, Alaska",earthquake
+275,1043201194610,18.77,-104.104,,24.0,7.6,0,"offshore Colima, Mexico",earthquake
+276,1043052186070,-10.491,160.77,,33.0,7.3,0,Solomon Islands,earthquake
+277,1037508833540,47.824,146.209,,459.1,7.3,0,northwest of the Kuril Islands,earthquake
+278,1036361561518,63.5141,-147.4529,,4.2,7.9,0,Central Alaska,earthquake
+279,1036200370700,2.824,96.085,,30.0,7.4,0,"Simeulue, Indonesia",earthquake
+280,1034247020570,-1.757,134.297,,10.0,7.6,0,"near the north coast of Papua, Indonesia",earthquake
+281,1031510663710,-3.302,142.945,,13.0,7.6,0,"near the north coast of New Guinea, Papua New Guinea",earthquake
+282,1029755304310,-23.884,178.495,,675.4,7.7,0,south of the Fiji Islands,earthquake
+283,1029754861190,-21.696,-179.513,,580.0,7.7,0,Fiji region,earthquake
+284,1025284770270,43.752,130.666,,566.0,7.3,0,"Jilin-Heilongjiang border region, China",earthquake
+285,1019837167000,13.088,144.619,,85.7,7.1,0,Guam region,earthquake
+286,1017557570490,24.279,122.179,,32.8,7.1,0,Taiwan region,earthquake
+287,1015362969130,6.033,124.249,,31.0,7.5,0,"Mindanao, Philippines",earthquake
+288,1015157299740,36.502,70.482,,225.6,7.4,0,"Hindu Kush region, Afghanistan",earthquake
+289,1009992168760,-17.6,167.856,,21.0,7.2,0,Vanuatu,earthquake
+290,1008165755040,-42.813,124.688,,10.0,7.1,0,south of Australia,earthquake
+291,1005729970010,35.946,90.541,,10.0,7.8,0,"southern Qinghai, China",earthquake
+292,1004519420000,-5.912,150.196,,33.0,7.0,0,"New Britain region, Papua New Guinea",earthquake
+293,1003462124460,-4.102,123.907,,33.0,7.5,0,Banda Sea,earthquake
+294,1002898936840,12.686,144.98,,37.0,7.0,0,Guam region,earthquake
+295,998376726250,-36.813,-179.575,,33.0,7.1,0,east of the North Island of New Zealand,earthquake
+296,994498723520,-17.543,-72.077,,33.0,7.6,0,near the coast of southern Peru,earthquake
+297,993328394130,-16.265,-73.641,,33.0,8.4,0,near the coast of southern Peru,earthquake
+298,991536117160,-29.666,-178.633,,178.1,7.2,0,"Kermadec Islands, New Zealand",earthquake
+299,982999428730,1.271,126.249,,35.0,7.1,0,Molucca Sea,earthquake
+300,982092510260,-4.68,102.562,,36.0,7.4,0,"southern Sumatra, Indonesia",earthquake
+301,980479000500,23.419,70.232,,16.0,7.7,0,"Gujarat, India",earthquake
+302,979407212380,13.049,-88.66,,60.0,7.7,0,offshore El Salvador,earthquake
+303,979058968000,-14.928,167.17,,103.0,7.1,0,Vanuatu,earthquake
+304,978332224170,6.898,126.579,,33.0,7.5,0,"Mindanao, Philippines",earthquake
+305,976122666400,39.566,54.799,,30.0,7.0,0,Turkmenistan,earthquake
+306,974494916490,-5.496,151.781,,33.0,7.8,0,"New Britain region, Papua New Guinea",earthquake
+307,974360536930,-5.233,153.102,,30.0,7.8,0,"New Ireland region, Papua New Guinea",earthquake
+308,974350496740,-3.98,152.169,,33.0,8.0,0,"New Ireland region, Papua New Guinea",earthquake
+309,972808628770,-4.766,153.945,,50.0,7.0,0,"New Ireland region, Papua New Guinea",earthquake
+310,970678724310,-15.421,166.91,,23.0,7.0,0,Vanuatu,earthquake
+311,965546832900,28.856,139.556,,394.8,7.4,0,"Bonin Islands, Japan region",earthquake
+312,961339453310,-13.802,97.453,,10.0,7.9,0,South Indian Ocean,earthquake
+313,960136106170,-4.721,102.087,,33.0,7.9,0,"southern Sumatra, Indonesia",earthquake
+314,958156998120,-23.548,-66.452,,225.0,7.2,0,"Jujuy, Argentina",earthquake
+315,957414076210,-1.105,123.573,,26.0,7.6,0,"Sulawesi, Indonesia",earthquake
+316,956482043320,-28.307,-62.99,,608.5,7.0,0,"Santiago Del Estero, Argentina",earthquake
+317,954241222510,22.338,143.73,,126.5,7.6,0,"Volcano Islands, Japan region",earthquake
+318,951443038640,-19.528,173.818,,33.0,7.1,0,Vanuatu region,earthquake
+319,947350040580,-16.925,-174.248,,183.4,7.2,0,Tonga,earthquake
