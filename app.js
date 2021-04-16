@@ -68,11 +68,21 @@ chartGroup.append("g")
     .classed("axis", true)
     .call(leftAxis);
 
+var labelsGroup = chartGroup.append("g")
+    .attr("transform", `translate(${chartWidth / 2}, ${chartHeight + 20})`)
+
+var hairLengthLabel = labelsGroup.append("text")
+    .attr("x", 0)
+    .attr("y", 20)
+    .attr("value", "hair_length") // value to grab for event listener
+    .classed("active", true)
+    .text("Years (2000-2019)");
+
     var circlesGroup = chartGroup.selectAll("circle")
     .data([gdpData])
     .enter()
     .append("circle")
-    .attr("r", "10")
+    .attr("r", "15")
     .attr("fill", "red");
   
     circlesGroup.on("mouseover", function() {
@@ -82,6 +92,21 @@ chartGroup.append("g")
         .attr("r", 20)
         .attr("fill", "lightblue");
     })
+
+  chartGroup.append("image")
+    .attr('xlink:href', 'https://cdn.britannica.com/s:180x120,c:crop/38/4038-050-BDDBA6AB/Flag-Thailand.jpg')
+    .attr('width', 30)
+    .attr('height', 30)
+    .attr("x", 0)
+    .attr("y", 0)
+  //    // append y axis
+  chartGroup.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 0 - margin.left)
+  .attr("x", 0 - (chartHeight / 2))
+  .attr("dy", "1em")
+  .classed("axis-text", true)
+  .text("GDP Growth (%)")
 
     .on("mouseout", function() {
       d3.select(this)
@@ -94,8 +119,14 @@ chartGroup.append("g")
     chartGroup.selectAll("circle")
     .transition()
     .duration(1000)
-    .attr("cx", data => xTimeScale(data.Year))
-    .attr("cy", data => yLinearScale(data.GDPgrowth));
+    .attr("cx", data => xTimeScale(data[4].Year))
+    .attr("cy", data => yLinearScale(data[4].GDPgrowth));
+
+    chartGroup.selectAll("image")
+    .transition()
+    .duration(1000)
+    .attr("x", data => xTimeScale(data[4].Year))
+    .attr("y", data => yLinearScale(data[4].GDPgrowth));
 })
 
 
