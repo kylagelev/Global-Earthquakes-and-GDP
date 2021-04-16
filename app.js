@@ -18,24 +18,25 @@ var chartHeight = svgHeight - margin.top - margin.bottom;
 var svg = d3.select("body")
   .append("svg")
   .attr("width", svgWidth)
-  .attr("height", svgHeight);
+  .attr("height", svgHeight)
 
 // Append a group area, then set its margins
 var chartGroup = svg.append("g")
-  .attr("transform", `translate(${margin.left}, ${margin.top})`);
+  .attr("transform", `translate(${margin.left}, ${margin.top})`)
+  .style("color","blue")
 
 // Configure a parseTime function which will return a new Date object from a string
-var parseTime = d3.timeParse("%B");
+var parseTime = d3.timeParse("%Y");
 
 
 d3.csv("Data/GDP_IDN.csv").then(function(gdpData){
 console.log(gdpData)
 
-// gdpData.forEach(function(data) {
-//   data.Year =  parseTime(data.Year);
-// });
+gdpData.forEach(function(data) {
+  data.Year =  parseTime(data.Year);
+});
 
-  var xTimeScale = d3.scaleLinear()
+  var xTimeScale = d3.scaleTime()
   .range([0,chartWidth])
   .domain(d3.extent(gdpData, data=>data.Year))
 
@@ -71,34 +72,38 @@ chartGroup.append("g")
 var labelsGroup = chartGroup.append("g")
     .attr("transform", `translate(${chartWidth / 2}, ${chartHeight + 20})`)
 
-var hairLengthLabel = labelsGroup.append("text")
+ labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 20)
-    .attr("value", "hair_length") // value to grab for event listener
+    .attr("value", "years") // value to grab for event listener
     .classed("active", true)
     .text("Years (2000-2019)");
 
-    var circlesGroup = chartGroup.selectAll("circle")
+    // var circlesGroup = chartGroup.selectAll("circle")
+    // .data([gdpData])
+    // .enter()
+    // .append("circle")
+    // .attr("r", "15")
+    // .attr("fill", "red");
+  
+    // circlesGroup.on("mouseover", function() {
+    //   d3.select(this)
+    //     .transition()
+    //     .duration(1000)
+    //     .attr("r", 20)
+    //     .attr("fill", "lightblue");
+    // })
+
+  var imageGroup=chartGroup.selectAll("image")
     .data([gdpData])
     .enter()
-    .append("circle")
-    .attr("r", "15")
-    .attr("fill", "red");
-  
-    circlesGroup.on("mouseover", function() {
-      d3.select(this)
-        .transition()
-        .duration(1000)
-        .attr("r", 20)
-        .attr("fill", "lightblue");
-    })
-
-  chartGroup.append("image")
+    .append("image")
     .attr('xlink:href', 'https://cdn.britannica.com/s:180x120,c:crop/38/4038-050-BDDBA6AB/Flag-Thailand.jpg')
     .attr('width', 30)
     .attr('height', 30)
-    .attr("x", 0)
-    .attr("y", 0)
+
+  
+  
   //    // append y axis
   chartGroup.append("text")
   .attr("transform", "rotate(-90)")
@@ -116,11 +121,11 @@ var hairLengthLabel = labelsGroup.append("text")
         .attr("fill", "red");
     });
   
-    chartGroup.selectAll("circle")
-    .transition()
-    .duration(1000)
-    .attr("cx", data => xTimeScale(data[4].Year))
-    .attr("cy", data => yLinearScale(data[4].GDPgrowth));
+    // chartGroup.selectAll("circle")
+    // .transition()
+    // .duration(1000)
+    // .attr("cx", data => xTimeScale(data[4].Year))
+    // .attr("cy", data => yLinearScale(data[4].GDPgrowth));
 
     chartGroup.selectAll("image")
     .transition()
