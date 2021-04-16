@@ -7,7 +7,7 @@ var margin = {
   top: 60,
   right: 60,
   bottom: 60,
-  left: 60
+  left: 100
 };
 
 // Define dimensions of the chart area
@@ -107,11 +107,19 @@ var labelsGroup = chartGroup.append("g")
   //    // append y axis
   chartGroup.append("text")
   .attr("transform", "rotate(-90)")
-  .attr("y", 0 - margin.left)
+  .attr("y", 0 - margin.left+20)
   .attr("x", 0 - (chartHeight / 2))
   .attr("dy", "1em")
   .classed("axis-text", true)
   .text("GDP Growth (%)")
+
+  chartGroup.append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 0 - margin.left+40) 
+  .attr("x", 0 - (chartHeight / 2)  )
+  .attr("dy", "1em")
+  .classed("axis-text", true)
+  .text("GDP ($USD)")
 
     .on("mouseout", function() {
       d3.select(this)
@@ -133,5 +141,3 @@ var labelsGroup = chartGroup.append("g")
     .attr("x", data => xTimeScale(data[4].Year))
     .attr("y", data => yLinearScale(data[4].GDPgrowth));
 })
-
-
