@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latitude | Weather Data Analysis </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet"  href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand text-light" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link dropdown-toggle text-secondary" href="#"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Plots <span class="sr-only"></span></a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>                </div>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-secondary" href="Comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item-end ">
+              <a class="nav-link text-secondary" href="Data.html">Data</a>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+
+        <br>
+        <div class="container bg-light">
+            <div class = "row">
+              <div class = "col">
+                <h1>Cloudiness</h1>
+              </div>
+              <hr class="my-4">
+            </div>
+            <div class = "row"></div>
+              <article>
+                <div class = "col-md-12"> 
+               
+                <div class="card mb-3">
+                    <img src="Resources/assets/images/Fig3.png" class="rounded mx-auto d-block" alt="Cloudiness" style="width:65%;max-height:500px">
+                    <div class="card-body">
+                      <h5 class="card-title">Visualization: City Latitude vs. Cloudiness</h5>
+                      <p class="card-text">Note a positive correlation between Cloudiness and Latitude from Northern Hemisphere. Meaning we can expect that the further north, the higher percentage of cloudiness. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+                      <p class="card-text"><small class="text-muted">Last updated March 14, 2021</small></p>
+                    </div>
+                  </div>
+                </div>
+            </article>
+            <div class = "row">
+                <div class = "col">
+                  <h3>Visualizations</h3>
+                </div>
+                <hr class="my-4">
+              </div>
+              <div class = "row">
+                  <p>Click on the following graphs to see the visualizations of latitude vs. key weather aspects:</p>
+              </div>
+              <div class = "row">
+                <div class = "col-sm-6 col-md-3 ">
+                    <a target="blank" href="MaxTemp.html">
+                      <img src="Resources/assets/images/Fig1.png" alt="MaxTempature" style="width:100%;max-width:300px"> 
+                    </a></div>
+                <div class = "col-sm-6 col-md-3">
+                  <a target="blank" href="Humidity.html">
+                    <img src="Resources/assets/images/Fig2.png" alt="Humidity" style="width:100%;max-width:300px">
+    
+                  </a></div>            
+                <div class = "col-sm-6 col-md-3">
+                  <a target="blank" href="Cloudiness.html">
+                    <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" style="width:100%;max-width:300px">
+    
+                  </a></div>            
+                <div class = "col-sm-6 col-md-3">
+                  <a target="blank" href="WindSpeed.html">
+                    <img src="Resources/assets/images/Fig4.png" alt="WindSpeed" style="width:100%;max-width:300px">
+    
+                  </a></div>
+              </div>
+            </div>
+
+      </main>
+
+      
+      <!-- Footer -->
+      <footer class="page-footer font-small blue ">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3  ">© 2021 Copyright:
+        <a href="https://github.com/tiffanyycheng99?tab=repositories"> Tiffany Cheng | Github | Data Analytics </a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
