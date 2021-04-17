@@ -35,17 +35,33 @@ var myMap = L.map("map", {
     }
 
     //setting up color for marker
-    var myIcon = L.icon({
-      iconUrl: 'red.png',
-      iconSize: [38, 65],
-      iconAnchor: [22, 64],
-      popupAnchor: [-3, -76],
-      shadowUrl: 'shadow.png',
-      shadowSize: [68, 95],
-      shadowAnchor: [22, 94]
-      });
+    // var myIcon = L.icon({
+    //   iconUrl: 'red.png',
+    //   iconSize: [38, 65],
+    //   iconAnchor: [22, 64],
+    //   popupAnchor: [-3, -76],
+    //   shadowUrl: 'shadow.png',
+    //   shadowSize: [68, 95],
+    //   shadowAnchor: [22, 94]
+    //   });
+
+    icon_imgs = ['flag_images/indonesian.png', 
+                  'flag_images/japanese.svg', 
+                  'flag_images/chilean.png', 
+                  'flag_images/indonesian.png', 
+                  'flag_images/indonesian.png']
 
     for (var i=0; i < 5; i++){
+    //setting up color for marker
+    var myIcon = L.icon({
+      iconUrl: icon_imgs[i],
+      iconSize: [50, 25],
+      iconAnchor: [24, 24],
+      popupAnchor: [-3, -46],
+      shadowUrl: 'flag_images/new_shadow.png',
+      shadowSize: [60, 25],
+      shadowAnchor: [30, 15]
+      });
       earthquakeMarkers.push(
         L.marker([response[i].Longitude, response[i].Latitude], {icon: myIcon}).bindPopup("<h4>" + `Place: ` + "</h4>" + response[i].Place  +
                                                                           
