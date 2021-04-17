@@ -19,7 +19,6 @@ var svg = d3.select("body")
   .append("svg")
   .attr("width", svgWidth)
   .attr("height", svgHeight)
-
 // Append a group area, then set its margins
 var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`)
@@ -146,7 +145,6 @@ var parseTime = d3.timeParse("%Y");
 
 
 
-
 //Initial Params
 
 var chosenYAxis = "GDPgrowth"
@@ -154,13 +152,15 @@ var chosenYAxis = "GDPgrowth"
 
 function yScale(gdpData, chosenYAxis){
   var yLinearScale = d3.scaleLinear()
-  .domain([d3.min(gdpData, d => d[chosenYAxis]) , 
+.range([chartHeight,0])
+.domain([d3.min(gdpData, d => d[chosenYAxis]) , 
   d3.max(gdpData, d=>d[chosenYAxis]) 
 ])
-.range([chartHeight,0]);
-
+console.log(yLinearScale)
 return yLinearScale
+
 }
+
 
 // function used for updating yAxis var upon click on axis label
 function renderYAxis(newYScale, yAxis) {
@@ -172,6 +172,9 @@ function renderYAxis(newYScale, yAxis) {
   return yAxis
 
 }
+
+
+  
 
 
 d3.csv("Data/GDP_IDN.csv").then(function(gdpData,err){
@@ -194,7 +197,18 @@ var xTimeScale = d3.scaleTime()
 var bottomAxis = d3.axisBottom(xTimeScale);
 var leftAxis = d3.axisLeft(yLinearScale);
 
-//append x axis
+  var drawLine = d3
+  .line()
+  .x(data => xTimeScale(data.Year))
+  .y(data => yLinearScale(data[chosenYAxis]));
+
+  chartGroup.append("path")
+  // The drawLine function returns the instructions for creating the line for milesData
+  .attr("d", drawLine(gdpData))
+  .attr("fill", "gray")
+  .classed("line", true);
+
+// // append x axis
 
 var xAxis = chartGroup.append("g")
     .classed("x-axis", true)
@@ -259,6 +273,10 @@ chartGroup.selectAll("text")
 
       yAxis=renderYAxis(yLinearScale,yAxis)
 
+      chartGroup.append("path")
+                .attr("d",drawLine(gdpData))
+                // .attr("fill","none")
+      // xAxis=renderXAxis(xTimeScale,xAxis)
       if (chosenYAxis === "GDPgrowth"){
 
         GDPgrowthLabel
