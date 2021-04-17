@@ -149,7 +149,7 @@ var parseTime = d3.timeParse("%Y");
 
 //Initial Params
 
-var chosenYAxis = "GDP"
+var chosenYAxis = "GDPgrowth"
 
 
 function yScale(gdpData, chosenYAxis){
@@ -171,7 +171,6 @@ function renderYAxis(newYScale, yAxis) {
        .call(leftAxis)
   return yAxis
 
-console.log(yaxis)
 }
 
 
@@ -204,7 +203,7 @@ var xAxis = chartGroup.append("g")
 
 //append y axis
 
-chartGroup.append("g")
+var yAxis = chartGroup.append("g")
     .call(leftAxis)
 
 
@@ -223,7 +222,8 @@ var labelsGroup = chartGroup.append("g")
   .attr("y", 0 - margin.left+20)
   .attr("x", 0 - (chartHeight / 2))
   .attr("dy", "1em")
-  .classed("axis-text", true)
+  .attr("value", "GDPgrowth")
+  .classed("active",true)
   .text("GDP Growth (%)")
 
   var GDPlabel = chartGroup.append("text")
@@ -231,7 +231,8 @@ var labelsGroup = chartGroup.append("g")
   .attr("y", 0 - margin.left+40) 
   .attr("x", 0 - (chartHeight / 2)  )
   .attr("dy", "1em")
-  .classed("axis-text", true)
+  .attr("value", "GDP")
+  .classed("active", false)
   .text("GDP ($USD)")
 
   var GDPpercapitalabel = chartGroup.append("text")
@@ -239,12 +240,13 @@ var labelsGroup = chartGroup.append("g")
   .attr("y", 0 - margin.left) 
   .attr("x", 0 - (chartHeight / 2)  )
   .attr("dy", "1em")
-  .classed("axis-text", true)
+  .attr("value","GDPpercapita")
+  .classed("active",false)
   .text("GDP Per Capita ($USD)")
 // y axis label event listener
 
 chartGroup.selectAll("text")
-.on("click"),function(){
+.on("click",function(){
 
   var value = d3.select(this).attr("value")
   if(value !== chosenYAxis){
@@ -255,7 +257,7 @@ chartGroup.selectAll("text")
         // updates y scale for new data
       yLinearScale = yScale(gdpData,chosenYAxis)
 
-      yaxis=renderYAxis(newYScale,yAxis)
+      yAxis=renderYAxis(yLinearScale,yAxis)
 
       if (chosenYAxis === "GDPgrowth"){
 
@@ -305,7 +307,7 @@ chartGroup.selectAll("text")
   }
 
 
-}
+})
   
 }).catch(function(error){
   console.log(error)
