@@ -55,9 +55,8 @@ gdpData.forEach(function(data) {
   .range([0,chartWidth])
   .domain(d3.extent(gdpData, data=>data.Year))
 
-  var yLinearScale =d3.scaleLinear()
-    .range([chartHeight,0])
-    .domain([d3.min(gdpData,data=>data.GDPgrowth),d3.max(gdpData,data=>data.GDPgrowth)])
+  var yL    .domain([d3.min(gdpData,data=>data.GDPgrowth),d3.max(    .domain([0,d3.max(gdpData,data=>data.GDPgrowth)])
+
 
   
 
