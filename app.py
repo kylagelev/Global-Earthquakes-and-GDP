@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
+import scrape_usgs
 
 
 app = Flask(__name__)
@@ -13,19 +14,19 @@ mongo = PyMongo(app)
 def home():
 
     # find one record of mars info
-    mars_info = mongo.db.collection.find_one()
+    quake_info = mongo.db.collection.find_one()
 
-    return render_template("index.html", mars_info=mars_info)
+    return render_template("index.html", quake_info=quake_info)
 
 
 # setup scrape route
 @app.route("/scrape")
 def scrape():
    
-    mars_data = scrape_mars.scrape()
+    quake_data = scrape_usgs.scrape()
     
 
-    mongo.db.collection.update({}, mars_data, upsert=True)
+    mongo.db.collection.update({}, quake_data, upsert=True)
 
     # Redirect back to home page
     return redirect("/")
