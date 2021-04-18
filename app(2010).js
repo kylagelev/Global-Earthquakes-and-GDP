@@ -57,7 +57,7 @@ function updatePlotly(){
     
       var yLinearScale =d3.scaleLinear()
         .range([chartHeight,0])
-        .domain([0,d3.max(gdpData,data=>data.GDPgrowth)])
+        .domain([d3.min(gdpData,data=>data.GDPgrowth),d3.max(gdpData,data=>data.GDPgrowth)])
     
       
     
