@@ -183,6 +183,7 @@ gdpData.forEach(function(data) {
   data.GDPgrowth = +data.GDPgrowth
   data.GDP = +data.GDP
   data.GDPpercapita = +data.GDPpercapita
+  console.log(data.Year)
 });
 var yLinearScale = yScale(gdpData,chosenYAxis)
 
