@@ -25,6 +25,8 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`)
   .style("color","blue")
 
+var line_colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple']
+
   Promise.all([d3.csv("../Data/GDP_IDN.csv"), 
                d3.csv("../Data/GDP_BRA.csv"),
                d3.csv("../Data/GDP_CHN.csv"),
@@ -36,9 +38,10 @@ var chartGroup = svg.append("g")
 
 for (var i=0; i<files.length; i++){
   files[i].forEach(function(data){
+  if (data.Year != '...'){
   data.Year = +data.Year
   data.GDP = +data.GDP
-
+  }
   })
 }
 
@@ -67,41 +70,44 @@ console.log(files)
   var labelsGroup = chartGroup.append("g")
   .attr("transform", `translate(${chartWidth/2}, ${chartHeight + 20} )`);
   
-   labelsGroup.append("text")
+  labelsGroup.append("text")
       .attr("x", 0)
       .attr("y", 20)
       .attr("value", "years") // value to grab for event listener
       .classed("active", true)
       .text("Years (2000-2019)");
 
-  var GDPlabel = chartGroup.append("text")
+  chartGroup.append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", 0 - margin.left+40) 
     .attr("x", 0 - (chartHeight / 2)  )
     .attr("dy", "1em")
-    .attr("value", "GDP")
-    .classed("active", false)
     .text("GDP ($USD)")
 
 //so now need to draw a line for each country
 for (var i=0; i<files.length; i++){
-  if ((files[i].Year == null) && (files[i].GDP == null)){
-    console.log(files[i])
-    console.log(files[i])
+  if (typeof files[i].GDP === 'number') {
+  // if ((files[i].Year == null) && (files[i].GDP == null)){
+  //   console.log(files[i])
+  //   console.log(files[i])
     // files[i].Year.remove()
     // files[i].GDP.remove()
-}
+// }
   var line = d3.line()
   .x(d => xTimeScale(files[i].Year))
   .y(d => yLinearScale(files[i].GDP));
 
+  console.log("Trying")
+
+
+
   chartGroup
   .append("path")
   .attr("d", line(files[i]))
-  .classed("line green", true);
-  
-}
+  .classed(line_colors[i], true);
 
+}
+}
         }).catch(function(error) {
   console.log(error);
 });
