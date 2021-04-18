@@ -42,7 +42,7 @@ var dataset = dropdownMenu.property("value")
 
 if (dataset === 'dataset1') {
   
-d3.csv("Data/GDP_IDN.csv").then(function(gdpData){
+d3.csv("Data/GDP_JPN.csv").then(function(gdpData){
 console.log(gdpData)
 
 gdpData.forEach(function(data) {
@@ -118,7 +118,7 @@ var labelsGroup = chartGroup.append("g")
     .data([gdpData])
     .enter()
     .append("image")
-    .attr('xlink:href', 'https://cdn.britannica.com/s:180x120,c:crop/38/4038-050-BDDBA6AB/Flag-Thailand.jpg')
+    .attr('xlink:href', 'https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg')
     .attr('width', 30)
     .attr('height', 30)
 
@@ -126,8 +126,8 @@ var labelsGroup = chartGroup.append("g")
     imageGroup.on("mouseover", function(gdpData) {
       toolTip.style("display", "block")
           .html(
-            `<strong>Year:${dateFormatter(gdpData[4].Year)}<strong><hr>GDP Growth:${(gdpData[4].GDPgrowth)}
-        %<hr>Location:Sumatra`)
+            `<strong>Year:${dateFormatter(gdpData[11].Year)}<strong><hr>GDP Growth:${(gdpData[11].GDPgrowth)}
+        %<hr>Location:Japan`)
           .style("left", d3.event.pageX + "px")
           .style("top", d3.event.pageY + "px");
     })
@@ -159,20 +159,20 @@ var labelsGroup = chartGroup.append("g")
     chartGroup.selectAll("circle")
     .transition()
     .duration(1000)
-    .attr("cx", data => xTimeScale(data[4].Year))
-    .attr("cy", data => yLinearScale(data[4].GDPgrowth));
+    .attr("cx", data => xTimeScale(data[11].Year))
+    .attr("cy", data => yLinearScale(data[11].GDPgrowth));
   
     chartGroup.selectAll("image")
     .transition()
     .duration(1000)
-    .attr("x", data => xTimeScale(data[4].Year))
-    .attr("y", data => yLinearScale(data[4].GDPgrowth));
+    .attr("x", data => xTimeScale(data[11].Year))
+    .attr("y", data => yLinearScale(data[11].GDPgrowth));
 })
 
 }else if (dataset==='dataset2'){
   dataset !== 'dataset1'
   dataset !== 'dataset2'
-  d3.csv("Data/GDP_IDN.csv").then(function(gdpData){
+  d3.csv("Data/GDP_JPN.csv").then(function(gdpData){
     console.log(gdpData)
     
     gdpData.forEach(function(data) {
@@ -248,7 +248,7 @@ var labelsGroup = chartGroup.append("g")
         .data([gdpData])
         .enter()
         .append("image")
-        .attr('xlink:href', 'https://cdn.britannica.com/s:180x120,c:crop/38/4038-050-BDDBA6AB/Flag-Thailand.jpg')
+        .attr('xlink:href', 'https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg')
         .attr('width', 30)
         .attr('height', 30)
     
@@ -256,8 +256,8 @@ var labelsGroup = chartGroup.append("g")
         imageGroup.on("mouseover", function(gdpData) {
           toolTip.style("display", "block")
               .html(
-                `<strong>Year:${dateFormatter(gdpData[4].Year)}<strong><hr>GDP:$${(gdpData[4].GDP)}
-            <hr>Location:Sumatra`)
+                `<strong>Year:${dateFormatter(gdpData[11].Year)}<strong><hr>GDP:$${(gdpData[11].GDP)}
+            <hr>Location:Japan`)
               .style("left", d3.event.pageX + "px")
               .style("top", d3.event.pageY + "px");
         })
@@ -289,17 +289,17 @@ var labelsGroup = chartGroup.append("g")
         chartGroup.selectAll("circle")
         .transition()
         .duration(1000)
-        .attr("cx", data => xTimeScale(data[4].Year))
-        .attr("cy", data => yLinearScale(data[4].GDP));
+        .attr("cx", data => xTimeScale(data[11].Year))
+        .attr("cy", data => yLinearScale(data[11].GDP));
       
         chartGroup.selectAll("image")
         .transition()
         .duration(1000)
-        .attr("x", data => xTimeScale(data[4].Year))
-        .attr("y", data => yLinearScale(data[4].GDP));
+        .attr("x", data => xTimeScale(data[11].Year))
+        .attr("y", data => yLinearScale(data[11].GDP));
     })
 }else{
-  d3.csv("Data/GDP_IDN.csv").then(function(gdpData){
+  d3.csv("Data/GDP_JPN.csv").then(function(gdpData){
     console.log(gdpData)
     
     gdpData.forEach(function(data) {
@@ -376,7 +376,7 @@ var labelsGroup = chartGroup.append("g")
         .data([gdpData])
         .enter()
         .append("image")
-        .attr('xlink:href', 'https://cdn.britannica.com/s:180x120,c:crop/38/4038-050-BDDBA6AB/Flag-Thailand.jpg')
+        .attr('xlink:href', 'https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg')
         .attr('width', 30)
         .attr('height', 30)
     
@@ -384,8 +384,8 @@ var labelsGroup = chartGroup.append("g")
         imageGroup.on("mouseover", function(gdpData) {
           toolTip.style("display", "block")
               .html(
-                `<strong>Year:${dateFormatter(gdpData[4].Year)}<strong><hr>GDP Per Capita:$${(gdpData[4].GDPpercapita)}
-            <hr>Location:Sumatra`)
+                `<strong>Year:${dateFormatter(gdpData[11].Year)}<strong><hr>GDP Per Capita:$${(gdpData[11].GDPpercapita)}
+            <hr>Location:Japan`)
               .style("left", d3.event.pageX + "px")
               .style("top", d3.event.pageY + "px");
         })
@@ -417,214 +417,17 @@ var labelsGroup = chartGroup.append("g")
         chartGroup.selectAll("circle")
         .transition()
         .duration(1000)
-        .attr("cx", data => xTimeScale(data[4].Year))
-        .attr("cy", data => yLinearScale(data[4].GDPpercapita));
+        .attr("cx", data => xTimeScale(data[11].Year))
+        .attr("cy", data => yLinearScale(data[11].GDPpercapita));
       
         chartGroup.selectAll("image")
         .transition()
         .duration(1000)
-        .attr("x", data => xTimeScale(data[4].Year))
-        .attr("y", data => yLinearScale(data[4].GDPpercapita));
+        .attr("x", data => xTimeScale(data[11].Year))
+        .attr("y", data => yLinearScale(data[11].GDPpercapita));
     })
 
 
 }
 
 }
-
-
-
-//Initial Params
-
-// var chosenYAxis = "GDPgrowth"
-
-
-// function yScale(gdpData, chosenYAxis){
-//   var yLinearScale = d3.scaleLinear()
-// .range([chartHeight,0])
-// .domain([d3.min(gdpData, d => d[chosenYAxis]) , 
-//   d3.max(gdpData, d=>d[chosenYAxis]) 
-// ])
-// console.log(yLinearScale)
-// return yLinearScale
-
-// }
-
-
-// // function used for updating yAxis var upon click on axis label
-// function renderYAxis(newYScale, yAxis) {
-//   var leftAxis = d3.axisLeft(newYScale); 
-
-//   yAxis.transition()
-//        .duration(1000)
-//        .call(leftAxis)
-//   return yAxis
-
-// }
-
-// function renderLine(lineGroup,chosenYAxis){
-//   lineGroup.transition()
-//     .duration(1000)
-//     .attr("")
-// }
-
-
-  
-
-
-// d3.csv("Data/GDP_IDN.csv").then(function(gdpData,err){
-//   if (err) throw err; 
-// console.log(gdpData)
-
-// gdpData.forEach(function(data) {
-//   data.Year =  parseTime(data.Year)
-//   data.GDPgrowth = +data.GDPgrowth
-//   data.GDP = +data.GDP
-//   data.GDPpercapita = +data.GDPpercapita
-// });
-// var yLinearScale = yScale(gdpData,chosenYAxis)
-
-// var xTimeScale = d3.scaleTime()
-//   .range([0,chartWidth])
-//   .domain(d3.extent(gdpData, data=>data.Year))
-
-//   // Create initial axis functions
-// var bottomAxis = d3.axisBottom(xTimeScale);
-// var leftAxis = d3.axisLeft(yLinearScale);
-
-//   var drawLine = d3
-//   .line()
-//   .x(data => xTimeScale(data.Year))
-//   .y(data => yLinearScale(data[chosenYAxis]));
-
-//   chartGroup.append("path")
-//   // The drawLine function returns the instructions for creating the line for milesData
-//   .attr("d", drawLine(gdpData))
-//   .attr("fill", "none")
-//   .classed("line", true);
-
-// // // append x axis
-
-// var xAxis = chartGroup.append("g")
-//     .classed("x-axis", true)
-//     .attr("transform", `translate(0,${chartHeight})`)
-//     .call(bottomAxis)
-
-// //append y axis
-
-// var yAxis = chartGroup.append("g")
-//     .call(leftAxis)
-
-
-// var labelsGroup = chartGroup.append("g")
-// .attr("transform", `translate(${chartWidth/2}, ${chartHeight + 20} )`);
-
-//  labelsGroup.append("text")
-//     .attr("x", 0)
-//     .attr("y", 20)
-//     .attr("value", "years") // value to grab for event listener
-//     .classed("active", true)
-//     .text("Years (2000-2019)");
-//   //    // append y axis
-//   var GDPgrowthLabel = chartGroup.append("text")
-//   .attr("transform", "rotate(-90)")
-//   .attr("y", 0 - margin.left+20)
-//   .attr("x", 0 - (chartHeight / 2))
-//   .attr("dy", "1em")
-//   .attr("value", "GDPgrowth")
-//   .classed("active",true)
-//   .text("GDP Growth (%)")
-
-//   var GDPlabel = chartGroup.append("text")
-//   .attr("transform", "rotate(-90)")
-//   .attr("y", 0 - margin.left+40) 
-//   .attr("x", 0 - (chartHeight / 2)  )
-//   .attr("dy", "1em")
-//   .attr("value", "GDP")
-//   .classed("active", false)
-//   .text("GDP ($USD)")
-
-//   var GDPpercapitalabel = chartGroup.append("text")
-//   .attr("transform", "rotate(-90)")
-//   .attr("y", 0 - margin.left) 
-//   .attr("x", 0 - (chartHeight / 2)  )
-//   .attr("dy", "1em")
-//   .attr("value","GDPpercapita")
-//   .classed("active",false)
-//   .text("GDP Per Capita ($USD)")
-// // y axis label event listener
-
-// chartGroup.selectAll("text")
-// .on("click",function(){
-
-//   var value = d3.select(this).attr("value")
-//   if(value !== chosenYAxis){
-
-//     chosenYAxis = value
-//     console.log(chosenYAxis)
-//     // functions here found above csv import
-//         // updates y scale for new data
-//       yLinearScale = yScale(gdpData,chosenYAxis)
-
-//       yAxis=renderYAxis(yLinearScale,yAxis)
-
-//       chartGroup.append("path")
-//                 .attr("d",drawLine(gdpData))
-//                 .classed("line",true)
-//       // xAxis=renderXAxis(xTimeScale,xAxis)
-//       if (chosenYAxis === "GDPgrowth"){
-
-//         GDPgrowthLabel
-//         .classed("active",true)
-//         .classed("inactive",false)
-         
-      
-        
-//         GDPlabel
-//         .classed("active",false)
-//         .classed("inactive",true)
-
-//         GDPpercapitalabel
-//         .classed("active",false)
-//         .classed("inactive",true)
-//       }
-//       else if (chosenYAxis === "GDP"){
-//         GDPgrowthLabel
-//         .classed("active",false)
-//         .classed("inactive",true)
-        
-//         GDPlabel
-//         .classed("active",true)
-//         .classed("inactive",false)
-
-//         GDPpercapitalabel
-//         .classed("active",false)
-//         .classed("inactive",true)
-
-//       }
-//       else{
-
-//         GDPgrowthLabel
-//         .classed("active",false)
-//         .classed("inactive",true)
-        
-//         GDPlabel
-//         .classed("active",false)
-//         .classed("inactive",true)
-
-//         GDPpercapitalabel
-//         .classed("active",true)
-//         .classed("inactive",false)
-      
-//       }
-
-
-//   }
-
-
-// })
-  
-// }).catch(function(error){
-//   console.log(error)
-// })
-
