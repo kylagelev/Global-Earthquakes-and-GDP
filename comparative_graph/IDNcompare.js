@@ -38,7 +38,7 @@ var line_colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple
 
 for (var i=0; i<files.length; i++){
   files[i].forEach(function(data){
-  if (data.Year != '...'){
+  if (data.Year != '2020'){
   data.Year = +data.Year
   data.GDP = +data.GDP
   }
