@@ -33,28 +33,75 @@ var chartGroup = svg.append("g")
                d3.csv("../Data/GDP_RUS.csv"),
                d3.csv("../Data/GDP_USA.csv")]).then(function(files){
 
-//console.log(files)
 
 for (var i=0; i<files.length; i++){
-  files[i].Year = +files[i].Year
-  files[i].GDP = +files[i].GDP
+  files[i].forEach(function(data){
+  data.Year = +data.Year
+  data.GDP = +data.GDP
 
-  console.log(files[i])
+  })
 }
 
+//checking to see that the values were converted to numbers
 console.log(files)
 
+  var xTimeScale = d3.scaleTime()
+  .range([0,chartWidth])
+  .domain(d3.extent(files, data=>data.Year))
 
+  var yLinearScale =d3.scaleLinear()
+  .range([chartHeight,0])
+  .domain([0,d3.max(files, data=>data.GDP)])
 
+  var bottomAxis = d3.axisBottom(xTimeScale);
+  var leftAxis = d3.axisLeft(yLinearScale)
 
+//Add x-axis
+  chartGroup.append("g")
+  .attr("transform", `translate(0, ${chartHeight})`)
+  .call(bottomAxis);
 
+// Add y-axis
+  chartGroup.append("g").call(leftAxis);
 
+  var labelsGroup = chartGroup.append("g")
+  .attr("transform", `translate(${chartWidth/2}, ${chartHeight + 20} )`);
+  
+   labelsGroup.append("text")
+      .attr("x", 0)
+      .attr("y", 20)
+      .attr("value", "years") // value to grab for event listener
+      .classed("active", true)
+      .text("Years (2000-2019)");
 
+  var GDPlabel = chartGroup.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - margin.left+40) 
+    .attr("x", 0 - (chartHeight / 2)  )
+    .attr("dy", "1em")
+    .attr("value", "GDP")
+    .classed("active", false)
+    .text("GDP ($USD)")
 
+//so now need to draw a line for each country
+for (var i=0; i<files.length; i++){
+  if ((files[i].Year == null) && (files[i].GDP == null)){
+    console.log(files[i])
+    console.log(files[i])
+    // files[i].Year.remove()
+    // files[i].GDP.remove()
+}
+  var line = d3.line()
+  .x(d => xTimeScale(files[i].Year))
+  .y(d => yLinearScale(files[i].GDP));
 
+  chartGroup
+  .append("path")
+  .attr("d", line(files[i]))
+  .classed("line green", true);
+  
+}
 
-
-
-
-
-              })
+        }).catch(function(error) {
+  console.log(error);
+});
