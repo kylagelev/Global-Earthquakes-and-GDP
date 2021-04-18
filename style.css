@@ -14,4 +14,18 @@ body {
   stroke-width: 2px;
 }
 
-
+.tooltip {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+    font: 12px sans-serif;
+    text-align: center;
+    color: white;
+    background: blue;
+    border: 0;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  
