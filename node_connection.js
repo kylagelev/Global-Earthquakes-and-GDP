@@ -18,5 +18,6 @@ var db = new sqlite3.Database('earthquake_db_schemata.db');
 
 // db.close
 
-//need to 
+//maybe need to try sql.js instead?? to query from there?
+//https://github.com/sql-js/sql.js/
 
