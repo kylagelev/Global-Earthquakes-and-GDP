@@ -1,4 +1,4 @@
-d3.selectAll("#selDataset").on("change", updatePlotly);
+vd3.selectAll("#selDataset").on("change", updatePlotly);
 
 
 function updatePlotly(){
@@ -55,9 +55,9 @@ gdpData.forEach(function(data) {
   .range([0,chartWidth])
   .domain(d3.extent(gdpData, data=>data.Year))
 
-  var yL    .domain([d3.min(gdpData,data=>data.GDPgrowth),d3.max(    .domain([0,d3.max(gdpData,data=>data.GDPgrowth)])
-
-
+  var yLinearScale =d3.scaleLinear()
+  .range([chartHeight,0])
+  .domain([d3.min(gdpData,data=>data.GDPgrowth),d3.max(gdpData,data=>data.GDPgrowth)])
   
 
   var bottomAxis = d3.axisBottom(xTimeScale);

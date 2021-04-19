@@ -1,3 +1,14 @@
+function makeResponsive(){
+
+
+// var svgArea = d3.select("body").select("svg");
+
+//   // clear svg is not empty
+//   if (!svgArea.empty()) {
+//     svgArea.remove();
+//   }
+
+
 // SVG wrapper dimensions are determined by the current width
 // and height of the browser window.
 var svgWidth = 1600;
@@ -25,8 +36,7 @@ var chartGroup = svg.append("g")
 //var parseTime = d3.timeParse("%Y");
 
 
-
-d3.csv("quake_df.csv").then(function(quakeData){
+d3.csv("../quake_df.csv").then(function(quakeData){
     // console.log(quakeData);
     // console.log(quakeData[0].Magnitude);
     // console.log(quakeData[0].Depth);
@@ -82,12 +92,12 @@ d3.csv("quake_df.csv").then(function(quakeData){
 
 
     // Append a path for line1
-    chartGroup.append("path")
-    .data([sortedData])
-    .attr("d", line1)
-    .attr("stroke","black")
-    .attr("stroke-width",2)
-    .attr("fill","none");
+    // chartGroup.append("path")
+    // .data([sortedData])
+    // .attr("d", line1)
+    // .attr("stroke","black")
+    // .attr("stroke-width",2)
+    // .attr("fill","none");
 
   // Add labels for x and y labels
 
@@ -107,23 +117,23 @@ d3.csv("quake_df.csv").then(function(quakeData){
     // Add Scale for Bubble Size
 
     var z = d3.scaleSqrt()
-      .domain([6.5,d3.max(sortedData, d => d.Depth)])
+      .domain([d3.min(sortedData,d=>d.Depth),d3.max(sortedData, d => d.Depth)])
       .range([0,30]);
 
-  // Hover Event
+  // // Hover Event
 
-    // What to do when one group is hovered
-    var highlight = function(d){
-      // reduce opacity of all groups
-      d3.selectAll(".bubbles").style("opacity", .05)
-      // expect the one that is hovered
-      d3.selectAll("."+d).style("opacity", 1)
-    }
+  //   // What to do when one group is hovered
+  //   var highlight = function(d){
+  //     // reduce opacity of all groups
+  //     d3.selectAll(".bubbles").style("opacity", .05)
+  //     // expect the one that is hovered
+  //     d3.selectAll("."+d).style("opacity", 1)
+  //   }
 
-    // And when it is not hovered anymore
-    var noHighlight = function(d){
-      d3.selectAll(".bubbles").style("opacity", 0.8)
-  }
+  //   // And when it is not hovered anymore
+  //   var noHighlight = function(d){
+  //     d3.selectAll(".bubbles").style("opacity", 0.8)
+  // }
 
 
   // Circle Markers
@@ -136,25 +146,25 @@ d3.csv("quake_df.csv").then(function(quakeData){
     .attr("cx", d => xTimeScale(d.Converted_Time_GMT))
     .attr("cy", d => yLinearScale1(d.Magnitude))
     .attr("r", d => z(d.Depth))
-    .style("fill","gray")
+    .style("fill","gray");
 
     // Tool Tip
     var toolTip = d3.select("body")
       .append("div")
-      .style("opacity", 0)
-      .attr("class", "tooltip")
-      .style("background-color", "black")
-      .style("border-radius", "5px")
-      .style("padding", "10px")
-      .style("color", "white")
+      .classed("tooltip",true);
+      //.style("opacity", 0) 
+      //.style("background-color", "grey")
+      // .style("border-radius", "5px")
+      // .style("padding", "10px")
+      // .style("color", "white");
 
-      circleGroup.on("mouseover", function(d) {
-        toolTip.style("display", "block")
-            .html(
-              `<strong>${d.Converted_Time_GMT}<strong><hr>${d.Place}<hr>Magnitude: ${d.Magnitude}<hr>Depth: ${d.Depth}`)
-            .style("left", d3.event.pageX + "px")
-            .style("top", d3.event.pageY + "px");
-      })
+    circleGroup.on("mouseover", function(sortedData){
+      toolTip.style("display", "block")
+          .html(
+            `<strong>${(sortedData.Converted_Time_GMT)}<strong><hr>${(sortedData.Place)}<hr>Magnitude: ${(sortedData.Magnitude)}<hr>Depth: ${(sortedData.Depth)}`)
+          .style("left", d3.event.pageX + "px")
+          .style("top", d3.event.pageY + "px");
+    })
         // Step 3: Create "mouseout" event listener to hide tooltip
         .on("mouseout", function() {
           toolTip.style("display", "none");
@@ -164,3 +174,9 @@ d3.csv("quake_df.csv").then(function(quakeData){
     console.log(error);
 
 });
+
+}
+
+makeResponsive();
+
+d3.select(window).on("resize",makeResponsive);
