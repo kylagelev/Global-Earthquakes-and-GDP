@@ -384,8 +384,7 @@ function updatePlotly(){
             imageGroup.on("mouseover", function(gdpData) {
               toolTip.style("display", "block")
                   .html(
-                    `<strong>Year:${dateFormatter(gdpData[10].Year)}<strong><hr>GDP Per Capita:$${(gdpData[10].GDPpercapita)}
-                <hr>Location:Japan`)
+                    `<strong>Year:${dateFormatter(gdpData[10].Year)}<strong><hr>GDP Per Capita:$${gdpData[10].GDPpercapita}<hr>Location:Japan`)
                   .style("left", d3.event.pageX + "px")
                   .style("top", d3.event.pageY + "px");
             })

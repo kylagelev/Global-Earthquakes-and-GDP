@@ -142,16 +142,18 @@ d3.csv("quake_df.csv").then(function(quakeData){
     var toolTip = d3.select("body")
       .append("div")
       .style("opacity", 0)
-      .attr("class", "tooltip")
+      .attr("classed", "tooltip")
       .style("background-color", "black")
       .style("border-radius", "5px")
       .style("padding", "10px")
       .style("color", "white")
+    
+    // var dateFormatter = d3.timeFormat("%d-%b-%y");
 
-      circleGroup.on("mouseover", function(d) {
+      circleGroup.on("mouseover", function(quakeData) {
         toolTip.style("display", "block")
             .html(
-              `<strong>${d.Converted_Time_GMT}<strong><hr>${d.Place}<hr>Magnitude: ${d.Magnitude}<hr>Depth: ${d.Depth}`)
+              `<strong>${dateFormatter(quakeData.Converted_Time_GMT)}<strong><hr>${quakeData.Place}<hr>Magnitude: ${quakeData.Magnitude}<hr>Depth: ${quakeData.Depth}`)
             .style("left", d3.event.pageX + "px")
             .style("top", d3.event.pageY + "px");
       })

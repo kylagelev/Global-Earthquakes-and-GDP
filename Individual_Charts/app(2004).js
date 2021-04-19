@@ -1,7 +1,20 @@
+
+
+
+function makeResponsive() {
+  // if the SVG area isn't empty when the browser loads,
+  // remove it and replace it with a resized version of the chart
+  var svgArea = d3.select("body").select("svg");
+  // clear svg is not empty
+  if (!svgArea.empty()) {
+    svgArea.remove();
+    }}
+
 d3.selectAll("#selDataset").on("change", updatePlotly);
 
 
 function updatePlotly(){
+  makeResponsive()
 
 // Define SVG area dimensions
 var svgWidth = 960;
@@ -98,7 +111,8 @@ var labelsGroup = chartGroup.append("g")
     .attr("y", 20)
     .attr("value", "years") // value to grab for event listener
     .classed("active", true)
-    .text("Years (2000-2019)");
+    .text("Years (2000-2019)")
+    .style("color","black")
 
     var circlesGroup = chartGroup.selectAll("circle")
     .data([gdpData])
@@ -120,7 +134,7 @@ var labelsGroup = chartGroup.append("g")
     .data([gdpData])
     .enter()
     .append("image")
-    .attr('xlink:href', 'https://cdn.britannica.com/s:180x120,c:crop/38/4038-050-BDDBA6AB/Flag-Thailand.jpg')
+    .attr('xlink:href', 'https://d2v9ipibika81v.cloudfront.net/uploads/sites/77/2015/08/indonesian-flag-350x239.png')
     .attr('width', 30)
     .attr('height', 30)
 
@@ -186,7 +200,7 @@ var labelsGroup = chartGroup.append("g")
       var xTimeScale = d3.scaleTime()
       .range([0,chartWidth])
       .domain(d3.extent(gdpData, data=>data.Year))
-    
+
       var yLinearScale =d3.scaleLinear()
         .range([chartHeight,0])
         .domain([0,d3.max(gdpData,data=>data.GDP)])
@@ -250,7 +264,7 @@ var labelsGroup = chartGroup.append("g")
         .data([gdpData])
         .enter()
         .append("image")
-        .attr('xlink:href', 'https://cdn.britannica.com/s:180x120,c:crop/38/4038-050-BDDBA6AB/Flag-Thailand.jpg')
+        .attr('xlink:href', 'https://d2v9ipibika81v.cloudfront.net/uploads/sites/77/2015/08/indonesian-flag-350x239.png')
         .attr('width', 30)
         .attr('height', 30)
     
@@ -378,7 +392,7 @@ var labelsGroup = chartGroup.append("g")
         .data([gdpData])
         .enter()
         .append("image")
-        .attr('xlink:href', 'https://cdn.britannica.com/s:180x120,c:crop/38/4038-050-BDDBA6AB/Flag-Thailand.jpg')
+        .attr('xlink:href', 'https://d2v9ipibika81v.cloudfront.net/uploads/sites/77/2015/08/indonesian-flag-350x239.png')
         .attr('width', 30)
         .attr('height', 30)
     
@@ -405,7 +419,7 @@ var labelsGroup = chartGroup.append("g")
       .attr("x", 0 - (chartHeight / 2))
       .attr("dy", "1em")
       .classed("axis-text", true)
-      .text("GDP ($)")
+      .text("GDP Per Capita ($)")
     
     
         .on("mouseout", function() {
@@ -433,7 +447,6 @@ var labelsGroup = chartGroup.append("g")
 }
 
 }
-
 
 
 //Initial Params
