@@ -34,10 +34,6 @@ def scrape():
     newest_magnitude = all_mag[5].text
     newest_time = all_time[0].text
 
-
-    
-   
-
    
     quake_info = {
         "newest_region": newest_region,
