@@ -172,7 +172,78 @@ var USA = {
     yaxis: {
       autorange: true,
       type: 'linear'
-    }
+    },
+    shapes: [
+      // 1st highlight during Feb 4 - Feb 6
+      {
+          type: 'rect',
+          // x-reference is assigned to the x-values
+          xref: 'x',
+          // y-reference is assigned to the plot paper [0,1]
+          yref: 'paper',
+          x0: '2002',
+          y0: 0,
+          x1: '2007',
+          y1: 1,
+          fillcolor: 'grey',
+          opacity: 0.2,
+          line: {
+              width: 0
+          }
+        },
+        {
+          type: 'rect',
+          // x-reference is assigned to the x-values
+          xref: 'x',
+          // y-reference is assigned to the plot paper [0,1]
+          yref: 'paper',
+          x0: '2004',
+          y0: 0,
+          x1: '2006',
+          y1: 1,
+          fillcolor: 'red',
+          opacity: 0.2,
+          line: {
+              width: 0
+          }
+        },
+
+          {
+              type: 'rect',
+              // x-reference is assigned to the x-values
+              xref: 'x',
+              // y-reference is assigned to the plot paper [0,1]
+              yref: 'paper',
+              x0: '2010',
+              y0: 0,
+              x1: '2014',
+              y1: 1,
+              fillcolor: 'grey',
+              opacity: 0.2,
+              line: {
+                  width: 0
+              }
+            },
+            {
+              type: 'rect',
+              // x-reference is assigned to the x-values
+              xref: 'x',
+              // y-reference is assigned to the plot paper [0,1]
+              yref: 'paper',
+              x0: '2012',
+              y0: 0,
+              x1: '2013',
+              y1: 1,
+              fillcolor: 'red',
+              opacity: 0.2,
+              line: {
+                  width: 0
+              }
+              // mode: 'text',
+              // text: 'Earthquake (04-11-2012)'
+            },
+          ]
+        
   }
 
   Plotly.newPlot('plot', data, layout)
