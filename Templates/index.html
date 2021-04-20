@@ -10,12 +10,13 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
+    <a href="index.html" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
     <!-- meet the team bootstrap tag -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- Float links to the right. Hide them on small screens -->
     
     <div class="w3-right w3-hide-small">
+      <a href="top5.html" class="w3-bar-item w3-button">Top 5 Magnitude Earthquakes</a>
       <a href="#countries" class="w3-bar-item w3-button">Countries</a>
       <a href="#about" class="w3-bar-item w3-button">Comparison</a>
       <a href="#contact" class="w3-bar-item w3-button">Heat Map</a>
@@ -28,17 +29,31 @@
 <br>
 <!-- Header -->
 <!-- <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="https://gray-wkyt-prod.cdn.arcpublishing.com/resizer/6vMrlFQQPC_C2ooaAFCcTKPJZIc=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/AOU4S7CU6VJYFGM7GTGMDHFKIY.jpg" alt="Architecture" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>TR</b></span> <span class="w3-hide-small w3-text-light-grey">Tremors</span></h1>
+<div class="w3-card-4">
+  <img src="http://inapcache.boston.com/universal/site_graphics/blogs/bigpicture/quake1/bp1.jpg" alt="Alps" style="max-width:1500px">
+  
+  <div class="w3-container w3-center">
+    
+    <p>The Italian / Austrian Alps</p>
   </div>
+</div>
 </header> -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="http://inapcache.boston.com/universal/site_graphics/blogs/bigpicture/quake1/bp1.jpg" alt="Quake" width="1400" height="700">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class=" w3-black w3-opacity-min"><b>Natural disasters have devasting immediate impacts, but their long-term effects on the economy are not well understood.</b></span>
+      <!-- <span class="w3-hide-small w3-text-light-grey">The 2011 Earthquake caused upwards of $235billion in property damage.</span></h1> -->
+    <!-- <p>Japan Earthquake</p> -->
+  </div>
+</header>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-    <div class="w3-content w3-padding" style="max-width:1564px">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Top 5 Earthquakes in the Past 50 Years</h3>
-      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1STO3ui244lTWk3_7WO4oeH_JaYk33OxALkl_STR0s-w&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+<header class="w3-display-container w3-content w3-wide col-12 text-center" style="max-width:1500px;" id="home">
+    <div class="w3-content w3-padding" style="max-width:1564px"></div>
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Motivation</h3>
+        <p>We will be using GDP to measure the long-term effects Earthquakes have on the economy.
+        </p>
+      <!-- <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1STO3ui244lTWk3_7WO4oeH_JaYk33OxALkl_STR0s-w&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe> -->
   </header>
 
 <!-- Page content -->
@@ -53,7 +68,7 @@
 
 
 
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container h-100">
               <div class="row h-100 align-items-center">
                 <div class="col-12 text-center"  id="vpadding">
@@ -62,27 +77,41 @@
                 </div>
               </div>
             </div>
-          </header>
+          </header> -->
   
   
-                  <!-- News  -->
-                  <div class="container">
+                  <!-- webscraping  -->
+                  <!-- <div class="container">
                     <div class="col-12 text-center"  id="vpadding">
                       
                     <h3>Latest Earthquake</h3>
                     <h6 >Epicenter: {{quake_info.newest_region}}</h6>
                     <p>Magnitude: {{quake_info.newest_magnitude}}</p>
                     <p>Time: {{quake_info.newest_time}}</p>
-                </div>
+                </div> -->
   <br>
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <div class="col-12 text-center"  id="vpadding">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Motivation</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
+  <!-- Earthquake Section -->
+  <div class="w3-container w3-padding-32" id="Earthquake">
+    <!-- <div class="col-12 text-center"  id="vpadding"> -->
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 col-12 text-center">What Causes an Earthquake</h3>
+    <img class="w3-image w3-border-light-grey" src="http://www.calacademy.org/sites/default/files/assets/images/explorescience/earthquake/infographic_anatomyofanearthquake-1920x1080.jpg" style= "float:right;" width="600" height="600">
+
+    <p class= "w3-center "><br><br><br><br><br><br>An&nbsp;<strong>earthquake</strong>&nbsp;is what happens when two blocks of the earth suddenly slip past one another. <br>
+      The surface where they slip is called the&nbsp;<strong>fault</strong>&nbsp;or<em>&nbsp;</em><strong>fault plane</strong>. <br>
+      The location below the earth’s surface where the earthquake starts is called the&nbsp;<strong>hypocenter</strong>, <br>
+      and the location directly above it on the surface of the earth is called the&nbsp;<strong>epicenter</strong>.</p>
+    
+  </div>
+
+   <!-- GDP Section -->
+   <div class="w3-container w3-padding-32 w3-display-container" id="GDP">
+    <!-- <div class="col-12 text-center"  id="vpadding"> -->
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 col-12 text-center">What is GDP</h3>
+    <br><br><br><br>
+    <img class="w3-image w3-border w3-border-light-grey" src="https://www.thebalance.com/thmb/ash_JBRjM2z6HFnVxQTs-OkAQg8=/950x0/filters:max_bytes(150000):strip_icc():format(webp)/u-s-gdp-5-latest-statistics-and-how-to-use-them-3306041-Final-3eaf7113efd34bdcbca4688d05d59ce3.png" style= "float:left;" width="600" height="600">
+    <p class= "w3-center "><br><br><br><br><br><br>Gross domestic product (GDP) is the total monetary or market value of all the finished goods and services <br> produced within a country's borders in a specific time period.<br> 
+      As a broad measure of overall domestic production, it functions as a comprehensive scorecard of a given country’s economic health. 
     </p>
   </div>
 
@@ -90,7 +119,7 @@
 
 
   <!-- Countries Section -->
-  <div class="w3-container w3-padding-32" id="countries">
+  <!-- <div class="w3-container w3-padding-32" id="countries">
     <div class="col-12 text-center"  id="vpadding">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Countries</h3>
   </div>
@@ -117,7 +146,7 @@
         <a href="https://www.linkedin.com/in/aaron-karpie-4019aa117/"></href>
         <img src="/static/assets/images/img/japan.jpg" alt="House" style="width:100%"></a>
       </div>
-    </div>
+    </div> -->
     
 
   <!-- About Section -->

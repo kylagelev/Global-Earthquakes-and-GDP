@@ -16,7 +16,7 @@ def home():
     # find one record of mars info
     quake_info = mongo.db.collection.find_one()
 
-    return render_template("index.html", quake_info=quake_info)
+    return render_template("top5.html", quake_info=quake_info)
 
 
 # setup scrape route
