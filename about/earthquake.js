@@ -25,7 +25,7 @@ var height = svgHeight - margin.top - margin.bottom;
 var width = svgWidth - margin.left - margin.right;
 
 // append svg and group
-var svg = d3.select("body")
+var svg = d3.select(".w3-center")
   .append("svg")
   .attr("height", svgHeight)
   .attr("width", svgWidth);
@@ -149,7 +149,7 @@ d3.csv("../quake_df.csv").then(function(quakeData){
     .style("fill","gray");
 
     // Tool Tip
-    var toolTip = d3.select("svg")
+    var toolTip = d3.select(".w3-center")
       .append("div")
       .classed("tooltip",true);
       //.style("opacity", 0) 
@@ -165,7 +165,7 @@ d3.csv("../quake_df.csv").then(function(quakeData){
           .style("left", d3.event.pageX + "px")
           .style("top", d3.event.pageY + "px");
     })
-        // Step 3: Create "mouseout" event listener to hide tooltip
+      // Step 3: Create "mouseout" event listener to hide tooltip
         .on("mouseout", function() {
           toolTip.style("display", "none");
         });

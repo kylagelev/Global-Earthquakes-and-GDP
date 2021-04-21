@@ -83,14 +83,15 @@ function runEnter(){
     // // var lon = data.features.geometry.coordinates[1]
     // var magnitude = data.features.properties.mag
 
-    var time={};
+    var feature = data.features;
+    var time = [];
+    //console.log(feature)
+    console.log(feature[0].properties.time)
+    // console.log(data.features[0].properties.time)
 
-
-    console.log(data.features[0].properties.time)
-
-    for (var i = 0; i++; i < data.length()){
-      time.append(data.features[i].properties.time);
-      console.log(data.features[i].properties.time);
+    for (var i = 0; i < feature.length; i++){
+      time.append(feature[i].properties.time);
+      console.log(feature[i].properties.time);
       
     }
   
