@@ -57,6 +57,11 @@ def map():
         
         return render_template('test_map.html')
 
+@app.route("/api/v1.0/compare")
+def compare():
+        
+        return render_template('compare_plot.html')
+
 @app.route('/api/v1.0/get_GDP')
 def get_GDP():
         session = Session(engine)
