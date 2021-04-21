@@ -149,9 +149,8 @@ d3.csv("../quake_df.csv").then(function(quakeData){
     .style("fill","gray");
 
     // Tool Tip
-    var toolTip = d3.select("body")
+    var toolTip = d3.select("svg")
       .append("div")
-<<<<<<< HEAD
       .classed("tooltip",true);
       //.style("opacity", 0) 
       //.style("background-color", "grey")
@@ -166,24 +165,6 @@ d3.csv("../quake_df.csv").then(function(quakeData){
           .style("left", d3.event.pageX + "px")
           .style("top", d3.event.pageY + "px");
     })
-=======
-      .style("opacity", 0)
-      .attr("classed", "tooltip")
-      .style("background-color", "black")
-      .style("border-radius", "5px")
-      .style("padding", "10px")
-      .style("color", "white")
-    
-    // var dateFormatter = d3.timeFormat("%d-%b-%y");
-
-      circleGroup.on("mouseover", function(quakeData) {
-        toolTip.style("display", "block")
-            .html(
-              `<strong>${dateFormatter(quakeData.Converted_Time_GMT)}<strong><hr>${quakeData.Place}<hr>Magnitude: ${quakeData.Magnitude}<hr>Depth: ${quakeData.Depth}`)
-            .style("left", d3.event.pageX + "px")
-            .style("top", d3.event.pageY + "px");
-      })
->>>>>>> d527f8d7027a3726c0d3b147a18099de9e4706d8
         // Step 3: Create "mouseout" event listener to hide tooltip
         .on("mouseout", function() {
           toolTip.style("display", "none");
