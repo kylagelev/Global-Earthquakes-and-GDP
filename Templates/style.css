@@ -162,4 +162,73 @@ body {
 
 
 
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    background-color:silver
+  }
+  
+  .axis {
+    font: 14px sans-serif;
+  }
+  
+  .line {
+    fill: none;
+    stroke:red;
+    stroke-width: 2px;
+  }
+  
+  .tooltip {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    font: 12px sans-serif;
+    text-align: center;
+    color: white;
+    background: blue;
+    border: 0;
+    border-radius: 10px;
+    display: none;
+  }
 
+
+
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    #map,
+    body,
+    html {
+      height: 100%;
+    }
+
+
+
+    /* html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.axis {
+  font: 14px sans-serif;
+}
+
+.line {
+  fill: none;
+  stroke:black;
+  stroke-width: 2px;
+}
+
+.bubbles {
+  stroke-width: 1px;
+  stroke: black;
+  opacity: .8
+}
+.bubbles:hover {
+  stroke: black;
+} */
