@@ -114,7 +114,7 @@ body {
     text-decoration: none;
   }
   
-  .dropdown {
+  /* .dropdown {
     float: left;
     overflow: hidden;
   }
@@ -158,24 +158,26 @@ body {
   
   .dropdown:hover .dropdown-content {
     display: block;
-  }
+  } */
 
 
 
-  html,
+  
   body {
-    padding: 0;
-    margin: 0;
-    background-color:silver
+    padding: 0px;
+    margin: 0px;
+    background-color:rgb(188, 220, 223);
+    align-items:center;
   }
   
   .axis {
     font: 14px sans-serif;
+    color:rgba(6, 8, 90, 0.685)
   }
   
   .line {
     fill: none;
-    stroke:red;
+    stroke:rgb(6, 75, 40);
     stroke-width: 2px;
   }
   
@@ -186,8 +188,8 @@ body {
     padding: 10px;
     font: 12px sans-serif;
     text-align: center;
-    color: white;
-    background: blue;
+    color: rgb(232, 228, 238);
+    background: rgb(4, 87, 80);
     border: 0;
     border-radius: 10px;
     display: none;
@@ -206,7 +208,9 @@ body {
       height: 100%;
     }
 
-
+header{
+  text-align: center;
+}
 
     /* html,
 body {
@@ -232,3 +236,7 @@ body {
 .bubbles:hover {
   stroke: black;
 } */
+
+
+
+

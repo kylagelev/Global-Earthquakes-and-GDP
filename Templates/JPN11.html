@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>Tremors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+<link rel="stylesheet"  href="style.css">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+  <body>
+
+
+        <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
+        
+        <div class="w3-right w3-hide-small">
+          <a href="top5.html" class="w3-bar-item w3-button">Top 5 Magnitude Earthquakes</a>
+          <div class="w3-dropdown-hover">
+            <div class="w3-button">Countries</div>
+              <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="IND04.html" class="w3-bar-item w3-button">2004 Indonesia</a>
+                <a href="IND05.html" class="w3-bar-item w3-button">2005 Indonesia</a>
+                <a href="CHL10.html" class="w3-bar-item w3-button">2010 Chile</a>
+                <a href="JPN11.html" class="w3-bar-item w3-button">2011 Japan</a>
+                <a href="IND12.html" class="w3-bar-item w3-button">2012 Indonesia</a>
+              </div>
+          </div>
+          <div class="w3-dropdown-hover">
+            <div class="w3-button">Comparison</div>
+              <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="IND_comp.html" class="w3-bar-item w3-button">Indonesia</a>
+                <a href="JPN_comp.html" class="w3-bar-item w3-button">Japan</a>
+                <a href="CHL_comp.html" class="w3-bar-item w3-button">Chile</a>
+              </div>
+          </div>
+          <a href="heat_map.html" class="w3-bar-item w3-button">Heat Map</a>
+          <a href="depth.html" class="w3-bar-item w3-button">Depth Chart</a>
+
+        </div>
+      </div>
+    </div>
+
+  <br>
+  <br>
+      <!-- Banner -->
+      <header class="w3-display-container w3-content w3-wide w3-bar-item w3-center" style="max-width:1500px;" id="home">
+        <img src="https://www.oregonlive.com/resizer/nGtknryGSx_Da78rvZxoFxSWldU=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.oregonlive.com/home/olive-media/width2048/img/business_impact/photo/japan-earthquakejpg-4dffe95777b83bec.jpg" 
+  alt="Alps" width= "1500" height= "500" >
+        
+        <div class="w3-container w3-center">
+          
+          <p class= "w3-center w3-xxlarge">Japan</p>
+        </div>
+      </div>
+      </header>
+
+    <br><br>
+
+    <!-- Visuals-->
+    <div class="w3-container w3-padding-32" id="Earthquake">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 col-12 text-center">2011: Offfhore Great Tohoku Earthquake</h3>
+      <h4> Magnitude: 9.1</h4>
+    
+      <select id="selDataset">
+          <option value="dataset1">GDP Growth (%)</option>
+          <option value="dataset2">GDP</option>
+          <option value="dataset3">GDP Per Capita</option>
+        </select>
+      <p class= "text-center"><script src="app(2010).js"></script></p>
+    </div>
+
+    <p class= "w3-right w3-row-padding w3-card">An&nbsp;<strong>earthquake</strong>&nbsp;is what happens when two blocks of the earth suddenly slip past one another. <br>
+      The surface where they slip is called the&nbsp;<strong>fault</strong>&nbsp;or<em>&nbsp;</em><strong>fault plane</strong>. <br>
+      The location below the earth’s surface where the earthquake starts is called the&nbsp;<strong>hypocenter</strong>, <br>
+      and the location directly above it on the surface of the earth is called the&nbsp;<strong>epicenter</strong>.</p>
+
+  </body>
+</html>

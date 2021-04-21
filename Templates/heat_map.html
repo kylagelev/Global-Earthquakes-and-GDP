@@ -6,29 +6,48 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet"  href="style.css">
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
-    <div class="w3-right w3-hide-small">
-      <a href="top5.html" class="w3-bar-item w3-button">Top 5 Magnitude Earthquakes</a>
-      <a href="#countries" class="w3-bar-item w3-button">Countries</a>
-      <a href="#about" class="w3-bar-item w3-button">Comparison</a>
-      <a href="#contact" class="w3-bar-item w3-button">Heat Map</a>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+          <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+          <a href="index.html" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
+          
+          <div class="w3-right w3-hide-small">
+              <a href="top5.html" class="w3-bar-item w3-button">Top 5 Magnitude Earthquakes</a>
+              <div class="w3-dropdown-hover">
+              <div class="w3-button">Countries</div>
+                  <div class="w3-dropdown-content w3-bar-block w3-border">
+                  <a href="IND04.html" class="w3-bar-item w3-button">2004 Indonesia</a>
+                  <a href="IND05.html" class="w3-bar-item w3-button">2005 Indonesia</a>
+                  <a href="CHL10.html" class="w3-bar-item w3-button">2010 Chile</a>
+                  <a href="JPN11.html" class="w3-bar-item w3-button">2011 Japan</a>
+                  <a href="IND12.html" class="w3-bar-item w3-button">2012 Indonesia</a>
+                  </div>
+              </div>
+              <div class="w3-dropdown-hover">
+              <div class="w3-button">Comparison</div>
+                  <div class="w3-dropdown-content w3-bar-block w3-border">
+                  <a href="IND_comp.html" class="w3-bar-item w3-button">Indonesia</a>
+                  <a href="JPN_comp.html" class="w3-bar-item w3-button">Japan</a>
+                  <a href="CHL_comp.html" class="w3-bar-item w3-button">Chile</a>
+                  </div>
+              </div>
+              <a href="heat_map.html" class="w3-bar-item w3-button">Heat Map</a>
+              <a href="depth.html" class="w3-bar-item w3-button">Depth Chart</a>
+  
+          </div>
+          </div>
+      </div>
 
-      
-    </div>
-  </div>
-</div>
+
 <br><br><br><br>
   <!-- Earthquake Section -->
   <div class="w3-container w3-padding-32" id="Earthquake">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 col-12 text-center">Earthquake Heat Map from 2000-2019</h3>
+    <p class= "w3-center"> Click to toggle where the top 5 Earthquakes took place.</p>
 
     </div>
 
@@ -51,6 +70,7 @@
     <!-- <script src="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojsonp"></script> -->
    
   </div>
+  
 
 </body>
 </html>
