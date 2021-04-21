@@ -46,9 +46,9 @@ def home():
                 "/api/v1.0/get_GDP_USA<br/>"
                 "/api/v1.0/get_quake<br/>")
 
-@app.route("/api/v1.0//test")
+@app.route("/api/v1.0/test")
 def test():
-
+        
         return render_template('test.html')
 
 @app.route('/api/v1.0/get_GDP')
