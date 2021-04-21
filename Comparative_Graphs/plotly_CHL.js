@@ -164,7 +164,7 @@ function buildPlot() {
       var data = [CHL, BRA, CHN, GBR, IND, RUS, USA]
     
       var layout = {
-        title: `GDP Across Major 7 Countries + Japan`,
+        title: `GDP Across Major 7 Countries + Chile`,
         xaxis: {
           range: [CHL_Y[0], CHL_Y[20]],
           type: 'date'

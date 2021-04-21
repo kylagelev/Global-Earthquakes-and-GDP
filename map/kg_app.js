@@ -14,7 +14,7 @@ var myMap = L.map("map", {
     accessToken: API_KEY
   }).addTo(myMap);
 
-  d3.csv('../quake_df.csv').then(function(response){
+  d3.json('../Flask/flask_app.py/get_quake').then(function(response){
     console.log(response)
 
     console.log(response[0].Longitude)
