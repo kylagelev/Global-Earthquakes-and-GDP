@@ -17,8 +17,15 @@ var myMap = L.map("map", {
   d3.json('/api/v1.0/map').then(function(response){
     console.log(response)
 
-    console.log(response[0].Longitude)
-    console.log(response[0].Latitude)
+//longitude is position 1 in array
+//latitude is position 2 in array
+//place is position 6 in array
+//magnitude is position 5 in array
+//time is position 8 in array
+//depth is position 4 in array
+
+    console.log(response[0][1])
+    console.log(response[0][2])
 
     var heatArray = []
     var magnitude = []
@@ -29,8 +36,8 @@ var myMap = L.map("map", {
         var location = response[i]
         
         if (location){
-            heatArray.push([location.Longitude, location.Latitude, location.Magnitude]);
-            magnitude.push(location.Magnitude)
+            heatArray.push([location[2], location[1], location[5]]);
+            magnitude.push(location[5])
         }
     }
 
@@ -63,15 +70,15 @@ var myMap = L.map("map", {
       shadowAnchor: [30, 15]
       });
       earthquakeMarkers.push(
-        L.marker([response[i].Longitude, response[i].Latitude], {icon: myIcon}).bindPopup("<h4>" + `Place: ` + "</h4>" + response[i].Place  +
+        L.marker([response[i][1], response[i][2]], {icon: myIcon}).bindPopup("<h4>" + `Place: ` + "</h4>" + response[i][6]  +
                                                                           
                                                                           // "<h4>" + `Longitude: ` + "</h4>" + response[i].Longitude +
                                                                           
                                                                           // "<h4>" + `Latitude: ` + "</h4>" + response[i].Latitude +
                                                                            
-                                                                          "<h4>" + `Magnitude: ` + "</h4>" + response[i].Magnitude +
+                                                                          "<h4>" + `Magnitude: ` + "</h4>" + response[i][5] +
                                                                           
-                                                                          "<h4>" + `Date: ` + "</h4>" + response[i].Converted_Time_GMT )
+                                                                          "<h4>" + `Date: ` + "</h4>" + response[i][8] )
       );
     }
 
@@ -123,59 +130,4 @@ var myMap = L.map("map", {
 
     //adding marker layer, indicating the top 5 by magnitude earthquakes
     L.control.layers(earthquakes).addTo(myMap);
-
-    // function updateList(timeline) {
-    //   var displayed = timeline.getLayers();
-    //   var list = document.getElementById("displayed-list");
-    //   list.innerHTML = "";
-    //   displayed.forEach(function (quake) {
-    //     var li = document.createElement("li");
-    //     li.innerHTML = quake.feature.properties.title;
-    //     list.appendChild(li);
-    //   });
-    // }
-
-    // // eqfeed_callback is called once the earthquake geojsonp file below loads
-    // function eqfeed_callback(data) {
-    //   var getInterval = function (quake) {
-    //     // earthquake data only has a time, so we'll use that as a "start"
-    //     // and the "end" will be that + some value based on magnitude
-    //     // 18000000 = 30 minutes, so a quake of magnitude 5 would show on the
-    //     // map for 150 minutes or 2.5 hours
-    //     return {
-    //       start: quake.properties.time,
-    //       end: quake.properties.time + quake.properties.mag * 1800000,
-    //     };
-    //   };
-    //   var timelineControl = L.timelineSliderControl({
-    //     formatOutput: function (date) {
-    //       return new Date(date).toString();
-    //     },
-    //   });
-    //   var timeline = L.timeline(data, {
-    //     getInterval: getInterval,
-    //     pointToLayer: function (data, latlng) {
-    //       var hue_min = 120;
-    //       var hue_max = 0;
-    //       var hue =
-    //         (data.properties.mag / 10) * (hue_max - hue_min) + hue_min;
-    //       return L.circleMarker(latlng, {
-    //         radius: data.properties.mag * 3,
-    //         color: "hsl(" + hue + ", 100%, 50%)",
-    //         fillColor: "hsl(" + hue + ", 100%, 50%)",
-    //       }).bindPopup(
-    //         '<a href="' + data.properties.url + '">click for more info</a>'
-    //       );
-    //     },
-    //   });
-    //   timelineControl.addTo(myMap);
-    //   timelineControl.addTimelines(timeline);
-    //   timeline.addTo(myMap);
-    //   timeline.on("change", function (e) {
-    //     updateList(e.target);
-    //   });
-    //   updateList(timeline);
-    // }
-
-    // eqfeed_callback(date)
     })
