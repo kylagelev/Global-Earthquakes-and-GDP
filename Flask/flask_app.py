@@ -51,6 +51,12 @@ def test():
         
         return render_template('test.html')
 
+
+@app.route("/api/v1.0/map")
+def map():
+        
+        return render_template('test_map.html')
+
 @app.route('/api/v1.0/get_GDP')
 def get_GDP():
         session = Session(engine)
