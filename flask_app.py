@@ -69,10 +69,10 @@ def CHL10():
         
         return render_template('CHL10.html')
 
-# @app.route("/api/v1.0/depth")
-# def depth():
+@app.route("/api/v1.0/depth")
+def depth():
         
-#         return render_template('depth.html')
+        return render_template('depth.html')
 
 @app.route("/api/v1.0/heat_map")
 def heat_map():
