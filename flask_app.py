@@ -100,6 +100,8 @@ def IND12():
         
         return render_template('IND12.html')
 
+
+
 @app.route("/api/v1.0/JPN11")
 def JPN11():
         
@@ -114,6 +116,16 @@ def top5():
 
     return render_template("top5.html", quake_info=quake_info)
         
+
+@app.route("/api/v1.0/jpn_comp")
+def jpn_comp():
+        
+        return render_template('jpn_comp.html')
+
+
+
+
+
 
 
 @app.route("/api/v1.0/all_data")
