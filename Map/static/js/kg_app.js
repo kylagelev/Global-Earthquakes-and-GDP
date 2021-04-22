@@ -11,10 +11,11 @@ var myMap = L.map("map", {
     maxZoom: 18,
     zoomOffset: -1,
     id: "mapbox/streets-v11",
-    accessToken: API_KEY
+    accessToken: "pk.eyJ1Ijoia3lsYWdlbGV2IiwiYSI6ImNrbjF6b3RmNzBzOGsydXFwaXplajU3amcifQ.--GxVlzMIA4n03YABveKKw"
   }).addTo(myMap);
 
-  d3.json('/api/v1.0/map').then(function(response){
+
+  d3.json('/api/v1.0/get_quake').then(function(response){
     console.log(response)
 
 //longitude is position 1 in array
@@ -36,7 +37,7 @@ var myMap = L.map("map", {
         var location = response[i]
         
         if (location){
-            heatArray.push([location[2], location[1], location[5]]);
+            heatArray.push([location[1], location[2], location[5]]);
             magnitude.push(location[5])
         }
     }
