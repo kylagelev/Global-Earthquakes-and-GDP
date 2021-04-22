@@ -218,5 +218,6 @@ def get_quake():
         jsonquake = jsonify(results)
         return(jsonquake)
 
+        
 if __name__ == '__main__':
     app.run(debug=True)
