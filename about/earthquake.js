@@ -92,12 +92,12 @@ d3.csv("../quake_df.csv").then(function(quakeData){
 
 
     // Append a path for line1
-    // chartGroup.append("path")
-    // .data([sortedData])
-    // .attr("d", line1)
-    // .attr("stroke","black")
-    // .attr("stroke-width",2)
-    // .attr("fill","none");
+    chartGroup.append("path")
+    .data([sortedData])
+    .attr("d", line1)
+    .attr("stroke","black")
+    .attr("stroke-width",2)
+    .attr("fill","none");
 
   // Add labels for x and y labels
 
@@ -120,32 +120,17 @@ d3.csv("../quake_df.csv").then(function(quakeData){
       .domain([d3.min(sortedData,d=>d.Depth),d3.max(sortedData, d => d.Depth)])
       .range([0,30]);
 
-  // // Hover Event
-
-  //   // What to do when one group is hovered
-  //   var highlight = function(d){
-  //     // reduce opacity of all groups
-  //     d3.selectAll(".bubbles").style("opacity", .05)
-  //     // expect the one that is hovered
-  //     d3.selectAll("."+d).style("opacity", 1)
-  //   }
-
-  //   // And when it is not hovered anymore
-  //   var noHighlight = function(d){
-  //     d3.selectAll(".bubbles").style("opacity", 0.8)
-  // }
-
 
   // Circle Markers
   var circleGroup = chartGroup.append('g')
     .selectAll("dot")
-    .data(sortedData)
+    .data(sortedData) //data.feature
     .enter()
     .append("circle")
     .attr("class", function(d) { return "bubbles" + d.magnitude} )
-    .attr("cx", d => xTimeScale(d.Converted_Time_GMT))
+    .attr("cx", d => xTimeScale(d.Converted_Time_GMT)) //d.prop
     .attr("cy", d => yLinearScale1(d.Magnitude))
-    .attr("r", d => z(d.Depth))
+    .attr("r", 2)
     .style("fill","gray");
 
     // Tool Tip
