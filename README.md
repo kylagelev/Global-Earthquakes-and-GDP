@@ -24,7 +24,7 @@ Data links can be found at [All_Data](http://127.0.0.1:5000/api/v1.0/all_data).
 Using created routes, specific datasets were loaded into Javascript files to create visualizations.
 *These visualizations include the index.html page with scrape activity, heat map, and all three comparison graphs.*
 
-*All Flask jupyter notebook and python test file can be found in the Flask folder.*
+*All Flask jupyter notebook and python test file can be found in the Flask folder.* \
 **Main Flask app can be found in main under flask_app.py**
 
 ## Visualizations
@@ -56,7 +56,7 @@ Compiled Map using Leaflet.js with heatlayer.
 Features markers indicating selected top 5 earthquakes by magnitude. 
 Also includes tooltip so when mouse clicks on marker, place, magnitude, and date appears.
 
-*Test Javascript file used in practice html found in Map/static/js under kg_app.js*
+*Test Javascript file used in practice html found in Map/static/js under kg_app.js* \
 **Javascript file used in Flask found in static/js under kg_app.js**
 
 #### GDP, GDP growth, and GDP per capita vs Timeline Graph(s)
@@ -64,7 +64,7 @@ Interactive D3 graph with 3 dropdown including GDP, GDP growth, and GDP per capi
 The top 5 greatest earthquakes each have a respective graph.
 Each include a country flag animation that moves to time of earthquake and tooltip showing Country, date, and GDP value (based on selected Y value). 
 
-*Test Javascript file used in practice html found in Individual Charts under app(2004).js, app(2005).js, app(2010).js, app(2011JPN).js, app(2012).js*
+*Test Javascript file used in practice html found in Individual Charts under app(2004).js, app(2005).js, app(2010).js, app(2011JPN).js, app(2012).js* \
 **Javascript file used in html found in static/js under app(2004).js, app(2005).js, app(2010).js, app(2011JPN).js, app(2012).js**
 
 #### Comparison Graph(s)
@@ -73,13 +73,13 @@ Gray box in each graph is a 1-2 year reference period to show country's GDP befo
 Red box in each graph is the year period of the earthquake. 
 These are used to help visualize potential changes in GDP, and see whether the drop in GDP in one country enabled another country's GDP to grow (opportunistic advances). (Example: Major export of country affected by earthquake was overtaken by other country.)
 
-*Test Javascript file used in practice html found in Comparative_Graphs/static/js under plotly_CHL.js, plotly_IDN.js, plotly_JPN.js*
+*Test Javascript file used in practice html found in Comparative_Graphs/static/js under plotly_CHL.js, plotly_IDN.js, plotly_JPN.js* \
 **Javascript file used in Flask found in static/js under plotly_CHL.js, plotly_IDN.js, plotly_JPN.js**
 
 ## Website
-All html files can be found in Templates folder. 
-All Javascript files can be found in static/js folder.
-All CSS file can be found in static/css folder.
+All html files can be found in Templates folder. \
+All Javascript files can be found in static/js folder. \
+All CSS file can be found in static/css folder. 
 
 #### Timeline.js
 Timeline.js was the chosen JS library that has not been used in class. 
