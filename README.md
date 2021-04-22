@@ -1,6 +1,6 @@
 # Global-Earthquakes-and-GDP
 ## Question: What are key traits to major earthquakes and how do major earthquakes impact the global economy?
-##### Opportunities of growth in the face of adversity or Opportunities of growth for opportunistic countries
+### Opportunities of growth in the face of adversity or Opportunities of growth for opportunistic countries
 We suspect that a major earthquake will negatively affect a country's GDP, resulting in a temporary decline, however, following a timeframe of two years, we approximate that the GDP will recover.
 
 ## Data Clean-up
@@ -30,7 +30,7 @@ Using created routes, specific datasets were loaded into Javascript files to cre
 ## Visualizations
 *Based on earthquakes dataset and GDP datasets with emphasis on selected top 5 Earthquakes by Magnitude*
 
-##### Top 5 Earthquakes by Magnitude
+### Top 5 Earthquakes by Magnitude
 * 2004 Sumatra (Indonesia) Earthquake, 9.1
 * 2011 Tohoku Region (Japan) Earthquake, 9.1
 * 2010 Bio-Bio (Chile) Earthquake, 8.8
@@ -95,3 +95,5 @@ Includes dates, images, and video for respective earthquake.
 * Japan was steadily growing at a similar rate to China, however following their earthquake, they experienced a decline. China continued to grow, while Japan remained under them, with no future potential surpass. 
 * Chile had slight increase in GDP growth resultins in increase in GDP and GDP per capita.
 * Chile, like Indonesia, remained with the lowest GDP in comparison to other countries. However, it does appear that other countries had a slight increase in their GDP's in the year of Chile's earthquake.
+
+**All visuals, description of process, and conclusions with post mortem can be found in powerpoint presentation**
