@@ -7,7 +7,7 @@ from sqlalchemy import create_engine, func
 from datetime import datetime, timedelta
 from flask_pymongo import PyMongo
 
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, redirect
 
 
 
