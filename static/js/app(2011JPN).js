@@ -123,7 +123,7 @@ d3.csv("Data/GDP_IDN.csv").then(function(gdpData){
       imageGroup.on("mouseover", function(gdpData) {
         toolTip.style("display", "block")
             .html(
-              `<strong>Year:${dateFormatter(gdpData[4].Year)}<strong><hr>GDP Growth:${(gdpData[4].GDPgrowth)}
+              `<strong>Year:${dateFormatter(gdpData[11].Year)}<strong><hr>GDP Growth:${(gdpData[11].GDPgrowth)}
           %<hr>Location:Sumatra`)
             .style("left", d3.event.pageX + "px")
             .style("top", d3.event.pageY + "px");
@@ -156,14 +156,14 @@ d3.csv("Data/GDP_IDN.csv").then(function(gdpData){
       chartGroup.selectAll("circle")
       .transition()
       .duration(1000)
-      .attr("cx", data => xTimeScale(data[4].Year))
-      .attr("cy", data => yLinearScale(data[4].GDPgrowth));
+      .attr("cx", data => xTimeScale(data[11].Year))
+      .attr("cy", data => yLinearScale(data[11].GDPgrowth));
     
       chartGroup.selectAll("image")
       .transition()
       .duration(1000)
-      .attr("x", data => xTimeScale(data[4].Year))
-      .attr("y", data => yLinearScale(data[4].GDPgrowth));
+      .attr("x", data => xTimeScale(data[11].Year))
+      .attr("y", data => yLinearScale(data[11].GDPgrowth));
   })
 }
 

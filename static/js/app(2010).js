@@ -36,7 +36,7 @@ var dropdownMenu = d3.select("#selDataset")
 
 var dataset = dropdownMenu.property("value")
 
-d3.csv("Data/GDP_IDN.csv").then(function(gdpData){
+d3.csv("Data/GDP_CHL.csv").then(function(gdpData){
   console.log(gdpData)
   
   gdpData.forEach(function(data) {
