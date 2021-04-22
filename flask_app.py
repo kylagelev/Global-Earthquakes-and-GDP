@@ -1,12 +1,17 @@
 import numpy as np
-
+import scrape_usgs
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 from datetime import datetime, timedelta
+from flask_pymongo import PyMongo
 
 from flask import Flask, jsonify, render_template
+
+
+
+
 
 database_path = 'updated_earthquake.db'
 engine = create_engine(f'sqlite:///{database_path}')
@@ -29,10 +34,31 @@ session = Session(engine)
 app = Flask(__name__)
 
 
+# Use flask_pymongo to set up mongo connection
+app.config["MONGO_URI"] = "mongodb://localhost:27017/tremors_app"
+mongo = PyMongo(app)
+
 @app.route("/")
 def home():
 
-        return render_template('index.html')
+       # find one record of mars info
+    quake_info = mongo.db.collection.find_one()
+
+    return render_template("index.html", quake_info=quake_info)
+
+
+# setup scrape route
+@app.route("/scrape")
+def scrape():
+   
+    quake_data = scrape_usgs.scrape()
+    
+
+    mongo.db.collection.update({}, quake_data, upsert=True)
+
+    # Redirect back to home page
+    return redirect("/")
+
 
 @app.route("/api/v1.0/CHL_comp")
 def CHL_comp():
