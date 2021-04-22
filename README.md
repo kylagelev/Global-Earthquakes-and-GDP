@@ -1,6 +1,6 @@
 # Global-Earthquakes-and-GDP
 ## Question: What are key traits to major earthquakes and how do major earthquakes impact the global economy?
-**~Opportunities of growth in the face of adversity or Opportunities of growth for opportunistic countries~**
+##### Opportunities of growth in the face of adversity or Opportunities of growth for opportunistic countries
 We suspect that a major earthquake will negatively affect a country's GDP, resulting in a temporary decline, however, following a timeframe of two years, we approximate that the GDP will recover.
 
 ## Data Clean-up
@@ -30,7 +30,7 @@ Using created routes, specific datasets were loaded into Javascript files to cre
 ## Visualizations
 *Based on earthquakes dataset and GDP datasets with emphasis on selected top 5 Earthquakes by Magnitude*
 
-###### Top 5 Earthquakes by Magnitude
+##### Top 5 Earthquakes by Magnitude
 * 2004 Sumatra (Indonesia) Earthquake, 9.1
 * 2011 Tohoku Region (Japan) Earthquake, 9.1
 * 2010 Bio-Bio (Chile) Earthquake, 8.8
@@ -56,16 +56,16 @@ Compiled Map using Leaflet.js with heatlayer.
 Features markers indicating selected top 5 earthquakes by magnitude. 
 Also includes tooltip so when mouse clicks on marker, place, magnitude, and date appears.
 
-*Javascript file used in Flask found in static/js under kg_app.js*
 *Test Javascript file used in practice html found in Map/static/js under kg_app.js*
+**Javascript file used in Flask found in static/js under kg_app.js**
 
 #### GDP, GDP growth, and GDP per capita vs Timeline Graph(s)
 Interactive D3 graph with 3 dropdown including GDP, GDP growth, and GDP per capita over the last 20 years.
 The top 5 greatest earthquakes each have a respective graph.
 Each include a country flag animation that moves to time of earthquake and tooltip showing Country, date, and GDP value (based on selected Y value). 
 
-*Javascript file used in html found in static/js under app(2004).js, app(2005).js, app(2010).js, app(2011JPN).js, app(2012).js*
 *Test Javascript file used in practice html found in Individual Charts under app(2004).js, app(2005).js, app(2010).js, app(2011JPN).js, app(2012).js*
+**Javascript file used in html found in static/js under app(2004).js, app(2005).js, app(2010).js, app(2011JPN).js, app(2012).js**
 
 #### Comparison Graph(s)
 Interactive Plotly graph with annual GDP of respective country with earthquake and BRIC (Brazil, Russia, India, China) countries, plus the USA and the UK.
@@ -73,20 +73,25 @@ Gray box in each graph is a 1-2 year reference period to show country's GDP befo
 Red box in each graph is the year period of the earthquake. 
 These are used to help visualize potential changes in GDP, and see whether the drop in GDP in one country enabled another country's GDP to grow (opportunistic advances). (Example: Major export of country affected by earthquake was overtaken by other country.)
 
-*Javascript file used in Flask found in static/js under plotly_CHL.js, plotly_IDN.js, plotly_JPN.js*
 *Test Javascript file used in practice html found in Comparative_Graphs/static/js under plotly_CHL.js, plotly_IDN.js, plotly_JPN.js*
+**Javascript file used in Flask found in static/js under plotly_CHL.js, plotly_IDN.js, plotly_JPN.js**
 
 ## Website
-
 All html files can be found in Templates folder. 
 All Javascript files can be found in static/js folder.
 All CSS file can be found in static/css folder.
 
 #### Timeline.js
-
 Timeline.js was the chosen JS library that has not been used in class. 
 Used to create an interactive timeline of the Top 5 Major Earthquakes by magnitude. 
 Includes dates, images, and video for respective earthquake.
 
 ## Conclusion
-
+* No significant increase or decrease of earthquakes observed in last 20 years.
+* Higher depth correlated to lower magnitudes.
+* Indonesia had slight decrease in GDP growth following 2004 and 2005 earthquakes, but overall grew in the following years.
+* Indonesia also remained with the lowest GDP in comparison to other countries, and it appears as though there was no significant change in other countries' GDP as a result of the Indonesia's own slight drop in GDP.
+* Japan had decrease in GDP and GDP per capita, with a slight increase in GDP growth (Japan's GDP growth was already in negatives prior to earthquake).
+* Japan was steadily growing at a similar rate to China, however following their earthquake, they experienced a decline. China continued to grow, while Japan remained under them, with no future potential surpass. 
+* Chile had slight increase in GDP growth resultins in increase in GDP and GDP per capita.
+* Chile, like Indonesia, remained with the lowest GDP in comparison to other countries. However, it does appear that other countries had a slight increase in their GDP's in the year of Chile's earthquake.
