@@ -32,6 +32,61 @@ app = Flask(__name__)
 @app.route("/")
 def home():
 
+        return render_template('index.html')
+
+@app.route("/api/v1.0/CHL_comp")
+def CHL_comp():
+        
+        return render_template('CHL_comp.html')
+
+@app.route("/api/v1.0/CHL10")
+def CHL10():
+        
+        return render_template('CHL10.html')
+
+@app.route("/api/v1.0/depth")
+def depth():
+        
+        return render_template('depth.html')
+
+@app.route("/api/v1.0/heat_map")
+def heat_map():
+        
+        return render_template('heat_map.html')
+
+@app.route("/api/v1.0/IND_comp")
+def IND_comp():
+        
+        return render_template('IND_comp.html')
+
+@app.route("/api/v1.0/IND04")
+def IND04():
+        
+        return render_template('IND04.html')
+
+@app.route("/api/v1.0/IND05")
+def IND05():
+        
+        return render_template('IND05.html')
+
+@app.route("/api/v1.0/IND12")
+def IND12():
+        
+        return render_template('IND12.html')
+
+@app.route("/api/v1.0/JPN11")
+def JPN11():
+        
+        return render_template('JPN11.html')
+
+@app.route("/api/v1.0/top5")
+def top5():
+        
+        return render_template('top5.html')
+
+@app.route("/api/v1.0/all_data")
+def all_data():
+
         return (f"Welcome to the Data of Global Earthquakes and GDP.<br/><br/>"
                 "Available Routes:<br/>" 
                 "/api/v1.0/get_GDP <br/>"
@@ -45,22 +100,6 @@ def home():
                 "/api/v1.0/get_GDP_RUS<br/>"
                 "/api/v1.0/get_GDP_USA<br/>"
                 "/api/v1.0/get_quake<br/>")
-
-@app.route("/api/v1.0/test")
-def test():
-        
-        return render_template('test.html')
-
-
-@app.route("/api/v1.0/map")
-def map():
-        
-        return render_template('test_map.html')
-
-@app.route("/api/v1.0/compare")
-def compare():
-        
-        return render_template('compare_plot.html')
 
 @app.route('/api/v1.0/get_GDP')
 def get_GDP():
