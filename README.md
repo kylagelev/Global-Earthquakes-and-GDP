@@ -1,6 +1,6 @@
 # Global-Earthquakes-and-GDP
 ## Question: What are key traits to major earthquakes and how do major earthquakes impact the global economy?
-We suspect that a major earthquake will negatively affect a country's GDP, resulting in a decline. Following two year, we approximate that the GDP will recover.
+We suspect that a major earthquake will negatively affect a country's GDP, resulting in a temporary decline, however, following a timeframe of two years, we approximate that the GDP will recover.
 
 ## Data Clean-up
 #### Data Sources
