@@ -4,8 +4,8 @@ We suspect that a major earthquake will negatively affect a country's GDP, resul
 
 ## Data Clean-up
 #### Data Sources
-[Earthquake Data - USGS](https://earthquake.usgs.gov/fdsnws/event/1/)
-[GDP Data - World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.KD?end=2019&start=1991)
+* [Earthquake Data - USGS](https://earthquake.usgs.gov/fdsnws/event/1/)
+* [GDP Data - World Bank](https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.KD?end=2019&start=1991)
 
 #### Methodology
 Earthquake data collected was earthquakes with greater than 7.0 magnitude and within the last 20 years. 
