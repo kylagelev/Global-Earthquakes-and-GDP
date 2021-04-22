@@ -12,7 +12,7 @@ We suspect that a major earthquake will negatively affect a country's GDP, resul
 Earthquake data collected was earthquakes with greater than 7.0 magnitude and within the last 20 years. 
 GDP data collected was GDP (annual in US dollars), GDP Growth, and GDP per capita.
 
-#### Clean - up
+#### Clean-up
 Loaded datasets into dataframes using pandas in jupyter-notebook. Reviewed data for deficiences, performed data validation, and loaded dataframes to SQL. 
 From SQL, downloaded schema for SQLite to use in Flask app. 
 
@@ -79,7 +79,7 @@ These are used to help visualize potential changes in GDP, and see whether the d
 ## Website
 All html files can be found in Templates folder. \
 All Javascript files can be found in static/js folder. \
-All CSS file can be found in static/css folder. 
+All CSS file(s) can be found in static/css folder. 
 
 #### Timeline.js
 Timeline.js was the chosen JS library that has not been used in class. 
