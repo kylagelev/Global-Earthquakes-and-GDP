@@ -37,7 +37,7 @@ var dropdownMenu = d3.select("#selDataset")
 
 var dataset = dropdownMenu.property("value")
 
-d3.csv("./Data_Cleaning/GDP_csvs/GDP_IDN.csv").then(function(gdpData){
+d3.csv("../Data_Cleaning/GDP_csvs/GDP_IDN.csv").then(function(gdpData){
   console.log(gdpData)
   
   gdpData.forEach(function(data) {
@@ -223,7 +223,7 @@ var dataset = dropdownMenu.property("value")
 
 if (dataset === 'dataset1') {
   
-d3.csv("./Data_Cleaning/GDP_csvs/GDP_IDN.csv").then(function(gdpData){
+d3.csv("../Data_Cleaning/GDP_csvs/GDP_IDN.csv").then(function(gdpData){
 console.log(gdpData)
 
 gdpData.forEach(function(data) {
@@ -356,7 +356,7 @@ var labelsGroup = chartGroup.append("g")
 }else if (dataset==='dataset2'){
   dataset !== 'dataset1'
   dataset !== 'dataset2'
-  d3.csv("./Data_Cleaning/GDP_csvs/GDP_IDN.csv").then(function(gdpData){
+  d3.csv("../Data_Cleaning/GDP_csvs/GDP_IDN.csv").then(function(gdpData){
     console.log(gdpData)
     
     gdpData.forEach(function(data) {
@@ -483,7 +483,7 @@ var labelsGroup = chartGroup.append("g")
         .attr("y", data => yLinearScale(data[4].GDP));
     })
 }else{
-  d3.csv("./Data_Cleaning/GDP_csvs/GDP_IDN.csv").then(function(gdpData){
+  d3.csv("../Data_Cleaning/GDP_csvs/GDP_IDN.csv").then(function(gdpData){
     console.log(gdpData)
     
     gdpData.forEach(function(data) {
