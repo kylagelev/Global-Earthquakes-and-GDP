@@ -90,7 +90,7 @@ Includes dates, images, and video for respective earthquake.
 * No significant increase or decrease of earthquakes observed in last 20 years.
 * Higher depth correlated to lower magnitudes.
 * Indonesia had slight decrease in GDP growth following 2004 and 2005 earthquakes, but overall grew in the following years.
-* Indonesia also remained with the lowest GDP in comparison to other countries, and it appears as though there was no significant change in other countries' GDP as a result of the Indonesia's own slight drop in GDP.
+* Indonesia also remained with the lowest GDP in comparison to other countries, and it appears as though there was no significant change in other countries' GDP as a result of Indonesia's own slight drop in GDP.
 * Japan had decrease in GDP and GDP per capita, with a slight increase in GDP growth (Japan's GDP growth was already in negatives prior to earthquake).
 * Japan was steadily growing at a similar rate to China, however following their earthquake, they experienced a decline. China continued to grow, while Japan remained under them, with no future potential surpass. 
 * Chile had slight increase in GDP growth resultins in increase in GDP and GDP per capita.
