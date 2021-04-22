@@ -34,7 +34,16 @@ Using created routes, specific datasets were loaded into Javascript files to cre
 #### Comparison Graphs
 
 ## Website
+
+All html files can be found in Templates folder. 
+All Javascript files can be found in static/js folder.
+All CSS file can be found in static/css folder.
+
 #### Timeline.js
+
+Timeline.js was the chosen JS library that has not been used in class. 
+Used to create an interactive timeline of the Top 5 Major Earthquakes by magnitude. 
+Includes dates, images, and video for respective earthquake.
 
 ## Conclusion
 
