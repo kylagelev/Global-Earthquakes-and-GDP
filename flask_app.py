@@ -107,8 +107,14 @@ def JPN11():
 
 @app.route("/api/v1.0/top5")
 def top5():
+
         
-        return render_template('top5.html')
+       # find one record of mars info
+    quake_info = mongo.db.collection.find_one()
+
+    return render_template("top5.html", quake_info=quake_info)
+        
+
 
 @app.route("/api/v1.0/all_data")
 def all_data():

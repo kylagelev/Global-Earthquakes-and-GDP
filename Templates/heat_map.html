@@ -10,37 +10,37 @@
 <link rel="stylesheet" href={{ url_for("static", filename="css/style.css") }} />
 <body>
 
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top">
-          <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-          <a href="index.html" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
-          
-          <div class="w3-right w3-hide-small">
-              <a href="top5.html" class="w3-bar-item w3-button">Top 5 Magnitude Earthquakes</a>
-              <div class="w3-dropdown-hover">
-              <div class="w3-button">Countries</div>
-                  <div class="w3-dropdown-content w3-bar-block w3-border">
-                  <a href="IND04.html" class="w3-bar-item w3-button">2004 Indonesia</a>
-                  <a href="IND05.html" class="w3-bar-item w3-button">2005 Indonesia</a>
-                  <a href="CHL10.html" class="w3-bar-item w3-button">2010 Chile</a>
-                  <a href="JPN11.html" class="w3-bar-item w3-button">2011 Japan</a>
-                  <a href="IND12.html" class="w3-bar-item w3-button">2012 Indonesia</a>
-                  </div>
-              </div>
-              <div class="w3-dropdown-hover">
-              <div class="w3-button">Comparison</div>
-                  <div class="w3-dropdown-content w3-bar-block w3-border">
-                  <a href="IND_comp.html" class="w3-bar-item w3-button">Indonesia</a>
-                  <a href="JPN_comp.html" class="w3-bar-item w3-button">Japan</a>
-                  <a href="CHL_comp.html" class="w3-bar-item w3-button">Chile</a>
-                  </div>
-              </div>
-              <a href="heat_map.html" class="w3-bar-item w3-button">Heat Map</a>
-              <a href="depth.html" class="w3-bar-item w3-button">Depth Chart</a>
-  
-          </div>
-          </div>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
+      
+      <div class="w3-right w3-hide-small">
+        <a href="top5.html" class="w3-bar-item w3-button">Top 5 Magnitude Earthquakes</a>
+        <div class="w3-dropdown-hover">
+          <div class="w3-button">Countries</div>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href={{ url_for("IND04") }} class="w3-bar-item w3-button">2004 Indonesia</a>
+              <a href={{ url_for("IND045") }} class="w3-bar-item w3-button">2005 Indonesia</a>
+              <a href={{ url_for("CHL10") }} class="w3-bar-item w3-button">2010 Chile</a>
+              <a href={{ url_for("JPN11") }} class="w3-bar-item w3-button">2011 Japan</a>
+              <a href={{ url_for("IND12") }} class="w3-bar-item w3-button">2012 Indonesia</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+          <div class="w3-button">Comparison</div>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href={{ url_for("IND_comp") }} class="w3-bar-item w3-button">Indonesia</a>
+              <a href={{ url_for("jpn_comp") }} class="w3-bar-item w3-button">Japan</a>
+              <a href={{ url_for("CHL_comp") }} class="w3-bar-item w3-button">Chile</a>
+            </div>
+        </div>
+        <a href={{ url_for("heat_map") }} class="w3-bar-item w3-button">Heat Map</a>
+        <a href={{ url_for("depth") }} class="w3-bar-item w3-button">Depth Chart</a>
+
       </div>
+    </div>
+  </div>
 
 
 <br><br><br><br>

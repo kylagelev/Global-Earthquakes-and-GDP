@@ -6,37 +6,37 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href={{ url_for("static", filename="css/style.css") }} />
   <body>
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="index.html" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
-        
-        <div class="w3-right w3-hide-small">
-          <a href="top5.html" class="w3-bar-item w3-button">Top 5 Magnitude Earthquakes</a>
-          <div class="w3-dropdown-hover">
-            <div class="w3-button">Countries</div>
-              <div class="w3-dropdown-content w3-bar-block w3-border">
-                <a href="IND04.html" class="w3-bar-item w3-button">2004 Indonesia</a>
-                <a href="IND05.html" class="w3-bar-item w3-button">2005 Indonesia</a>
-                <a href="CHL10.html" class="w3-bar-item w3-button">2010 Chile</a>
-                <a href="JPN11.html" class="w3-bar-item w3-button">2011 Japan</a>
-                <a href="IND12.html" class="w3-bar-item w3-button">2012 Indonesia</a>
-              </div>
-          </div>
-          <div class="w3-dropdown-hover">
-            <div class="w3-button">Comparison</div>
-              <div class="w3-dropdown-content w3-bar-block w3-border">
-                <a href="IND_comp.html" class="w3-bar-item w3-button">Indonesia</a>
-                <a href="JPN_comp.html" class="w3-bar-item w3-button">Japan</a>
-                <a href="CHL_comp.html" class="w3-bar-item w3-button">Chile</a>
-              </div>
-          </div>
-          <a href="heat_map.html" class="w3-bar-item w3-button">Heat Map</a>
-          <a href="depth.html" class="w3-bar-item w3-button">Depth Chart</a>
-
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="index.html" class="w3-bar-item w3-button"><b>TR</b> Tremors</a>
+      
+      <div class="w3-right w3-hide-small">
+        <a href="top5.html" class="w3-bar-item w3-button">Top 5 Magnitude Earthquakes</a>
+        <div class="w3-dropdown-hover">
+          <div class="w3-button">Countries</div>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href={{ url_for("IND04") }} class="w3-bar-item w3-button">2004 Indonesia</a>
+              <a href={{ url_for("IND045") }} class="w3-bar-item w3-button">2005 Indonesia</a>
+              <a href={{ url_for("CHL10") }} class="w3-bar-item w3-button">2010 Chile</a>
+              <a href={{ url_for("JPN11") }} class="w3-bar-item w3-button">2011 Japan</a>
+              <a href={{ url_for("IND12") }} class="w3-bar-item w3-button">2012 Indonesia</a>
+            </div>
         </div>
+        <div class="w3-dropdown-hover">
+          <div class="w3-button">Comparison</div>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href={{ url_for("IND_comp") }} class="w3-bar-item w3-button">Indonesia</a>
+              <a href={{ url_for("jpn_comp") }} class="w3-bar-item w3-button">Japan</a>
+              <a href={{ url_for("CHL_comp") }} class="w3-bar-item w3-button">Chile</a>
+            </div>
+        </div>
+        <a href={{ url_for("heat_map") }} class="w3-bar-item w3-button">Heat Map</a>
+        <a href={{ url_for("depth") }} class="w3-bar-item w3-button">Depth Chart</a>
+
       </div>
     </div>
+  </div>
 
   <br><br>
 
@@ -80,35 +80,35 @@
       <div class="w3-col l3 m6 w3-display-container">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">2004 Indonesia</div>
-          <a href="IND04.html"></href>
+          <a href={{ url_for("IND04") }}></href>
           <img src="https://2.bp.blogspot.com/-_ymvKmvIYE8/W4HcGHsjHeI/AAAAAAAAAQ4/IK7OhnzlZAwyQRa9igfm-VA7JIVK99_vgCEwYBhgL/s640/6.PNG" alt="House" style="width:100%" height = "250"></a>
         </div>
       </div>
       <div class="w3-col l3 m6 w3-display-container">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">2005 Indonesia</div>
-          <a href="IND05.html"></href>
+          <a href={{ url_for("IND05") }}></href>
           <img src="https://captureindonesia.com/wp-content/uploads/2017/04/10-of-The-Best-Indonesia-Tourist-Attractions.jpg" alt="House" style="width:100%" height = "250"></a>
         </div>
       </div>
       <div class="w3-col l3 m6 w3-display-container">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">2012 Indonesia</div>
-          <a href="IND12.html"></href>
+          <a href={{ url_for("IND12") }}></href>
           <img src="http://blog.goinglobal.com/wp-content/uploads/2019/03/iStock-912846046.jpg" alt="House" style="width:100%" height = "250"></a>
         </div>
       </div>
       <div class="w3-col l3 m6 w3-display-container">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">2010 Chile</div>
-          <a href="CHL10.html"></href>
+          <a href={{ url_for("CHL10") }}></href>
           <img src="https://i1.wp.com/www.escapenormal.com/wp-content/uploads/2019/10/easter-island.jpg?fit=1280%2C854&ssl=1" alt="House" style="width:100%" height = "250"></a>
         </div>
       </div>
       <div class="w3-col l3 m6 w3-display-container">
         <div class="w3-display-container">
           <div class="w3-display-topleft w3-black w3-padding">2011 Japan</div>
-          <a href="JPN11.html"></href>
+          <a href={{ url_for("JPN11") }}></href>
           <img src="https://www.destguides.com/dynamic-files/itinerarystop/3636/background-image.jpg" alt="House" style="width:100%" height = "250"></a>
         </div>
       </div>
