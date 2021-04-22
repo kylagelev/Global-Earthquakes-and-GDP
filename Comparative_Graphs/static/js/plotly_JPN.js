@@ -1,25 +1,27 @@
 function buildPlot() {
 
-    Promise.all([d3.csv("../Data/GDP_JPN.csv"), 
-                 d3.csv("../Data/GDP_BRA.csv"),
-                 d3.csv("../Data/GDP_CHN.csv"),
-                 d3.csv("../Data/GDP_GBR.csv"),
-                 d3.csv("../Data/GDP_IND.csv"),
-                 d3.csv("../Data/GDP_RUS.csv"),
-                 d3.csv("../Data/GDP_USA.csv")]).then(function(files){
+    Promise.all([d3.json("/api/v1.0/get_GDP_JPN"), 
+                 d3.json("/api/v1.0/get_GDP_BRA"),
+                 d3.json("/api/v1.0/get_GDP_CHN"),
+                 d3.json("/api/v1.0/get_GDP_GBR"),
+                 d3.json("/api/v1.0/get_GDP_IND"),
+                 d3.json("/api/v1.0/get_GDP_RUS"),
+                 d3.json("/api/v1.0/get_GDP_USA")]).then(function(files){
     
-    //collecting data for lines from csv files
+    //collecting data for lines from json files
+    //year is in position 0
+    //GDP is in position 2
     
     //JPN
     JPN_Y = []
     JPN_G = []
     files[0].forEach(function(data){
-        if (data.Year != '2020'){
-          data.Year = +data.Year
-          data.GDP = +data.GDP
+        if (data[0] != '2020'){
+          data[0] = +data[0]
+          data[2] = +data[2]
         
-        JPN_Y.push(data.Year)
-        JPN_G.push(data.GDP)
+        JPN_Y.push(data[0])
+        JPN_G.push(data[2])
         }
     })
     console.log(JPN_G)
@@ -28,12 +30,12 @@ function buildPlot() {
     BRA_Y = []
     BRA_G = []
     files[1].forEach(function(data){
-        if (data.Year != '2020'){
-          data.Year = +data.Year
-          data.GDP = +data.GDP
+        if (data[0] != '2020'){
+          data[0] = +data[0]
+          data[2] = +data[2]
     
-          BRA_Y.push(data.Year)
-          BRA_G.push(data.GDP)
+          BRA_Y.push(data[0])
+          BRA_G.push(data[2])
         }
     })
     console.log(BRA_G)
@@ -42,12 +44,12 @@ function buildPlot() {
     CHN_Y = []
     CHN_G = []
     files[2].forEach(function(data){
-        if (data.Year != '2020'){
-          data.Year = +data.Year
-          data.GDP = +data.GDP
+        if (data[0] != '2020'){
+          data[0] = +data[0]
+          data[2] = +data[2]
     
-          CHN_Y.push(data.Year)
-          CHN_G.push(data.GDP)
+          CHN_Y.push(data[0])
+          CHN_G.push(data[2])
     
         }
     })
@@ -56,12 +58,12 @@ function buildPlot() {
     GBR_Y = []
     GBR_G = []
     files[3].forEach(function(data){
-        if (data.Year != '2020'){
-          data.Year = +data.Year
-          data.GDP = +data.GDP
+        if (data[0] != '2020'){
+          data[0] = +data[0]
+          data[2] = +data[2]
     
-          GBR_Y.push(data.Year)
-          GBR_G.push(data.GDP)
+          GBR_Y.push(data[0])
+          GBR_G.push(data[2])
         }
     })
     
@@ -69,12 +71,12 @@ function buildPlot() {
     IND_Y = []
     IND_G = []
     files[4].forEach(function(data){
-        if (data.Year != '2020'){
-          data.Year = +data.Year
-          data.GDP = +data.GDP
+        if (data[0] != '2020'){
+          data[0] = +data[0]
+          data[2] = +data[2]
     
-          IND_Y.push(data.Year)
-          IND_G.push(data.GDP)
+          IND_Y.push(data[0])
+          IND_G.push(data[2])
         }
     })
     
@@ -82,12 +84,12 @@ function buildPlot() {
     RUS_Y = []
     RUS_G = []
     files[5].forEach(function(data){
-        if (data.Year != '2020'){
-          data.Year = +data.Year
-          data.GDP = +data.GDP
+        if (data[0] != '2020'){
+          data[0] = +data[0]
+          data[2] = +data[2]
     
-          RUS_Y.push(data.Year)
-          RUS_G.push(data.GDP)
+          RUS_Y.push(data[0])
+          RUS_G.push(data[2])
         }
     })
     
@@ -95,12 +97,12 @@ function buildPlot() {
     USA_Y = []
     USA_G = []
     files[6].forEach(function(data){
-        if (data.Year != '2020'){
-          data.Year = +data.Year
-          data.GDP = +data.GDP
+        if (data[0] != '2020'){
+          data[0] = +data[0]
+          data[2] = +data[2]
     
-          USA_Y.push(data.Year)
-          USA_G.push(data.GDP)
+          USA_Y.push(data[0])
+          USA_G.push(data[2])
         }
     })
     
