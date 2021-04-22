@@ -220,7 +220,7 @@ var dataset = dropdownMenu.property("value")
 
 if (dataset === 'dataset1') {
   
-d3.csv("Data/GDP_JPN.csv").then(function(gdpData){
+d3.csv("./Data_Cleaning/GDP_csvs/GDP_JPN.csv").then(function(gdpData){
 console.log(gdpData)
 
 gdpData.forEach(function(data) {
@@ -350,7 +350,7 @@ var labelsGroup = chartGroup.append("g")
 }else if (dataset==='dataset2'){
   dataset !== 'dataset1'
   dataset !== 'dataset2'
-  d3.csv("Data/GDP_JPN.csv").then(function(gdpData){
+  d3.csv("./Data_Cleaning/GDP_csvs/GDP_JPN.csv").then(function(gdpData){
     console.log(gdpData)
     
     gdpData.forEach(function(data) {
@@ -477,7 +477,7 @@ var labelsGroup = chartGroup.append("g")
         .attr("y", data => yLinearScale(data[11].GDP));
     })
 }else{
-  d3.csv("Data/GDP_JPN.csv").then(function(gdpData){
+  d3.csv("./Data_Cleaning/GDP_csvs/GDP_JPN.csv").then(function(gdpData){
     console.log(gdpData)
     
     gdpData.forEach(function(data) {

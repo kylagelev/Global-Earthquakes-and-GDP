@@ -36,7 +36,7 @@ var dropdownMenu = d3.select("#selDataset")
 
 var dataset = dropdownMenu.property("value")
 
-d3.csv("Data/GDP_CHL.csv").then(function(gdpData){
+d3.csv("./Data_Cleaning/GDP_csvs/GDP_CHL.csv").then(function(gdpData){
   console.log(gdpData)
   
   gdpData.forEach(function(data) {
@@ -219,7 +219,7 @@ function updatePlotly(){
     
     if (dataset === 'dataset1') {
       
-    d3.csv("Data/GDP_CHL.csv").then(function(gdpData){
+    d3.csv("./Data_Cleaning/GDP_csvs/GDP_CHL.csv").then(function(gdpData){
     console.log(gdpData)
     
     gdpData.forEach(function(data) {
@@ -349,7 +349,7 @@ function updatePlotly(){
     }else if (dataset==='dataset2'){
       dataset !== 'dataset1'
       dataset !== 'dataset2'
-      d3.csv("Data/GDP_CHL.csv").then(function(gdpData){
+      d3.csv("./Data_Cleaning/GDP_csvs/GDP_CHL.csv").then(function(gdpData){
         console.log(gdpData)
         
         gdpData.forEach(function(data) {
@@ -476,7 +476,7 @@ function updatePlotly(){
             .attr("y", data => yLinearScale(data[10].GDP));
         })
     }else{
-      d3.csv("Data/GDP_CHL.csv").then(function(gdpData){
+      d3.csv("./Data_Cleaning/GDP_csvs/GDP_CHL.csv").then(function(gdpData){
         console.log(gdpData)
         
         gdpData.forEach(function(data) {
