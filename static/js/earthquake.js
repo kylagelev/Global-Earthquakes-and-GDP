@@ -36,7 +36,7 @@ var chartGroup = svg.append("g")
 //var parseTime = d3.timeParse("%Y");
 
 
-d3.csv("./Data_Cleaning/earthquake_csv/quake_df.csv").then(function(quakeData){
+d3.csv("../Data_Cleaning/earthquake_csv/quake_df.csv").then(function(quakeData){
     // console.log(quakeData);
     // console.log(quakeData[0].Magnitude);
     // console.log(quakeData[0].Depth);
