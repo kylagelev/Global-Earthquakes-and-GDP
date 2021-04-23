@@ -147,33 +147,38 @@ def all_data():
 @app.route('/api/v1.0/get_GDP')
 def get_GDP():
         session = Session(engine)
-        results = session.query(gdp.Series_Name, 
-                                gdp.Series_Code, 
-                                gdp.Country_Name,
-                                gdp.Country_Code, 
-                                gdp.YearZero, 
-                                gdp.YearOne, 
-                                gdp.YearTwo, 
-                                gdp.YearThree,
-                                gdp.YearFour,
-                                gdp.YearFive,
-                                gdp.YearSix,
-                                gdp.YearSeven,
-                                gdp.YearEight,
-                                gdp.YearNine,
-                                gdp.YearTen,
-                                gdp.YearEleven,
-                                gdp.YearTwelve,
-                                gdp.YearThirteen,
-                                gdp.YearFourteen,
-                                gdp.YearFifteen,
-                                gdp.YearSixteen,
-                                gdp.YearSeventeen,
-                                gdp.YearEighteen,
-                                gdp.YearNineteen
-                                ).all()
+#         results = session.query(gdp.Series_Name, 
+#                                 gdp.Series_Code, 
+#                                 gdp.Country_Name,
+#                                 gdp.Country_Code, 
+#                                 gdp.YearZero, 
+#                                 gdp.YearOne, 
+#                                 gdp.YearTwo, 
+#                                 gdp.YearThree,
+#                                 gdp.YearFour,
+#                                 gdp.YearFive,
+#                                 gdp.YearSix,
+#                                 gdp.YearSeven,
+#                                 gdp.YearEight,
+#                                 gdp.YearNine,
+#                                 gdp.YearTen,
+#                                 gdp.YearEleven,
+#                                 gdp.YearTwelve,
+#                                 gdp.YearThirteen,
+#                                 gdp.YearFourteen,
+#                                 gdp.YearFifteen,
+#                                 gdp.YearSixteen,
+#                                 gdp.YearSeventeen,
+#                                 gdp.YearEighteen,
+#                                 gdp.YearNineteen
+#                                 ).all()
+       
+        result = session.execute("SELECT * FROM gdp")
+        response = [dict(row.items()) for row in result]
+        all_results=json.dumps(response)
+
         session.close()
-        jsongdp = jsonify(results)
+        jsongdp = all_results
         return(jsongdp)
 
 @app.route('/api/v1.0/get_GDP_BRA')
