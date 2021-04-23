@@ -96,4 +96,4 @@ Includes dates, images, and video for respective earthquake.
 * Chile had slight increase in GDP growth resultins in increase in GDP and GDP per capita.
 * Chile, like Indonesia, remained with the lowest GDP in comparison to other countries. However, it does appear that other countries had a slight increase in their GDP's in the year of Chile's earthquake.
 
-**All visuals, description of process, and conclusions with post mortem can be found in powerpoint presentation**
+**All visuals, description of process, and conclusions with post mortem can be found in powerpoint presentation (Earthquake and GDP.pptx) **
