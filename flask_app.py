@@ -144,7 +144,8 @@ def all_data():
                 "/api/v1.0/get_GDP_JPN<br/>"
                 "/api/v1.0/get_GDP_RUS<br/>"
                 "/api/v1.0/get_GDP_USA<br/>"
-                "/api/v1.0/get_quake<br/>")
+                "/api/v1.0/get_quake<br/>"
+                "/api/v1.0/get_quake_json<br/>")
 
 @app.route('/api/v1.0/get_GDP')
 def get_GDP():
@@ -306,6 +307,17 @@ def get_quake():
         session.close()
         jsonquake = jsonify(results)
         return(jsonquake)
+       
+@app.route('/api/v1.0/get_quake_json')
+def get_quake_json():
+        session = Session(engine)
+        result = session.execute("SELECT * FROM quake")
+        response = [dict(row.items()) for row in result]
+        all_results=json.dumps(response)
+
+        session.close()
+        jsonquake_json = all_results
+        return(jsonquake_json)
 
         
 if __name__ == '__main__':
