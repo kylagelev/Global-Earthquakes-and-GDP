@@ -4,10 +4,10 @@ import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
+import json
 from datetime import datetime, timedelta
 from flask_pymongo import PyMongo
 from flask import Flask, jsonify, render_template, redirect
-
 
 
 
@@ -110,7 +110,7 @@ def JPN11():
 def top5():
 
         
-       # find one record of mars info
+#        find one record of mars info
     quake_info = mongo.db.collection.find_one()
 
     return render_template("top5.html", quake_info=quake_info)
@@ -133,50 +133,52 @@ def all_data():
         return (f"Welcome to the Data of Global Earthquakes and GDP.<br/><br/>"
                 "Available Routes:<br/>" 
                 "/api/v1.0/get_GDP <br/>"
-                "/api/v1.0/get_GDP_BRA<br/>"
-                "/api/v1.0/get_GDP_CHL<br/>"
-                "/api/v1.0/get_GDP_CHN<br/>"
-                "/api/v1.0/get_GDP_GBR<br/>"
-                "/api/v1.0/get_GDP_IDN<br/>"
-                "/api/v1.0/get_GDP_IND<br/>"
-                "/api/v1.0/get_GDP_JPN<br/>"
-                "/api/v1.0/get_GDP_RUS<br/>"
-                "/api/v1.0/get_GDP_USA<br/>"
-                "/api/v1.0/get_quake<br/>")
+                "/api/v1.0/get_GDP_BRA_json<br/>"
+                "/api/v1.0/get_GDP_CHL_json<br/>"
+                "/api/v1.0/get_GDP_CHN_json<br/>"
+                "/api/v1.0/get_GDP_GBR_json<br/>"
+                "/api/v1.0/get_GDP_IDN_json<br/>"
+                "/api/v1.0/get_GDP_IND_json<br/>"
+                "/api/v1.0/get_GDP_JPN_json<br/>"
+                "/api/v1.0/get_GDP_RUS_json<br/>"
+                "/api/v1.0/get_GDP_USA_json<br/>"
+                "/api/v1.0/get_quake_json<br/>")
 
 @app.route('/api/v1.0/get_GDP')
 def get_GDP():
         session = Session(engine)
-        results = session.query(gdp.Series_Name, 
-                                gdp.Series_Code, 
-                                gdp.Country_Name,
-                                gdp.Country_Code, 
-                                gdp.YearZero, 
-                                gdp.YearOne, 
-                                gdp.YearTwo, 
-                                gdp.YearThree,
-                                gdp.YearFour,
-                                gdp.YearFive,
-                                gdp.YearSix,
-                                gdp.YearSeven,
-                                gdp.YearEight,
-                                gdp.YearNine,
-                                gdp.YearTen,
-                                gdp.YearEleven,
-                                gdp.YearTwelve,
-                                gdp.YearThirteen,
-                                gdp.YearFourteen,
-                                gdp.YearFifteen,
-                                gdp.YearSixteen,
-                                gdp.YearSeventeen,
-                                gdp.YearEighteen,
-                                gdp.YearNineteen
-                                ).all()
-       
-        
+        # results = session.query(gdp.Series_Name, 
+        #                         gdp.Series_Code, 
+        #                         gdp.Country_Name,
+        #                         gdp.Country_Code, 
+        #                         gdp.YearZero, 
+        #                         gdp.YearOne, 
+        #                         gdp.YearTwo, 
+        #                         gdp.YearThree,
+        #                         gdp.YearFour,
+        #                         gdp.YearFive,
+        #                         gdp.YearSix,
+        #                         gdp.YearSeven,
+        #                         gdp.YearEight,
+        #                         gdp.YearNine,
+        #                         gdp.YearTen,
+        #                         gdp.YearEleven,
+        #                         gdp.YearTwelve,
+        #                         gdp.YearThirteen,
+        #                         gdp.YearFourteen,
+        #                         gdp.YearFifteen,
+        #                         gdp.YearSixteen,
+        #                         gdp.YearSeventeen,
+        #                         gdp.YearEighteen,
+        #                         gdp.YearNineteen
+        #                         ).all()
+
+        results = session.execute("SELECT * FROM gdp")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
 
         session.close()
-        jsongdp = results
+        jsongdp = all_results
         return(jsongdp)
 
 @app.route('/api/v1.0/get_GDP_BRA')
@@ -191,6 +193,17 @@ def get_GDP_BRA():
         jsongdp_bra = jsonify(results)
         return(jsongdp_bra)
 
+@app.route('/api/v1.0/get_GDP_BRA_json')
+def get_GDP_BRA_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_bra")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_bra_json = all_results
+        return(jsongdp_bra_json)
+
 @app.route('/api/v1.0/get_GDP_CHL')
 def get_GDP_CHL():
         session = Session(engine)
@@ -202,6 +215,17 @@ def get_GDP_CHL():
         session.close()
         jsongdp_chl = jsonify(results)
         return(jsongdp_chl)
+
+@app.route('/api/v1.0/get_GDP_CHL_json')
+def get_GDP_CHL_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_chl")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_chl_json = all_results
+        return(jsongdp_chl_json)
 
 @app.route('/api/v1.0/get_GDP_CHN')
 def get_GDP_CHN():
@@ -215,6 +239,17 @@ def get_GDP_CHN():
         jsongdp_chn = jsonify(results)
         return(jsongdp_chn)
 
+@app.route('/api/v1.0/get_GDP_CHN_json')
+def get_GDP_CHN_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_chn")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_chn_json = all_results
+        return(jsongdp_chn_json)
+
 @app.route('/api/v1.0/get_GDP_GBR')
 def get_GDP_GBR():
         session = Session(engine)
@@ -226,6 +261,17 @@ def get_GDP_GBR():
         session.close()
         jsongdp_gbr = jsonify(results)
         return(jsongdp_gbr)
+
+@app.route('/api/v1.0/get_GDP_GBR_json')
+def get_GDP_GBR_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_gbr")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_gbr_json = all_results
+        return(jsongdp_gbr_json)
 
 @app.route('/api/v1.0/get_GDP_IDN')
 def get_GDP_IDN():
@@ -239,6 +285,17 @@ def get_GDP_IDN():
         jsongdp_idn = jsonify(results)
         return(jsongdp_idn)
 
+@app.route('/api/v1.0/get_GDP_IDN_json')
+def get_GDP_IDN_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_idn")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_idn_json = all_results
+        return(jsongdp_idn_json)
+
 @app.route('/api/v1.0/get_GDP_IND')
 def get_GDP_IND():
         session = Session(engine)
@@ -250,6 +307,17 @@ def get_GDP_IND():
         session.close()
         jsongdp_ind = jsonify(results)
         return(jsongdp_ind)
+
+@app.route('/api/v1.0/get_GDP_IND_json')
+def get_GDP_IND_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_ind")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_ind_json = all_results
+        return(jsongdp_ind_json)
 
 @app.route('/api/v1.0/get_GDP_JPN')
 def get_GDP_JPN():
@@ -263,6 +331,17 @@ def get_GDP_JPN():
         jsongdp_jpn = jsonify(results)
         return(jsongdp_jpn)
 
+@app.route('/api/v1.0/get_GDP_JPN_json')
+def get_GDP_JPN_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_jpn")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_jpn_json = all_results
+        return(jsongdp_jpn_json)
+
 @app.route('/api/v1.0/get_GDP_RUS')
 def get_GDP_RUS():
         session = Session(engine)
@@ -275,6 +354,17 @@ def get_GDP_RUS():
         jsongdp_rus = jsonify(results)
         return(jsongdp_rus)
 
+@app.route('/api/v1.0/get_GDP_RUS_json')
+def get_GDP_RUS_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_rus")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_rus_json = all_results
+        return(jsongdp_rus_json)
+
 @app.route('/api/v1.0/get_GDP_USA')
 def get_GDP_USA():
         session = Session(engine)
@@ -286,6 +376,17 @@ def get_GDP_USA():
         session.close()
         jsongdp_usa = jsonify(results)
         return(jsongdp_usa)
+
+@app.route('/api/v1.0/get_GDP_USA_json')
+def get_GDP_USA_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM gdp_usa")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_usa_json = all_results
+        return(jsongdp_usa_json)
 
 @app.route('/api/v1.0/get_quake')
 def get_quake():
@@ -302,6 +403,17 @@ def get_quake():
         session.close()
         jsonquake = jsonify(results)
         return(jsonquake)
+
+@app.route('/api/v1.0/get_quake_json')
+def get_quake_json():
+        session = Session(engine)
+        results = session.execute("SELECT * FROM quake")
+        response = [dict(row.items()) for row in results]
+        all_results = json.dumps(response)
+
+        session.close()
+        jsongdp_quake_json = all_results
+        return(jsongdp_quake_json)
 
 if __name__ == '__main__':
     app.run(debug=True)
