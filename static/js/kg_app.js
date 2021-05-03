@@ -61,17 +61,17 @@ var myMap = L.map("map", {
 
     for (var i=0; i < 5; i++){
     //setting up color for marker
-    var myIcon = L.icon({
-      iconUrl: icon_imgs[i],
-      iconSize: [50, 25],
-      iconAnchor: [24, 24],
-      popupAnchor: [-3, -46],
-      shadowUrl: '../flag_images/new_shadow.png',
-      shadowSize: [60, 25],
-      shadowAnchor: [30, 15]
-      });
+    // var myIcon = L.icon({
+    //   iconUrl: icon_imgs[i],
+    //   iconSize: [50, 25],
+    //   iconAnchor: [24, 24],
+    //   popupAnchor: [-3, -46],
+    //   shadowUrl: '../flag_images/new_shadow.png',
+    //   shadowSize: [60, 25],
+    //   shadowAnchor: [30, 15]
+    //   });
       earthquakeMarkers.push(
-        L.marker([response[i][1], response[i][2]], {icon: myIcon}).bindPopup("<h4>" + `Place: ` + "</h4>" + response[i][6]  +
+        L.marker([response[i][1], response[i][2]]).bindPopup("<h4>" + `Place: ` + "</h4>" + response[i][6]  +
                                                                           
                                                                           // "<h4>" + `Longitude: ` + "</h4>" + response[i].Longitude +
                                                                           
