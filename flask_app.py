@@ -6,8 +6,6 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 from datetime import datetime, timedelta
 from flask_pymongo import PyMongo
-import pandas as pd
-import json
 from flask import Flask, jsonify, render_template, redirect
 
 
@@ -144,44 +142,41 @@ def all_data():
                 "/api/v1.0/get_GDP_JPN<br/>"
                 "/api/v1.0/get_GDP_RUS<br/>"
                 "/api/v1.0/get_GDP_USA<br/>"
-                "/api/v1.0/get_quake<br/>"
-                "/api/v1.0/get_quake_json<br/>")
+                "/api/v1.0/get_quake<br/>")
 
 @app.route('/api/v1.0/get_GDP')
 def get_GDP():
         session = Session(engine)
-#         results = session.query(gdp.Series_Name, 
-#                                 gdp.Series_Code, 
-#                                 gdp.Country_Name,
-#                                 gdp.Country_Code, 
-#                                 gdp.YearZero, 
-#                                 gdp.YearOne, 
-#                                 gdp.YearTwo, 
-#                                 gdp.YearThree,
-#                                 gdp.YearFour,
-#                                 gdp.YearFive,
-#                                 gdp.YearSix,
-#                                 gdp.YearSeven,
-#                                 gdp.YearEight,
-#                                 gdp.YearNine,
-#                                 gdp.YearTen,
-#                                 gdp.YearEleven,
-#                                 gdp.YearTwelve,
-#                                 gdp.YearThirteen,
-#                                 gdp.YearFourteen,
-#                                 gdp.YearFifteen,
-#                                 gdp.YearSixteen,
-#                                 gdp.YearSeventeen,
-#                                 gdp.YearEighteen,
-#                                 gdp.YearNineteen
-#                                 ).all()
+        results = session.query(gdp.Series_Name, 
+                                gdp.Series_Code, 
+                                gdp.Country_Name,
+                                gdp.Country_Code, 
+                                gdp.YearZero, 
+                                gdp.YearOne, 
+                                gdp.YearTwo, 
+                                gdp.YearThree,
+                                gdp.YearFour,
+                                gdp.YearFive,
+                                gdp.YearSix,
+                                gdp.YearSeven,
+                                gdp.YearEight,
+                                gdp.YearNine,
+                                gdp.YearTen,
+                                gdp.YearEleven,
+                                gdp.YearTwelve,
+                                gdp.YearThirteen,
+                                gdp.YearFourteen,
+                                gdp.YearFifteen,
+                                gdp.YearSixteen,
+                                gdp.YearSeventeen,
+                                gdp.YearEighteen,
+                                gdp.YearNineteen
+                                ).all()
        
-        result = session.execute("SELECT * FROM gdp")
-        response = [dict(row.items()) for row in result]
-        all_results=json.dumps(response)
+        
 
         session.close()
-        jsongdp = all_results
+        jsongdp = results
         return(jsongdp)
 
 @app.route('/api/v1.0/get_GDP_BRA')
@@ -307,18 +302,6 @@ def get_quake():
         session.close()
         jsonquake = jsonify(results)
         return(jsonquake)
-       
-@app.route('/api/v1.0/get_quake_json')
-def get_quake_json():
-        session = Session(engine)
-        result = session.execute("SELECT * FROM quake")
-        response = [dict(row.items()) for row in result]
-        all_results=json.dumps(response)
 
-        session.close()
-        jsonquake_json = all_results
-        return(jsonquake_json)
-
-        
 if __name__ == '__main__':
     app.run(debug=True)
